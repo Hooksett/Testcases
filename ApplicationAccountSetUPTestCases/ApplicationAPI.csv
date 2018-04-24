@@ -1,0 +1,463 @@
+"Title 
+(Denotes new test case)","Type 
+(Automated, Compatibility, Functional, Other, Performance, Functional)","Priority 
+(Critical, High, Medium, Low)","Estimate
+(1-59M in Min
+1H + in Hours)",References (Link user stories or bugs),"Status
+(Draft, Ready for Review, Final)","Owner
+(FirstName LastName)","Objective
+(Describe the Overall Objective this case is designed to achieve)","Preconditions
+(List prerequisite conditions for this test case)",Steps (One step per row),Number,"Expected Result (Per step, Expected for whole test case list on last step)"
+/api/application/RefState,Functional,Critical,15M,None,Final,Megh Thapa,"Validation of Application API Account setup endpoint displays, write and update Correct data  ",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/RefState,1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section ",,Api-Key is accepted
+,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data and length ,,Return all  refState table Data
+ /api/application/AvailableStores/1,Functional,Critical,15M,None,Final,Megh Thapa,"Validation of Application API Account setup endpoint displays, write and update Correct data  ",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/AvailableStores/{AccountType},1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section  and  paste account type =1 ",,Api-Key is accepted
+,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data and length ,,Return all visionworks account 
+ /api/application/AvailableStores/{2,Functional,Critical,15M,None,Final,Megh Thapa,"Validation of Application API Account setup endpoint displays, write and update Correct data  ",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/AvailableStores/{AccountType},1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section  and  paste account type =2",,Api-Key is accepted
+,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data and length ,,Return all Empire Vision account 
+ /api/application/AvailableStores/3,Functional,Critical,15M,None,Final,Megh Thapa,"Validation of Application API Account setup endpoint displays, write and update Correct data  ",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/AvailableStores/{AccountType},1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section  and  paste account type =3",,Api-Key is accepted
+,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data and length ,,Return all Davis Vision account
+ /api/application/AvailableStores/,Functional,Critical,15M,None,Final,Megh Thapa,"Validation of Application API Account setup endpoint displays, write and update Correct data  ",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/AvailableStores/,1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section  and paste accounttype =empty",,Api-Key is accepted
+,,,,,,,,,"
+Click send",,Status code should be 404 not found
+,,,,,,,,,Verify response JSON data and length ,,Should return file or directory not found 
+ /api/application/AvailableStores/14,Functional,Critical,15M,None,Final,Megh Thapa,"Validation of Application API Account setup endpoint displays, write and update Correct data  ",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/AvailableStores/,1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section  and paste accounttype = 14",,Api-Key is accepted
+,,,,,,,,,"
+Click send",,Status code should be 200 
+,,,,,,,,,Verify response JSON data and length ,,Should return file or directory not found 
+/api/application/ManageAccount update ,Functional,Critical,15M,None,Final,Megh Thapa,"Validation of Application API Account setup endpoint displays, write and update Correct data  ",Log in to Postman,Select POST from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/ManageAccount,1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section  and paste following JSON properties on  body/raw section {
+  ""accountInfoID"": 1,
+  ""refAccountTypeCode"": 1,
+  ""refAccountTypeName"": ""Test"",
+  ""accountTypeID"": 1,
+  ""accountNumber"": 1,
+  ""accountName"": ""Test"",
+  ""accountCity"": ""San Antonio"",
+  ""accountState"": ""SA"",
+  ""accountZip"": ""78229"",
+  ""primaryLabID"": 891,
+  ""primaryLabName"": ""Richland Hills"",
+  ""primaryLabNameWithNumber"": ""string"",
+  ""secondaryLabID"": 125,
+  ""secondaryLabName"": ""Schertz"",
+  ""secondaryLabNameWithNumber"": ""string"",
+  ""doNotReroute"": true,
+  ""isActive"": true,
+  ""lastModifiedRefUserID"": 0,
+  ""lastModifiedDate"": ""2018-02-05T15:43:03.164Z"",
+  ""accountPhone"": ""string"",
+  ""accountFax"": ""string"",
+  ""accountEmail"": ""Test@gmail.com""
+}",,Api-Key and JSON properties is accepted 
+,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,Account  is updated into DB
+/api/application/ManageAccount New Account,Functional,Critical,15M,None,Final,Megh Thapa,"Validation of Application API Account setup endpoint displays, write and update Correct data  ",Log in to Postman,Select POST from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/ManageAccount,1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section  and paste following JSON properties on  body/raw section{
+  ""accountInfoID"": 92541,
+  ""refAccountTypeCode"": 1,
+  ""refAccountTypeName"": ""Test"",
+  ""accountTypeID"": 3,
+  ""accountNumber"": 30000,
+  ""accountName"": ""Test123"",
+  ""accountCity"": ""San Antonio"",
+  ""accountState"": ""SA"",
+  ""accountZip"": 78229,
+  ""primaryLabID"": 891,
+  ""primaryLabName"": ""Richland Hills"",
+  ""primaryLabNameWithNumber"": ""string"",
+  ""secondaryLabID"": 125,
+  ""secondaryLabName"": ""Schertz"",
+  ""secondaryLabNameWithNumber"": ""string"",
+  ""doNotReroute"": true,
+  ""isActive"": true,
+  ""lastModifiedRefUserID"": 0,
+  ""lastModifiedDate"": ""2018-02-05T15:43:03.164Z"",
+  ""accountPhone"": 2105445645,
+  ""accountFax"": 2104567445,
+  ""accountEmail"": ""Test@gmail.com""
+}",,Api-Key and JSON properties is accepted 
+,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,New Account is created
+/api/application/ManageAccount New Account(Davis),Functional,Critical,15M,None,Final,Megh Thapa,"Validation of Application API Account setup endpoint displays, write and update Correct data  ",Log in to Postman,Select POST from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/ManageAccount,1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section  and paste following JSON properties on  body/raw section{
+  ""accountInfoID"": 92541,
+  ""refAccountTypeCode"": 2,
+  ""refAccountTypeName"": ""Test"",
+  ""accountTypeID"": 1,
+  ""accountNumber"": 1,
+  ""accountName"": ""Test123"",
+  ""accountCity"": ""San Antonio"",
+  ""accountState"": ""SA"",
+  ""accountZip"": 78229,
+  ""primaryLabID"": 891,
+  ""primaryLabName"": ""Richland Hills"",
+  ""primaryLabNameWithNumber"": ""string"",
+  ""secondaryLabID"": 125,
+  ""secondaryLabName"": ""Schertz"",
+  ""secondaryLabNameWithNumber"": 1234567890,
+  ""doNotReroute"": true,
+  ""isActive"": true,
+  ""lastModifiedRefUserID"": 0,
+  ""lastModifiedDate"": ""2018-02-05T15:43:03.164Z"",
+  ""accountPhone"": 2105445645,
+  ""accountFax"": 2104567445,
+  ""accountEmail"": ""Test@gmail.com""
+}",,Api-Key and JSON properties is accepted 
+,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,New Account is created
+/api/application/ManageAccount New Account(EV),Functional,Critical,15M,None,Final,Megh Thapa,"Validation of Application API Account setup endpoint displays, write and update Correct data  ",Log in to Postman,Select POST from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/ManageAccount,1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section  and paste following JSON properties on  body/raw section{
+  ""accountInfoID"": 9559,
+  ""refAccountTypeCode"": 2,
+  ""refAccountTypeName"": ""TestEV"",
+  ""accountTypeID"": 2,
+  ""accountNumber"": 3000,
+  ""accountName"": ""Test123DavisAPI"",
+  ""accountCity"": ""San Antonio"",
+  ""accountState"": ""SA"",
+  ""accountZip"": 78229,
+  ""primaryLabID"": 891,
+  ""primaryLabName"": ""Richland Hills"",
+  ""primaryLabNameWithNumber"": ""string"",
+  ""secondaryLabID"": 125,
+  ""secondaryLabName"": ""Schertz"",
+  ""secondaryLabNameWithNumber"": 1234567890,
+  ""doNotReroute"": true,
+  ""isActive"": true,
+  ""lastModifiedRefUserID"": 0,
+  ""lastModifiedDate"": ""2018-02-05T15:43:03.164Z"",
+  ""accountPhone"": 2105445645,
+  ""accountFax"": 2104567445,
+  ""accountEmail"": ""Test@gmail.com""
+}",,Api-Key and JSON properties is accepted 
+,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,, New Account info 9559 is created in DB
+/api/application/ManageAccount Update(EV),Functional,Critical,15M,None,Final,Megh Thapa,"Validation of Application API Account setup endpoint displays, write and update Correct data  ",Log in to Postman,Select POST from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/ManageAccount,1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section  and paste following JSON properties on  body/raw section{
+  ""accountInfoID"": 9559,
+  ""refAccountTypeCode"": 2,
+  ""refAccountTypeName"": ""TestEVUpdate"",
+  ""accountTypeID"": 2,
+  ""accountNumber"": 3000,
+  ""accountName"": ""Test123EVAPIUpdate"",
+  ""accountCity"": ""San Antonio"",
+  ""accountState"": ""SA"",
+  ""accountZip"": 78229,
+  ""primaryLabID"": 891,
+  ""primaryLabName"": ""Richland Hills"",
+  ""primaryLabNameWithNumber"": ""Update"",
+  ""secondaryLabID"": 125,
+  ""secondaryLabName"": ""Schertz"",
+  ""secondaryLabNameWithNumber"": 1234567890,
+  ""doNotReroute"": true,
+  ""isActive"": true,
+  ""lastModifiedRefUserID"": 0,
+  ""lastModifiedDate"": ""2018-02-05T15:43:03.164Z"",
+  ""accountPhone"": 2105445645,
+  ""accountFax"": 2104567445,
+  ""accountEmail"": ""Test@gmail.com""
+}",,Api-Key and JSON properties is accepted 
+,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,, New Account info 9559 is created in DB
+/api/application/Manage New account(ECom),Functional,Critical,15M,None,Final,Megh Thapa,"Validation of Application API Account setup endpoint displays, write and update Correct data  ",Log in to Postman,Select POST from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/ManageAccount,1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section  and paste following JSON properties on  body/raw section{
+  ""accountInfoID"": 9559,
+  ""refAccountTypeCode"": 5,
+  ""refAccountTypeName"": ""TestEcom"",
+  ""accountTypeID"": 5,
+  ""accountNumber"": 3000,
+  ""accountName"": ""Test123EcomAPI"",
+  ""accountCity"": ""San Antonio"",
+  ""accountState"": ""SA"",
+  ""accountZip"": 78229,
+  ""primaryLabID"": 891,
+  ""primaryLabName"": ""Richland HillsUpdate"",
+  ""primaryLabNameWithNumber"": ""Update"",
+  ""secondaryLabID"": 125,
+  ""secondaryLabName"": ""Schertz"",
+  ""secondaryLabNameWithNumber"": 1234567890,
+  ""doNotReroute"": true,
+  ""isActive"": true,
+  ""lastModifiedRefUserID"": 0,
+  ""lastModifiedDate"": ""2018-02-05T15:43:03.164Z"",
+  ""accountPhone"": 2105445645,
+  ""accountFax"": 2104567445,
+  ""accountEmail"": ""TestEcom@gmail.com""
+}",,Api-Key and JSON properties is accepted 
+,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,, New Account info 9559 is created in DB
+/api/application/Manage Update(ECom),Functional,Critical,15M,None,Final,Megh Thapa,"Validation of Application API Account setup endpoint displays, write and update Correct data  ",Log in to Postman,Select POST from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/ManageAccount,1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section  and paste following JSON properties on  body/raw section{
+  ""accountInfoID"": 9559,
+  ""refAccountTypeCode"": 5,
+  ""refAccountTypeName"": ""TestEComUpdate"",
+  ""accountTypeID"": 5,
+  ""accountNumber"": 3000,
+  ""accountName"": ""Test123EcomAPIUpdate"",
+  ""accountCity"": ""San Antonio"",
+  ""accountState"": ""SA"",
+  ""accountZip"": 78229,
+  ""primaryLabID"": 891,
+  ""primaryLabName"": ""Richland Hills"",
+  ""primaryLabNameWithNumber"": ""Update"",
+  ""secondaryLabID"": 125,
+  ""secondaryLabName"": ""Schertz"",
+  ""secondaryLabNameWithNumber"": 1234567890,
+  ""doNotReroute"": true,
+  ""isActive"": true,
+  ""lastModifiedRefUserID"": 0,
+  ""lastModifiedDate"": ""2018-02-05T15:43:03.164Z"",
+  ""accountPhone"": 2105445645,
+  ""accountFax"": 2104567445,
+  ""accountEmail"": ""TestEcom@gmail.com""
+}",,Api-Key and JSON properties is accepted 
+,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,, New Account info 9559 is created in DB
+/api/application/Stores/VisionWorks,Functional,Critical,15M,None,Final,Megh Thapa,"Validation of Application API Account setup endpoint displays, write and update Correct data  ",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/Stores/{AccountType},1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section  and  enter AccountType =1 ",,Api-Key and JSON properties is accepted 
+,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,Return all the Visionworks account from vCorpInfoStore view
+/api/application/Stores/EV,Functional,Critical,15M,None,Final,Megh Thapa,"Validation of Application API Account setup endpoint displays, write and update Correct data  ",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/Stores/{AccountType},1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section  and  enter AccountType =2",,Api-Key and JSON properties is accepted 
+,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,Return all  the EV account from vCorpInfoStore view
+/api/application/Stores/Davis,Functional,Critical,15M,None,Final,Megh Thapa,"Validation of Application API Account setup endpoint displays, write and update Correct data  ",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/Stores/{AccountType},1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section  and  enter AccountType =3",,Api-Key and JSON properties is accepted 
+,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,should not return any Davis account information default to Visionworks account
+/api/application/Stores/12,Functional,Critical,15M,None,Final,Megh Thapa,"Validation of Application API Account setup endpoint displays, write and update Correct data  ",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/Stores/{AccountType},1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section  and  enter AccountType =3",,Api-Key and JSON properties is accepted 
+,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,should not return any account information default to Visionworks account
+/api/application/RefAccountTypeByRole/0,Functional,Critical,15M,None,Final,Megh Thapa,"Validation of Application API Account setup endpoint displays, write and update Correct data  ",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/RefAccountTypeByRole/{accountRole},1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section  and  enter Account role =0",,Api-Key and JSON properties is accepted 
+,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,Should only return Davis vision account
+/api/application/RefAccountTypeByRole/1,Functional,Critical,15M,None,Final,Megh Thapa,"Validation of Application API Account setup endpoint displays, write and update Correct data  ",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/RefAccountTypeByRole/{accountRole},1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section  and  enter Account role =1",,Api-Key and JSON properties is accepted 
+,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,"Should return VisionWorks,Empire Vision and e-commerce account"
+/api/application/RefAccountTypeByRole/2,Functional,Critical,15M,None,Final,Megh Thapa,"Validation of Application API Account setup endpoint displays, write and update Correct data  ",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/RefAccountTypeByRole/{accountRole},1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section  and  enter Account role =2",,Api-Key and JSON properties is accepted 
+,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,"should return  Davis,  VisionWorks, Empire Vision and e-commerce account"
+/api/application/RefAccountTypeByRole/3,Functional,Critical,15M,None,Final,Megh Thapa,"Validation of Application API Account setup endpoint displays, write and update Correct data  ",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/RefAccountTypeByRole/{accountRole},1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section  and  enter Account role =1",,Api-Key and JSON properties is accepted 
+,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,should return empty array
+/api/application/SearchAccountInfo/Visionworks/Accountnumber1/{SearchString},Functional,Critical,15M,None,Final,Megh Thapa,"Validation of Application API Account setup endpoint displays, write and update Correct data  ",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/SearchAccountInfo/{refAccountTypeCode}/{SearchType}/{SearchString},1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section , enter AccountTypeCode = 1, SearchType = Accountnumber and SearchingString = 1",,Api-Key and JSON properties is accepted 
+,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,Data should match with the Account Info table 
+/api/application/SearchAccountInfo/Visionworks/Accountnumber/{SearchString},Functional,Critical,15M,None,Final,Megh Thapa,"Validation of Application API Account setup endpoint displays, write and update Correct data  ",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/SearchAccountInfo/{refAccountTypeCode}/{SearchType}/{SearchString},1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section , enter AccountTypeCode = 1, SearchType = Accountnumber and SearchingString = 859",,Api-Key and JSON properties is accepted 
+,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,Data should match with the Account Info table 
+/api/application/SearchAccountInfo/Visionworks/AccountCity/{SearchString},Functional,Critical,15M,None,Final,Megh Thapa,"Validation of Application API Account setup endpoint displays, write and update Correct data  ",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/SearchAccountInfo/{refAccountTypeCode}/{SearchType}/{SearchString},1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section , enter AccountTypeCode = 1, SearchType = accountCity and SearchingString = ""San Antonio""",,Api-Key and JSON properties is accepted 
+,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,Data should match with the Account Info table 
+/api/application/SearchAccountInfo/Visionworks/AccountName/{SearchString},Functional,Critical,15M,None,Final,Megh Thapa,"Validation of Application API Account setup endpoint displays, write and update Correct data  ",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/SearchAccountInfo/{refAccountTypeCode}/{SearchType}/{SearchString},1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section , enter AccountTypeCode = 1, SearchType = AccountName and SearchingString = Novi",,Api-Key and JSON properties is accepted 
+,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,Data should match with the Account Info table 
+/api/application/SearchAccountInfo/EV/Accountnumber/{SearchString},Functional,Critical,15M,None,Final,Megh Thapa,"Validation of Application API Account setup endpoint displays, write and update Correct data  ",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/SearchAccountInfo/{refAccountTypeCode}/{SearchType}/{SearchString},1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section , enter AccountTypeCode = 2, SearchType = Accountnumber and SearchingString = 1279",,Api-Key and JSON properties is accepted 
+,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,Data should match with the Account Info table 
+/api/application/SearchAccountInfo/EV/Accountnumber1/{SearchString},Functional,Critical,15M,None,Final,Megh Thapa,"Validation of Application API Account setup endpoint displays, write and update Correct data  ",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/SearchAccountInfo/{refAccountTypeCode}/{SearchType}/{SearchString},1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section , enter AccountTypeCode = 2, SearchType = Accountnumber and SearchingString = 1020",,Api-Key and JSON properties is accepted 
+,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,Data should match with the Account Info table 
+/api/application/SearchAccountInfo/EV/AccountCity/{SearchString},Functional,Critical,15M,None,Final,Megh Thapa,"Validation of Application API Account setup endpoint displays, write and update Correct data  ",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/SearchAccountInfo/{refAccountTypeCode}/{SearchType}/{SearchString},1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section , enter AccountTypeCode = 2, SearchType = accountCity and SearchingString = FULTON",,Api-Key and JSON properties is accepted 
+,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,Data should match with the Account Info table 
+/api/application/SearchAccountInfo/EV/AccountName2/{SearchString},Functional,Critical,15M,None,Final,Megh Thapa,"Validation of Application API Account setup endpoint displays, write and update Correct data  ",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/SearchAccountInfo/{refAccountTypeCode}/{SearchType}/{SearchString},1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section , enter AccountTypeCode = 2, SearchType = AccountName and SearchingString = SYRACUSE",,Api-Key and JSON properties is accepted 
+,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,Data should match with the Account Info table 
+/api/application/SearchAccountInfo/DV/Accountnumber/{SearchString},Functional,Critical,15M,None,Final,Megh Thapa,"Validation of Application API Account setup endpoint displays, write and update Correct data  ",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/SearchAccountInfo/{refAccountTypeCode}/{SearchType}/{SearchString},1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section , enter AccountTypeCode = 3, SearchType = Accountnumber and SearchingString = 9954",,Api-Key and JSON properties is accepted 
+,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,Data should match with the Account Info table 
+/api/application/SearchAccountInfo/DV/Accountnumber1/{SearchString},Functional,Critical,15M,None,Final,Megh Thapa,"Validation of Application API Account setup endpoint displays, write and update Correct data  ",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/SearchAccountInfo/{refAccountTypeCode}/{SearchType}/{SearchString},1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section , enter AccountTypeCode = 3, SearchType = Accountnumber and SearchingString = 80653",,Api-Key and JSON properties is accepted 
+,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,Data should match with the Account Info table 
+/api/application/SearchAccountInfo/DV/AccountCity/{SearchString},Functional,Critical,15M,None,Final,Megh Thapa,"Validation of Application API Account setup endpoint displays, write and update Correct data  ",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/SearchAccountInfo/{refAccountTypeCode}/{SearchType}/{SearchString},1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section , enter AccountTypeCode = 3, SearchType = accountCity and SearchingString = Carlsbad",,Api-Key and JSON properties is accepted 
+,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,Data should match with the Account Info table 
+/api/application/SearchAccountInfo/DV/AccountName/{SearchString},Functional,Critical,15M,None,Final,Megh Thapa,"Validation of Application API Account setup endpoint displays, write and update Correct data  ",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/SearchAccountInfo/{refAccountTypeCode}/{SearchType}/{SearchString},1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section , enter AccountTypeCode = 3, SearchType = AccountName and SearchingString = Maietta, Martha",,Api-Key and JSON properties is accepted 
+,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,Data should match with the Account Info table 
+/api/application/SearchAccountInfo/Ecom/AccountCity/{SearchString},Functional,Critical,15M,None,Final,Megh Thapa,"Validation of Application API Account setup endpoint displays, write and update Correct data  ",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/SearchAccountInfo/{refAccountTypeCode}/{SearchType}/{SearchString},1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section , enter AccountTypeCode = 5, SearchType = accountCity and SearchingString = San Antonio",,Api-Key and JSON properties is accepted 
+,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,Data should match with the Account Info table 
+/api/application/SearchAccountInfo/Ecom/AccountName/{SearchString},Functional,Critical,15M,None,Final,Megh Thapa,"Validation of Application API Account setup endpoint displays, write and update Correct data  ",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/SearchAccountInfo/{refAccountTypeCode}/{SearchType}/{SearchString},1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section , enter AccountTypeCode = 5, SearchType = AccountName and SearchingString = San Antonio",,Api-Key and JSON properties is accepted 
+ ,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,Data should match with the Account Info table 
+/api/application/Search/AccountTypeAndTransactionNumber/{refAccountTypeID}/{reportDate}/{storeNumber},Functional,Critical,15M,None,Final,Megh Thapa,"Validation of Application API Account setup endpoint displays, write and update Correct data  ",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/Search/AccountTypeAndTransactionNumber/{refAccountTypeID}/{reportDate}/{storeNumber},1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section , enter refAccountTypeCode = 1, ReportDate = 2016-11-30  and StoreNumber = 1",,Api-Key and JSON properties is accepted 
+ ,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,Data should match with the Account Info table 
+/api/application/RefAccountType,Functional,Critical,15M,None,Final,Megh Thapa,"Validation of Application API Account setup endpoint displays, write and update Correct data  ",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/RefAccountType,1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section ",,Api-Key and JSON properties is accepted 
+,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,"Should return VisionWorks,Empire Vision and e-commerce account"
+/api/application/AccountInfo/1/99/True,Functional,Critical,15M,None,Final,Megh Thapa,"Validation of Application API Account setup endpoint displays, write and update Correct data  ",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/AccountInfo/{refAccountTypeCode}/{AccountNumber}/{IsActiveOnly},1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section, enter  refAccountTypeCode =1 , AccountNumber=99 and IsActiveOnly =true",,Api-Key and JSON properties is accepted 
+,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,Account details should match with AccountInfo table 
+/api/application/AccountInfo/2/1286/True,Functional,Critical,15M,None,Final,Megh Thapa,"Validation of Application API Account setup endpoint displays, write and update Correct data  ",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/AccountInfo/{refAccountTypeCode}/{AccountNumber}/{IsActiveOnly},1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section, enter  refAccountTypeCode =2 , AccountNumber=1286 and IsActiveOnly =true",,Api-Key and JSON properties is accepted 
+,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,Account details should match with AccountInfo table 
+/api/application/AccountInfo/3/9990/True,Functional,Critical,15M,None,Final,Megh Thapa,"Validation of Application API Account setup endpoint displays, write and update Correct data  ",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/AccountInfo/{refAccountTypeCode}/{AccountNumber}/{IsActiveOnly},1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section, enter  refAccountTypeCode =3 , AccountNumber=9990 and IsActiveOnly =true",,Api-Key and JSON properties is accepted 
+,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,Account details should match with AccountInfo table 
+/api/application/AccountInfo/5/1006/True,Functional,Critical,15M,None,Final,Megh Thapa,"Validation of Application API Account setup endpoint displays, write and update Correct data  ",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/AccountInfo/{refAccountTypeCode}/{AccountNumber}/{IsActiveOnly},1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section, enter  refAccountTypeCode =5 , AccountNumber=1006 and IsActiveOnly =true",,Api-Key and JSON properties is accepted 
+,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,Account details should match with AccountInfo table 
+/api/application/AccountInfo/1/867/False,Functional,Critical,15M,None,Final,Megh Thapa,"Validation of Application API Account setup endpoint displays, write and update Correct data  ",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/AccountInfo/{refAccountTypeCode}/{AccountNumber}/{IsActiveOnly},1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section, enter  refAccountTypeCode =1 , AccountNumber=867 and IsActiveOnly =False",,Api-Key and JSON properties is accepted 
+,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,Account details should match with AccountInfo table 
+/api/application/AccountInfo/2/1235/False,Functional,Critical,15M,None,Final,Megh Thapa,"Validation of Application API Account setup endpoint displays, write and update Correct data  ",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/AccountInfo/{refAccountTypeCode}/{AccountNumber}/{IsActiveOnly},1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section, enter  refAccountTypeCode =2 , AccountNumber=1235 and IsActiveOnly =False",,Api-Key and JSON properties is accepted 
+,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,Account details should match with AccountInfo table 
+/api/application/AccountInfo/3/9851/False,Functional,Critical,15M,None,Final,Megh Thapa,"Validation of Application API Account setup endpoint displays, write and update Correct data  ",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/AccountInfo/{refAccountTypeCode}/{AccountNumber}/{IsActiveOnly},1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section, enter  refAccountTypeCode =3 , AccountNumber=9851 and IsActiveOnly =False",,Api-Key and JSON properties is accepted 
+,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,Account details should match with AccountInfo table 
+/api/application/ManageAccountInfoHeader (VisionWorks),Functional,Critical,15M,None,Final,Megh Thapa,"Validation of Application API Account setup endpoint displays, write and update Correct data  ",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/AccountInfo/{refAccountTypeCode}/{AccountNumber}/{IsActiveOnly},1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section, enter UserID  and paste following xml tag  {
+  ""userID"": ,
+  ""xmlData"":""<AccountInfoSetup>
+  <AccountInfoSetupData> 
+       <AccountInfoID>1</AccountInfoID>
+       <AccountTypeID>1</AccountTypeID>
+       <AccountNumber>1</AccountNumber>
+       <PrimaryLabID>125</PrimaryLabID >
+       <SecondaryLabID>891</SecondaryLabID>
+       <DoNotReroute>1</DoNotReroute>
+       <IsActive>1</IsActive>
+</AccountInfoSetupData>
+    </AccountInfoSetup>"" 
+  }",,Api-Key and JSON properties is accepted 
+,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,Account update should match with AccountInfo table ( USP_Manufacturing_ManageAccountInfo_Header)
+/api/application/ManageAccountInfoHeader (EV),Functional,Critical,15M,None,Final,Megh Thapa,"Validation of Application API Account setup endpoint displays, write and update Correct data  ",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/AccountInfo/{refAccountTypeCode}/{AccountNumber}/{IsActiveOnly},1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section, enter UserID  and paste following xml tag {
+  ""userID"": 2812,
+  ""xmlData"":""<AccountInfoSetup>
+  <AccountInfoSetupData> 
+       <AccountInfoID>516</AccountInfoID>
+       <AccountTypeID>2</AccountTypeID>
+       <AccountNumber>101</AccountNumber>
+       <PrimaryLabID>125</PrimaryLabID >
+       <SecondaryLabID>891</SecondaryLabID>
+       <DoNotReroute>1</DoNotReroute>
+       <IsActive>1</IsActive>
+</AccountInfoSetupData>
+    </AccountInfoSetup>"" 
+  }",,Api-Key and JSON properties is accepted 
+,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,Account update should match with AccountInfo table ( USP_Manufacturing_ManageAccountInfo_Header)
+/api/application/ManageAccountInfoHeader (Davis),Functional,Critical,15M,None,Final,Megh Thapa,"Validation of Application API Account setup endpoint displays, write and update Correct data  ",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/AccountInfo/{refAccountTypeCode}/{AccountNumber}/{IsActiveOnly},1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section, enter UserID  and paste following xml tag {
+  ""userID"": 2812,
+  ""xmlData"":""<AccountInfoSetup>
+  <AccountInfoSetupData> 
+       <AccountInfoID>9563</AccountInfoID>
+       <AccountTypeID>3</AccountTypeID>
+       <AccountNumber>101</AccountNumber>
+       <PrimaryLabID>125</PrimaryLabID >
+       <SecondaryLabID>891</SecondaryLabID>
+       <DoNotReroute>1</DoNotReroute>
+       <IsActive>1</IsActive>
+</AccountInfoSetupData>
+    </AccountInfoSetup>"" 
+  }",,Api-Key and JSON properties is accepted 
+,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,Account update should match with AccountInfo table ( USP_Manufacturing_ManageAccountInfo_Header)
+/api/application/ManageAccountInfoHeader (ECom),Functional,Critical,15M,None,Final,Megh Thapa,"Validation of Application API Account setup endpoint displays, write and update Correct data  ",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/AccountInfo/{refAccountTypeCode}/{AccountNumber}/{IsActiveOnly},1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section, enter UserID  and paste following xml tag {
+  ""userID"": 2812,
+  ""xmlData"":""<AccountInfoSetup>
+  <AccountInfoSetupData> 
+       <AccountInfoID>41919</AccountInfoID>
+       <AccountTypeID>5</AccountTypeID>
+       <AccountNumber>1005</AccountNumber>
+       <PrimaryLabID>125</PrimaryLabID >
+       <SecondaryLabID>891</SecondaryLabID>
+       <DoNotReroute>1</DoNotReroute>
+       <IsActive>1</IsActive>
+</AccountInfoSetupData>
+    </AccountInfoSetup>"" 
+  }",,Api-Key and JSON properties is accepted 
+,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,Account update should match with AccountInfo table ( USP_Manufacturing_ManageAccountInfo_Header)

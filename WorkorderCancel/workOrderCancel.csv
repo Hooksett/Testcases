@@ -1,0 +1,249 @@
+"Title 
+(Denotes new test case)","Type 
+(Automated, Compatibility, Functional, Other, Performance, Functional)","Priority 
+(Critical, High, Medium, Low)","Estimate
+(1-59M in Min
+1H + in Hours)",References (Link user stories or bugs),"Status
+(Draft, Ready for Review, Final)","Owner
+(FirstName LastName)","Objective
+(Describe the Overall Objective this case is designed to achieve)","Preconditions
+(List prerequisite conditions for this test case)",Steps (One step per row),Number,"Expected Result (Per step, Expected for whole test case list on last step)"
+/api/application/OutSourcedCosts/AddOutsourceJobCostToCostLog(VW),Functional,Critical,15M,None,Final,Megh Thapa,"Validation of AdminSetUp displays, write and update Correct data",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/OutSourcedCosts/AddOutsourceJobCostToCostLog,1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section and provide below JSON on the body {
+  ""costLogID"": 0,
+  ""workOrderID"": 30760524,
+  ""groupCode"": ""ABCVW"",
+  ""costType"": ""testVW"",
+  ""costSubType"": ""testVW"",
+  ""cost"": 0,
+  ""costLogDate"": ""2017-02-19T22:26:52.686Z"",
+  ""lastModified"": ""2017-02-19T22:26:52.686Z""
+}",,Api-Key and JSON properties is accepted 
+ ,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,Data should be updated into CostLog table 
+/api/application/OutSourcedCosts/AddOutsourceJobCostToCostLog(EV),Functional,Critical,15M,None,Final,Megh Thapa,"Validation of AdminSetUp displays, write and update Correct data",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/OutSourcedCosts/AddOutsourceJobCostToCostLog,1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section and provide below JSON on the body {
+  ""costLogID"": 0,
+  ""workOrderID"": 11134206,
+  ""groupCode"": ""ABCEV"",
+  ""costType"": ""testEV"",
+  ""costSubType"": ""testEV"",
+  ""cost"": 0,
+  ""costLogDate"": ""2017-02-19T22:26:52.686Z"",
+  ""lastModified"": ""2017-02-19T22:26:52.686Z""
+}",,Api-Key and JSON properties is accepted 
+ ,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,Data should be updated into CostLog table 
+/api/application/OutSourcedCosts/AddOutsourceJobCostToCostLog(DV),Functional,Critical,15M,None,Final,Megh Thapa,"Validation of AdminSetUp displays, write and update Correct data",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/OutSourcedCosts/AddOutsourceJobCostToCostLog,1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section and provide below JSON on the body {
+  ""costLogID"": 0,
+  ""workOrderID"": 27206545,
+  ""groupCode"": ""ABC"",
+  ""costType"": ""test"",
+  ""costSubType"": ""test"",
+  ""cost"": 0,
+  ""costLogDate"": ""2017-02-19T22:26:52.686Z"",
+  ""lastModified"": ""2017-02-19T22:26:52.686Z""
+}",,Api-Key and JSON properties is accepted 
+ ,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,Data should be updated into CostLog table 
+/api/application/OutSourcedCosts/AddOutsourceJobCostToCostLog(ECOM),Functional,Critical,15M,None,Final,Megh Thapa,"Validation of AdminSetUp displays, write and update Correct data",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/OutSourcedCosts/AddOutsourceJobCostToCostLog,1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section and provide below JSON on the body {
+  ""costLogID"": 0,
+  ""workOrderID"": 27206545,
+  ""groupCode"": ""ABC"",
+  ""costType"": ""test"",
+  ""costSubType"": ""test"",
+  ""cost"": 0,
+  ""costLogDate"": ""2017-02-19T22:26:52.686Z"",
+  ""lastModified"": ""2017-02-19T22:26:52.686Z""
+}",,Api-Key and JSON properties is accepted 
+ ,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,Data should be updated into CostLog table 
+/api/application/OutSourcedCosts/JobCostExists,Functional,Critical,15M,None,Final,Megh Thapa,"Validation of AdminSetUp displays, write and update Correct data",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/OutSourcedCosts/JobCostExists,1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section and provide below JSON on the body{
+  ""outsourceJobCostID"": 1,
+  ""dateSent"": ""2018-02-19"",
+  ""rxNumber"": 123,
+  ""trayNumber"": 500,
+  ""vendorName"": ""TesterMegh"",
+  ""dateReceived"": ""2018-02-19T22:26:52.692Z"",
+  ""trackingNumber"": ""TestTracking"",
+  ""invoiceNumber"": 1200,
+  ""debitAmt"": 200,
+  ""creditAmt"": 200,
+  ""shippingAmt"": 5,
+  ""storeNumber"": 1020,
+  ""providerNumber"": 1,
+  ""pairNumber"": 1,
+  ""remake"": null,
+  ""manufacturingFacilityName"": ""testmegh"",
+  ""status"": ""test"",
+  ""workOrderID"": 13231146,
+  ""lastModifiedUser"": ""Meghthapa"",
+  ""lastModifiedTime"": ""2018-02-19T22:26:52.692Z""
+}",,Api-Key and JSON properties is accepted 
+ ,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,Should return 2 (Validate OutsourceJobCost table have 2 records for our test parameters )
+/api/application/OutSourcedCosts/JobCostExists(placeholder),Functional,Critical,15M,None,Final,Megh Thapa,"Validation of AdminSetUp displays, write and update Correct data",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/OutSourcedCosts/JobCostExists,1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section and provide below JSON on the body{
+  ""outsourceJobCostID"": 1,
+  ""dateSent"": ""2018-02-19"",
+  ""rxNumber"": 12345,
+  ""trayNumber"": 500,
+  ""vendorName"": ""TesterMegh"",
+  ""dateReceived"": ""2018-02-19T22:26:52.692Z"",
+  ""trackingNumber"": ""TestTracking"",
+  ""invoiceNumber"": 1200,
+  ""debitAmt"": 200,
+  ""creditAmt"": 200,
+  ""shippingAmt"": 5,
+  ""storeNumber"": 1020,
+  ""providerNumber"": 1,
+  ""pairNumber"": 1,
+  ""remake"": null,
+  ""manufacturingFacilityName"": ""testmegh"",
+  ""status"": ""test"",
+  ""workOrderID"": 54321,
+  ""lastModifiedUser"": ""Meghthapa"",
+  ""lastModifiedTime"": ""2018-02-19T22:26:52.692Z""
+}",,Api-Key and JSON properties is accepted 
+ ,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,Should return 1 (Validate OutsourceJobCost table  )
+/api/application/OutSourcedCosts/AddOutsourceJobCost,Functional,Critical,15M,None,Final,Megh Thapa,"Validation of AdminSetUp displays, write and update Correct data",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/OutSourcedCosts/AddOutsourceJobCost,1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section and provide below JSON on the body{
+  ""outsourceJobCostID"": 1,
+  ""dateSent"": ""2017-02-19T22:26:52.703Z"",
+  ""rxNumber"": 12345,
+  ""trayNumber"": 500,
+  ""vendorName"": ""TesterMegh"",
+  ""dateReceived"": ""2018-02-19T22:26:52.703Z"",
+  ""trackingNumber"": ""Testtracking"",
+  ""invoiceNumber"": 1200,
+  ""debitAmt"": 200,
+  ""creditAmt"": 200,
+  ""shippingAmt"": 5,
+  ""storeNumber"": 1020,
+  ""providerNumber"":1 ,
+  ""pairNumber"": 1,
+  ""remake"": ""test"",
+  ""manufacturingFacilityName"": ""TestMegh"",
+  ""status"": ""Shipped"",
+  ""workOrderID"": 54321,
+  ""lastModifiedUser"": ""MeghThapa"",
+  ""lastModifiedTime"": ""2018-02-19T22:26:52.703Z""
+}",,Api-Key and JSON properties is accepted 
+ ,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,Insert into the OutsourceJobCost table 
+/api/application/OutSourcedCosts/AddOutsourceJobCost,Functional,Critical,15M,None,Final,Megh Thapa,"Validation of AdminSetUp displays, write and update Correct data",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/OutSourcedCosts/AddOutsourceJobCost,1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section and provide below JSON on the body{
+  ""outsourceJobCostID"": 1,
+  ""dateSent"": ""2018-02-19"",
+  ""rxNumber"": 123,
+  ""trayNumber"": 500,
+  ""vendorName"": ""TesterMegh2"",
+  ""dateReceived"": ""2018-02-19T22:26:52.692Z"",
+  ""trackingNumber"": ""TestTracking2"",
+  ""invoiceNumber"": 1200,
+  ""debitAmt"": 200,
+  ""creditAmt"": 200,
+  ""shippingAmt"": 5,
+  ""storeNumber"": 1020,
+  ""providerNumber"": 1,
+  ""pairNumber"": 1,
+  ""remake"": null,
+  ""manufacturingFacilityName"": ""testmegh2"",
+  ""status"": ""test"",
+  ""workOrderID"": 13231146,
+  ""lastModifiedUser"": ""Meghthapa2"",
+  ""lastModifiedTime"": ""2018-02-19T22:26:52.692Z""
+}",,Api-Key and JSON properties is accepted 
+ ,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,Insert into the OutsourceJobCost table 
+/api/application/OutSourcedCosts/GetOutsourceJobCosts,Functional,Critical,15M,None,Final,Megh Thapa,"Validation of AdminSetUp displays, write and update Correct data",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/OutSourcedCosts/GetOutsourceJobCosts,1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section and provide below JSON on the body{
+  ""outsourceJobCostID"": 1,
+  ""dateSent"": ""2018-02-19"",
+  ""rxNumber"": 123,
+  ""trayNumber"": 500,
+  ""vendorName"": ""TesterMegh2"",
+  ""dateReceived"": ""2018-02-19T22:26:52.692Z"",
+  ""trackingNumber"": ""TestTracking2"",
+  ""invoiceNumber"": 1200,
+  ""debitAmt"": 200,
+  ""creditAmt"": 200,
+  ""shippingAmt"": 5,
+  ""storeNumber"": 1020,
+  ""providerNumber"": 1,
+  ""pairNumber"": 1,
+  ""remake"": null,
+  ""manufacturingFacilityName"": ""testmegh2"",
+  ""status"": ""test"",
+  ""workOrderID"": 13231146,
+  ""lastModifiedUser"": ""Meghthapa2"",
+  ""lastModifiedTime"": ""2018-02-19T22:26:52.692Z""
+}",,Api-Key and JSON properties is accepted 
+ ,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,Insert into the OutsourceJobCost table 
+/api/application/OutSourcedCosts/GetAllProviders,Functional,Critical,15M,None,Final,Megh Thapa,"Validation of AdminSetUp displays, write and update Correct data",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/OutSourcedCosts/GetAllProviders,1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section ",,Api-Key and JSON properties is accepted 
+ ,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,Data and count should match with accountTypeID = 3 (Check accountInfo table)
+/api/application/OutSourcedCosts/GetAllStores,Functional,Critical,15M,None,Final,Megh Thapa,"Validation of AdminSetUp displays, write and update Correct data",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/OutSourcedCosts/GetAllProviders,1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section ",,Api-Key and JSON properties is accepted 
+ ,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,"Data and count should match with accountTypeID in(1,2) (Check accountInfo table)"
+/api/application/OutSourcedCosts/GetOutsourcedVendorNames,Functional,Critical,15M,None,Final,Megh Thapa,"Validation of AdminSetUp displays, write and update Correct data",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/OutSourcedCosts/GetOutsourcedVendorNames,1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section ",,Api-Key and JSON properties is accepted 
+ ,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,Data and count should match with refOutsourcedVendor table 
+/api/application/OutSourcedCosts/GetFacilityNames,Functional,Critical,15M,None,Final,Megh Thapa,"Validation of AdminSetUp displays, write and update Correct data",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/OutSourcedCosts/GetFacilityNames,1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section ",,Api-Key and JSON properties is accepted 
+ ,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,Data and count should match with ManufacturingFacility table and returns active account 
+/api/application/OutSourcedCosts/CheckIfStoreExists/1341,Functional,Critical,15M,None,Final,Megh Thapa,"Validation of AdminSetUp displays, write and update Correct data",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/OutSourcedCosts/CheckIfStoreExists/{storeNumber},1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section ans store number = 1341",,Api-Key and JSON properties is accepted 
+ ,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,"Should return 2 (Verify  AccountInfo table where  AccountTypeID in 1 and 2)
+  "
+/api/application/OutSourcedCosts/CheckIfStoreExists/81,Functional,Critical,15M,None,Final,Megh Thapa,"Validation of AdminSetUp displays, write and update Correct data",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/OutSourcedCosts/CheckIfStoreExists/{storeNumber},1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section and storeNumber = 81",,Api-Key and JSON properties is accepted 
+ ,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,"Should return 1 (Verify  AccountInfo table where  AccountTypeID in 1 and 2)
+  "
+/api/application/OutSourcedCosts/CheckIfStoreExists/9890,Functional,Critical,15M,None,Final,Megh Thapa,"Validation of AdminSetUp displays, write and update Correct data",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/OutSourcedCosts/CheckIfStoreExists/{storeNumber},1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section and storeNumber = 81",,Api-Key and JSON properties is accepted 
+ ,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,"Should return 0(Verify  AccountInfo table where  AccountTypeID in 1 and 2)
+  "
+/api/application/OutSourcedCosts/CheckIfProviderExists/57319,Functional,Critical,15M,None,Final,Megh Thapa,"Validation of AdminSetUp displays, write and update Correct data",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/OutSourcedCosts/CheckIfProviderExists/57319,1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section ",,Api-Key and JSON properties is accepted 
+ ,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,Should return 1(Verify  AccountInfo table where  AccountTypeID =3)
+/api/application/OutSourcedCosts/CheckIfProviderExists/81,Functional,Critical,15M,None,Final,Megh Thapa,"Validation of AdminSetUp displays, write and update Correct data",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/OutSourcedCosts/CheckIfProviderExists/81,1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section ",,Api-Key and JSON properties is accepted 
+ ,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,Should return 1(Verify  AccountInfo table where  AccountTypeID =3)
+/api/application/OutSourcedCosts/WorkOrderIdExists,Functional,Critical,15M,None,Final,Megh Thapa,"Validation of AdminSetUp displays, write and update Correct data",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/OutSourcedCosts/CheckIfProviderExists/81,1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section ",,Api-Key and JSON properties is accepted 
+ ,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,Should return 1(Verify  AccountInfo table where  AccountTypeID =3)

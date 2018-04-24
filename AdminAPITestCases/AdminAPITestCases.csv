@@ -1,0 +1,93 @@
+"Title 
+(Denotes new test case)","Type 
+(Automated, Compatibility, Functional, Other, Performance, Functional)","Priority 
+(Critical, High, Medium, Low)","Estimate
+(1-59M in Min
+1H + in Hours)",References (Link user stories or bugs),"Status
+(Draft, Ready for Review, Final)","Owner
+(FirstName LastName)","Objective
+(Describe the Overall Objective this case is designed to achieve)","Preconditions
+(List prerequisite conditions for this test case)",Steps (One step per row),Number,"Expected Result (Per step, Expected for whole test case list on last step)"
+Inactive User ,Functional,Critical,15M,None,Final,Megh Thapa,"Is to verify only authorized person can get access with windows login and API is able to assign user, create user and modify roles ",,Copy the link from the pre-condition and paste into the IE ,1.1,EOR application should open 
+,,,,,,,,"http://txs-q-eorweb01.hvhcvision.com:8085/SpecialsLabQA.application
+ ",Click Admin and select Security  from the Menu,,Admin security window should open 
+,,,,,,,,,"Select yourself from a user, uncheck Active and Apply changes",,Apply button should be disabled 
+,,,,,,,,,Close the application and reopen from  the precondition link,,Application should not open 
+Add a new User ,Functional,Critical,15M,None,Final,Megh Thapa,"Is to verify only authorized person can get access with windows login and API is able to assign user, create user and modify roles ","http://txs-q-eorweb01.hvhcvision.com:8085/SpecialsLabQA.application
+",Copy the link from the pre-condition and paste into the IE ,1.1,EOR application should open 
+,,,,,,,,,Click Admin and select Security  from the Menu,,Admin security window should open 
+,,,,,,,,,Click new ,,User Name and User Logon textbox should be enabled 
+,,,,,,,,,"Type any username ,UserLogon information and apply changes ",,Apply button should be disabled 
+,,,,,,,,,Click close and reopen Admin-security ,,Username should appear in to the user list 
+Make User Inactive  ,Functional,Critical,15M,None,Final,Megh Thapa,"Is to verify only authorized person can get access with windows login and API is able to assign user, create user and modify roles ",http://txs-q-eorweb01.hvhcvision.com:8085/SpecialsLabQA.application,Copy the link from the pre-condition and paste into the IE ,1.1,EOR application should open 
+,,,,,,,,,Click Admin and select Security  from the Menu,,Admin security window should open 
+,,,,,,,,,"Select any user, uncheck Active and Apply changes",,Apply button should be disabled 
+,,,,,,,,,Click close and reopen Admin-security ,,Username should appear in to the user list 
+,,,,,,,,,Double click same user,,Active box is not checked and Apply button is disable 
+Add single roles ,Functional,Critical,15M,None,Final,Megh Thapa,"Is to verify only authorized person can get access with windows login and API is able to assign user, create user and modify roles ",http://txs-q-eorweb01.hvhcvision.com:8085/SpecialsLabQA.application,Copy the link from the pre-condition and paste into the IE ,1.1,EOR application should open 
+,,,,,,,,,Click Admin and select Security  from the Menu,,Admin security window should open 
+,,,,,,,,,"Select any user,select a role (Adminstrator) and click "">"" ",,Role should move to right and apply button is enabled
+,,,,,,,,,Apply changes and close the application ,,Apply button is disabled and close button is enabled 
+,,,,,,,,,Click close and reopen Admin-security ,,Admin security window should open 
+,,,,,,,,,Double click same user,,Role is assigned to the user and save in to the right window
+Add Multiple Users roles ,Functional,Critical,15M,None,Final,Megh Thapa,"Is to verify only authorized person can get access with windows login and API is able to assign user, create user and modify roles ",http://txs-q-eorweb01.hvhcvision.com:8085/SpecialsLabQA.application,Copy the link from the pre-condition and paste into the IE ,1.1,EOR application should open 
+,,,,,,,,,Click Admin and select Security  from the Menu,,Admin security window should open 
+,,,,,,,,,"Select any users, roles (Adminstrator, Manufacturing, Facility operator && Home Office ) and click "">"" ",,Role should move to right and apply button is enabled
+,,,,,,,,,Apply changes and close the application ,,Apply button is disabled and close button is enabled 
+,,,,,,,,,Click close and reopen Admin-security ,,Admin security window should open 
+,,,,,,,,,Double click same user,,Role is assigned and save in to the right window
+Remove Users roles ,Functional,Critical,15M,None,Final,Megh Thapa,"Is to verify only authorized person can get access with windows login and API is able to assign user, create user and modify roles ",http://txs-q-eorweb01.hvhcvision.com:8085/SpecialsLabQA.application,Copy the link from the pre-condition and paste into the IE ,1.1,EOR application should open 
+,,,,,,,,,Click Admin and select Security  from the Menu,,Admin security window should open 
+,,,,,,,,,"Select any users, roles form the right window  and click ""<"" ",,Role should move to right and apply button is enabled
+,,,,,,,,,Apply changes and close the application ,,Apply button is disabled and close button is enabled 
+,,,,,,,,,Click close and reopen Admin-security ,,Admin security window should open 
+,,,,,,,,,Double click same user,,User roles is removed from the user 
+Add all Users roles ,Functional,Critical,15M,None,Final,Megh Thapa,"Is to verify only authorized person can get access with windows login and API is able to assign user, create user and modify roles ","http://txs-q-eorweb01.hvhcvision.com:8085/SpecialsLabQA.application
+",Copy the link from the pre-condition and paste into the IE ,1.1,EOR application should open 
+,,,,,,,,,Click Admin and select Security  from the Menu,,Admin security window should open 
+,,,,,,,,,"Select any users, apply all  roles and click "">"" ",,Role should move to right and apply button is enabled
+,,,,,,,,,Apply changes and close the application ,,Apply button is disabled and close button is enabled 
+,,,,,,,,,Click close and reopen Admin-security ,,Admin security window should open 
+,,,,,,,,,Double click same user,,Role is assigned and save in to the right window
+Remove all Users roles ,Functional,Critical,15M,None,Final,Megh Thapa,"Is to verify only authorized person can get access with windows login and API is able to assign user, create user and modify roles ",http://txs-q-eorweb01.hvhcvision.com:8085/SpecialsLabQA.application,Copy the link from the pre-condition and paste into the IE ,1.1,EOR application should open 
+,,,,,,,,,Click Admin and select Security  from the Menu,,Admin security window should open 
+,,,,,,,,,"Select any users, all roles form the right window  and click ""<"" ",,Role should move to right and apply button is enabled
+,,,,,,,,,Apply changes and close the application ,,Apply button is disabled and close button is enabled 
+,,,,,,,,,Click close and reopen Admin-security ,,Admin security window should open 
+,,,,,,,,,Double click same user,,Role is removed  from the right window
+Modify Users roles ,Functional,Critical,15M,None,Final,Megh Thapa,"Is to verify only authorized person can get access with windows login and API is able to assign user, create user and modify roles ",http://txs-q-eorweb01.hvhcvision.com:8085/SpecialsLabQA.application,Copy the link from the pre-condition and paste into the IE ,1.1,EOR application should open 
+,,,,,,,,,Click Admin and select Security  from the Menu,,Admin security window should open 
+,,,,,,,,,"Select any users, move roles form the right window  and click ""<"" ",,Role should move to right and apply button is enabled
+,,,,,,,,,Apply changes and close the application ,,Apply button is disabled and close button is enabled 
+,,,,,,,,,Click close and reopen Admin-security ,,Admin security window should open 
+,,,,,,,,,Double click same user,,Role is removed  from the right window
+Modify multiple Users roles ,Functional,Critical,15M,None,Final,Megh Thapa,"Is to verify only authorized person can get access with windows login and API is able to assign user, create user and modify roles ",http://txs-q-eorweb01.hvhcvision.com:8085/SpecialsLabQA.application,Copy the link from the pre-condition and paste into the IE ,1.1,EOR application should open 
+,,,,,,,,,Click Admin and select Security  from the Menu,,Admin security window should open 
+,,,,,,,,,"Select any users, move 2 roles form the right window  and click ""<"" ",,Role should move to right and apply button is enabled
+,,,,,,,,,Apply changes and close the application ,,Apply button is disabled and close button is enabled 
+,,,,,,,,,Click close and reopen Admin-security ,,Admin security window should open 
+,,,,,,,,,Double click same user,,Role is removed  from the right window
+Create new Roles  ,Functional,Critical,15M,None,Final,Megh Thapa,"Is to verify only authorized person can get access with windows login and API is able to assign user, create user and modify roles ",http://txs-q-eorweb01.hvhcvision.com:8085/SpecialsLabQA.application,Copy the link from the pre-condition and paste into the IE ,1.1,EOR application should open 
+,,,,,,,,,Click Admin and select Security  from the Menu,,Admin security window should open 
+,,,,,,,,,Click Roles tab  ,,Roles is displayed
+,,,,,,,,,Click new button,,Role Name textbox is enabled
+,,,,,,,,,"Type any name, assign any role function and click "">""",,Role function should move in to the right window
+,,,,,,,,,Apply changes and close the application ,,Apply button is disabled and close button is enabled 
+,,,,,,,,,Click close and reopen Admin-security ,,Admin security window is open 
+,,,,,,,,,Verify Role Name ,,Role Name is displayed in Roles list 
+New Roles  with all role Function ,Functional,Critical,15M,None,Final,Megh Thapa,"Is to verify only authorized person can get access with windows login and API is able to assign user, create user and modify roles ",http://txs-q-eorweb01.hvhcvision.com:8085/SpecialsLabQA.application,Copy the link from the pre-condition and paste into the IE ,1.1,EOR application should open 
+,,,,,,,,,Click Admin and select Security  from the Menu,,Admin security window should open 
+,,,,,,,,,Click Roles tab  ,,Roles is displayed
+,,,,,,,,,Click new button,,Role Name textbox is enabled
+,,,,,,,,,"Type any name, assign all role function and click "">""",,Role function should move in to the right window
+,,,,,,,,,Apply changes and close the application ,,Apply button is disabled and close button is enabled 
+,,,,,,,,,Click close and reopen Admin-security ,,Admin security window is open 
+,,,,,,,,,Verify all Role function,,All Role function  is applied  to the role
+Remove role function ,Functional,Critical,15M,None,Final,Megh Thapa,"Is to verify only authorized person can get access with windows login and API is able to assign user, create user and modify roles ",http://txs-q-eorweb01.hvhcvision.com:8085/SpecialsLabQA.application,Copy the link from the pre-condition and paste into the IE ,1.1,EOR application should open 
+,,,,,,,,,Click Admin and select Security  from the Menu,,Admin security window should open 
+,,,,,,,,,Click Roles tab  ,,Roles is displayed
+,,,,,,,,,Select roles from the list ,,Role function and applied roles is displayed 
+,,,,,,,,,"Select any role from the right window and click ""<""",,Role function should move in to the role function window
+,,,,,,,,,Apply changes and close the application ,,Apply button is disabled and close button is enabled 
+,,,,,,,,,Click close and reopen Admin-security ,,Admin security window is open 
+,,,,,,,,,Verify  Role function,, Role function  is removed from the role

@@ -1,0 +1,174 @@
+{
+	"id": "fd24b24c-42a6-4bee-8d0d-904c40d808f1",
+	"name": "PUT",
+	"allTests": [],
+	"timestamp": "2017-12-15T16:15:22.653Z",
+	"collection_id": "33c59a7b-6d13-1ed0-7b1d-6f5a178034b6",
+	"folder_id": "72ce1376-d9fa-8fba-e677-11cc24839f0d",
+	"target_type": "folder",
+	"environment_id": "no-environment",
+	"data": [],
+	"delay": 0,
+	"count": 5,
+	"collection": {
+		"id": "33c59a7b-6d13-1ed0-7b1d-6f5a178034b6",
+		"name": "DataDrivenAutoPutApi",
+		"description": "",
+		"order": [],
+		"folders": [
+			{
+				"auth": null,
+				"collection": "33c59a7b-6d13-1ed0-7b1d-6f5a178034b6",
+				"collectionId": "33c59a7b-6d13-1ed0-7b1d-6f5a178034b6",
+				"collection_id": "33c59a7b-6d13-1ed0-7b1d-6f5a178034b6",
+				"createdAt": 1513347634928,
+				"description": "",
+				"folders_order": [],
+				"id": "72ce1376-d9fa-8fba-e677-11cc24839f0d",
+				"name": "PUT",
+				"order": [
+					"a1889d38-30a5-8640-195d-7d85c7abd908"
+				],
+				"owner": "3208698",
+				"updatedAt": 1513347634928
+			}
+		],
+		"folders_order": [
+			"72ce1376-d9fa-8fba-e677-11cc24839f0d"
+		],
+		"timestamp": 1513347612741,
+		"synced": false,
+		"remote_id": 0,
+		"owner": "3208698",
+		"sharedWithTeam": false,
+		"subscribed": false,
+		"remoteLink": "",
+		"remoteLinkUpdatedAt": null,
+		"public": false,
+		"createdAt": 1513347612741,
+		"updatedAt": 1513347612741,
+		"write": true,
+		"published": false,
+		"favorite": false,
+		"permissions": {},
+		"syncedPermissions": {},
+		"events": [],
+		"variables": [],
+		"auth": null
+	},
+	"folder": {
+		"auth": null,
+		"collection": "33c59a7b-6d13-1ed0-7b1d-6f5a178034b6",
+		"collectionId": "33c59a7b-6d13-1ed0-7b1d-6f5a178034b6",
+		"collection_id": "33c59a7b-6d13-1ed0-7b1d-6f5a178034b6",
+		"createdAt": 1513347634928,
+		"description": "",
+		"folders_order": [],
+		"id": "72ce1376-d9fa-8fba-e677-11cc24839f0d",
+		"name": "PUT",
+		"order": [
+			"a1889d38-30a5-8640-195d-7d85c7abd908"
+		],
+		"owner": "3208698",
+		"updatedAt": 1513347634928
+	},
+	"environment": null,
+	"globals": [],
+	"results": [
+		{
+			"name": "http://txs-q-eorweb01.hvhcvision.com:8083/api/davis/Providers copy",
+			"id": "a1889d38-30a5-8640-195d-7d85c7abd908",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"name": "Status code is 200",
+				"status": "pass",
+				"Response time is less than 200ms": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 5,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 0,
+					"fail": 5
+				}
+			},
+			"times": [
+				"2058",
+				"1540",
+				"1998",
+				"2059",
+				"1511"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 200ms": false
+				},
+				{
+					"name": "Status code is 200",
+					"status": "pass",
+					"Response time is less than 200ms": false
+				},
+				{
+					"name": "Status code is 200",
+					"status": "pass",
+					"Response time is less than 200ms": false
+				},
+				{
+					"name": "Status code is 200",
+					"status": "pass",
+					"Response time is less than 200ms": false
+				},
+				{
+					"name": "Status code is 200",
+					"status": "pass",
+					"Response time is less than 200ms": false
+				}
+			],
+			"time": "1511",
+			"totalRequestTime": "20581540199820591511",
+			"iterationResults": {}
+		}
+	],
+	"totalPass": 5,
+	"totalFail": 5,
+	"totalTime": 9166,
+	"lifecycle": "done",
+	"requests": [
+		{
+			"name": "http://txs-q-eorweb01.hvhcvision.com:8083/api/davis/Providers copy",
+			"id": "a1889d38-30a5-8640-195d-7d85c7abd908",
+			"url": "http://txs-q-eorweb01.hvhcvision.com:8083/api/davis/Providers",
+			"time": "1511",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 5,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 0,
+					"fail": 5
+				}
+			}
+		}
+	],
+	"synced": false
+}

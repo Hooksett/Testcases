@@ -1,0 +1,329 @@
+"Title 
+(Denotes new test case)","Type 
+(Automated, Compatibility, Functional, Other, Performance, Functional)","Priority 
+(Critical, High, Medium, Low)","Estimate
+(1-59M in Min
+1H + in Hours)",References (Link user stories or bugs),"Status
+(Draft, Ready for Review, Final)","Owner
+(FirstName LastName)","Objective
+(Describe the Overall Objective this case is designed to achieve)","Preconditions
+(List prerequisite conditions for this test case)",Steps (One step per row),Number,Expected Result 
+Routing onDemand screen ,Functional,Critical,15M,None,Final,Megh Thapa,Verification of OnDemand UI matches with production  ,Log in to EOR ,Click Routing on Demand from the Menu ,1,new Routing on demand window should open 
+,,,,,,,,,Double click on the first Row ,,new screen should open 
+ ,,,,,,,,,"Match with Current EOR 
+",,Data should be same on both 
+Routing onDemand New-Blank button,Functional,Critical,15M,None,Final,Megh Thapa,Verification of OnDemand UI matches with production  ,Log in to EOR ,Click Routing on Demand from the Menu ,1,new Routing on demand window should open 
+,,,,,,,,,Click New-Blank button from right corner  ,,new screen should open and all the field should be empty or unselected except date and time
+ ,,,,,,,,,"Match with Current EOR 
+",,Data should be same on both 
+Routing onDemand New-Blank (New rule),Functional,Critical,15M,None,Final,Megh Thapa,Verification of OnDemand UI matches with production  ,Log in to EOR ,Click Routing on Demand from the Menu ,1,new Routing on demand window should open 
+,,,,,,,,,Click New-Blank button from right corner  ,,new screen should open and all the field should be empty or unselected except date and time
+ ,,,,,,,,,Select Richland Hills form the Manufacturing Facility dropdown ,,All the Facility is displayed 
+,,,,,,,,,Enter 20 on the Total Job Routing count ,,Should be able to enter number 
+,,,,,,,,,Type : This is a Test on Notes,,Notes option are enabled 
+,,,,,,,,,In a General Tab check All Jobs ,,radio button is selected 
+,,,,,,,,,Click SAVE ,,Record is saved 
+Routing onDemand New-Blank (New rule),Functional,Critical,15M,None,Final,Megh Thapa,Verification of OnDemand UI matches with production  ,Log in to EOR ,Click Routing on Demand from the Menu ,1,new Routing on demand window should open 
+,,,,,,,,,Click New-Blank button from right corner  ,,new screen should open and all the field should be empty or unselected except date and time
+ ,,,,,,,,,Select Richland Hills form the Manufacturing Facility dropdown ,,All the Facility is displayed 
+,,,,,,,,,Enter 20 on the Total Job Routing count ,,Should be able to enter number 
+,,,,,,,,,Type : This is a Test on Notes,,Notes option are enabled 
+,,,,,,,,,In a General Tab check All Jobs ,,radio button is selected 
+,,,,,,,,,Click SAVE ,,Record is saved and displayed on ROD main screen
+Routing onDemand New-Copy ,Functional,Critical,15M,None,Final,Megh Thapa,Verification of OnDemand UI matches with production  ,Log in to EOR ,Click Routing on Demand from the Menu ,1,new Routing on demand window should open 
+,,,,,,,,,Click New-Copy button from right corner  ,,new screen should open and all the field should be filled from selected Routing on demand main screen 
+ ,,,,,,,,,Click SAVE ,,Record is saved and displayed on Routing On Demand  main screen
+,,,,,,,,,Verify all the column matches ,,data should be same except Current job routing count 
+Routing onDemand EDIT ,Functional,Critical,15M,None,Final,Megh Thapa,Verification of OnDemand UI matches with production  ,Log in to EOR ,Click Routing on Demand from the Menu ,1,new Routing on demand window should open 
+,,,,,,,,,Click EDIT button from right corner  ,,new screen should open and all the field should be filled from selected Routing on demand main screen 
+ ,,,,,,,,,Change Total Job routing count = 3000,,Textbox is enabled for editing 
+,,,,,,,,,Uncheck Is Active button ,,Is unchecked 
+,,,,,,,,,Click save ,,Record should not be displayed on main screen 
+Routing onDemand EDIT (Content change ),Functional,Critical,15M,None,Final,Megh Thapa,Verification of OnDemand UI matches with production  ,Log in to EOR ,Click Routing on Demand from the Menu ,1,new Routing on demand window should open 
+,,,,,,,,,Click EDIT button from right corner  ,,new screen should open and all the field should be filled from selected Routing on demand main screen 
+ ,,,,,,,,,Change Total Job routing count = 3000,,Textbox is enabled for editing 
+,,,,,,,,,Click save ,,Record should be edited and displayed on main screen 
+Routing onDemand General tab (Union jobs Only),Functional,Critical,15M,None,Final,Megh Thapa,Verification of OnDemand UI matches with production  ,Log in to EOR ,Click Routing on Demand from the Menu ,1,new Routing on demand window should open 
+,,,,,,,,,Click General tab ,,new screen should open and all the field should be filled from selected Routing on demand main screen 
+ ,,,,,,,,,Click union job Only ,,is selected 
+,,,,,,,,,Click save ,,Close the window and reopen (Union jobs only should be selected )
+Routing onDemand General tab (Non Union jobs Only),Functional,Critical,15M,None,Final,Megh Thapa,Verification of OnDemand UI matches with production  ,Log in to EOR ,Click Routing on Demand from the Menu ,1,new Routing on demand window should open 
+,,,,,,,,,Click General tab ,,new screen should open and all the field should be filled from selected Routing on demand main screen 
+ ,,,,,,,,,Click Non Union jobs Only,,is selected 
+,,,,,,,,,Click save ,,Close the window and reopen (Non Union jobs only should be selected )
+Routing onDemand General tab (Include Overnight Shipping Requested Job),Functional,Critical,15M,None,Final,Megh Thapa,Verification of OnDemand UI matches with production  ,Log in to EOR ,Click Routing on Demand from the Menu ,1,new Routing on demand window should open 
+,,,,,,,,,Click General tab ,,new screen should open and all the field should be filled from selected Routing on demand main screen 
+ ,,,,,,,,,Click Non Union jobs Only,,is selected 
+,,,,,,,,,check Include Overnight Shipping Requested Job ,,Should be enable 
+,,,,,,,,,Click save ,,Close the window and reopen (Non Union jobs only  and Include Overnight Shipping Requested Job should be selected )
+Routing onDemand Frame tab (Include frame to come ),Functional,Critical,15M,None,Final,Megh Thapa,Verification of OnDemand UI matches with production  ,Log in to EOR ,Click Routing on Demand from the Menu ,1,new Routing on demand window should open 
+,,,,,,,,,Click Frame tab ,,new screen should open and all the field should be filled from selected Routing on demand main screen 
+ ,,,,,,,,,Check  Include Frame To Come ,,Is checked 
+,,,,,,,,,Click save ,,Close the window and reopen (Include Frame To Come checkbox should be checked )
+Routing onDemand Frame tab (Include Safety jobs ),Functional,Critical,15M,None,Final,Megh Thapa,Verification of OnDemand UI matches with production  ,Log in to EOR ,Click Routing on Demand from the Menu ,1,new Routing on demand window should open 
+,,,,,,,,,Click Frame tab ,,new screen should open and all the field should be filled from selected Routing on demand main screen 
+ ,,,,,,,,,Check Include Safety jobs ,,Is checked 
+,,,,,,,,,Click save ,,Close the window and reopen (Include  Safety jobs checkbox should be checked )
+Routing onDemand Frame tab (Include Frame trace ),Functional,Critical,15M,None,Final,Megh Thapa,Verification of OnDemand UI matches with production  ,Log in to EOR ,Click Routing on Demand from the Menu ,1,new Routing on demand window should open 
+,,,,,,,,,Click Frame tab ,,new screen should open and all the field should be filled from selected Routing on demand main screen 
+ ,,,,,,,,,Check Include Frame trace,,Is checked 
+,,,,,,,,,Click save ,,Close the window and reopen (Include  Frame trace checkbox should be checked )
+Routing onDemand Frame tab (Include Frame supply ),Functional,Critical,15M,None,Final,Megh Thapa,Verification of OnDemand UI matches with production  ,Log in to EOR ,Click Routing on Demand from the Menu ,1,new Routing on demand window should open 
+,,,,,,,,,Click Frame tab ,,new screen should open and all the field should be filled from selected Routing on demand main screen 
+ ,,,,,,,,,Check Include Frame supply,,Is checked 
+,,,,,,,,,Click save ,,Close the window and reopen (Include Frame supply checkbox should be checked )
+Routing onDemand Frame tab (Include Frame Only ),Functional,Critical,15M,None,Final,Megh Thapa,Verification of OnDemand UI matches with production  ,Log in to EOR ,Click Routing on Demand from the Menu ,1,new Routing on demand window should open 
+,,,,,,,,,Click Frame tab ,,new screen should open and all the field should be filled from selected Routing on demand main screen 
+ ,,,,,,,,,Check Include Frame Only,,Is checked 
+,,,,,,,,,Click save ,,Close the window and reopen (Include Frame only checkbox should be checked )
+Routing onDemand Frame tab (Include Sportwrap ),Functional,Critical,15M,None,Final,Megh Thapa,Verification of OnDemand UI matches with production  ,Log in to EOR ,Click Routing on Demand from the Menu ,1,new Routing on demand window should open 
+,,,,,,,,,Click Frame tab ,,new screen should open and all the field should be filled from selected Routing on demand main screen 
+ ,,,,,,,,,Check Include Sportwrap,,Is checked 
+,,,,,,,,,Click save ,,Close the window and reopen (Include Sportwrap checkbox should be checked )
+Routing onDemand Frame tab (Check all checkbox option  ),Functional,Critical,15M,None,Final,Megh Thapa,Verification of OnDemand UI matches with production  ,Log in to EOR ,Click Routing on Demand from the Menu ,1,new Routing on demand window should open 
+,,,,,,,,,Click Frame tab ,,new screen should open and all the field should be filled from selected Routing on demand main screen 
+ ,,,,,,,,,Check all checkbox option  ,,Is checked 
+,,,,,,,,,Click save ,,Close the window and reopen (all checkbox option should be checked )
+Routing onDemand Frame tab (Do Not Route These Frame Add ),Functional,Critical,15M,None,Final,Megh Thapa,Verification of OnDemand UI matches with production  ,Log in to EOR ,Click Routing on Demand from the Menu ,1,new Routing on demand window should open 
+,,,,,,,,,Click Frame tab ,,new screen should open and all the field should be filled from selected Routing on demand main screen 
+ ,,,,,,,,,Click Add button ,,New window should open 
+,,,,,,,,,Click SKU/UPC radio button ,,
+,,,,,,,,,Enter Frame number = 1071921 and click search ,,Search result is displayed 
+,,,,,,,,,Click Frame number and select ,,should be added in Do Not Route These Frames section 
+,,,,,,,,,Click save ,,Close the window and reopen (Frame number with description and type is displayed on Do Not Route These Frames section  )
+Routing onDemand Frame tab (Do Not Route These Frame Add (10 Frames  ),Functional,Critical,15M,None,Final,Megh Thapa,Verification of OnDemand UI matches with production  ,Log in to EOR ,Click Routing on Demand from the Menu ,1,new Routing on demand window should open 
+,,,,,,,,,Click Frame tab ,,new screen should open and all the field should be filled from selected Routing on demand main screen 
+ ,,,,,,,,,Click Add button ,,New window should open 
+,,,,,,,,,Click SKU/UPC radio button ,,
+,,,,,,,,,Add multiple Frames and click search(From WorkOrderFrame table ),,Frames are added 
+,,,,,,,,,Click save ,,Close the window and reopen (Frames number with description and type is displayed on Do Not Route These Frames section  )
+Routing onDemand Frame tab (Do Not Route These Frame Add iClass ),Functional,Critical,15M,None,Final,Megh Thapa,Verification of OnDemand UI matches with production  ,Log in to EOR ,Click Routing on Demand from the Menu ,1,new Routing on demand window should open 
+,,,,,,,,,Click Frame tab ,,new screen should open and all the field should be filled from selected Routing on demand main screen 
+ ,,,,,,,,,Click Add button ,,New window should open 
+,,,,,,,,,Click iClass,,
+,,,,,,,,,Enter Frame number = 705 and click search ,,Return search result 
+,,,,,,,,,Double click  Frame result from a search result,,iClass is added on Do not route These Frames section 
+,,,,,,,,,Click save ,,Close the window and reopen (Frames number with description and type is displayed on Do Not Route These Frames section  )
+Routing onDemand Frame tab (Do Not Route These Frame Add iClass ),Functional,Critical,15M,None,Final,Megh Thapa,Verification of OnDemand UI matches with production  ,Log in to EOR ,Click Routing on Demand from the Menu ,1,new Routing on demand window should open 
+,,,,,,,,,Click Frame tab ,,new screen should open and all the field should be filled from selected Routing on demand main screen 
+ ,,,,,,,,,Click Add button ,,New window should open 
+,,,,,,,,,Click iClass,,
+,,,,,,,,,Add multiple Frames ,,Return search result 
+,,,,,,,,,Click save ,,Close the window and reopen (Frames number with description and type is displayed on Do Not Route These Frames section  )
+Routing onDemand Frame tab (Do Not Route These Frame Remove (single line)  ),Functional,Critical,15M,None,Final,Megh Thapa,Verification of OnDemand UI matches with production  ,Log in to EOR ,Click Routing on Demand from the Menu ,1,new Routing on demand window should open 
+,,,,,,,,,Click Frame tab ,,Is opened 
+ ,,,,,,,,,"Verify Do Not Route These Frames section have data (If not , add a item from Add option )",,Data  is available
+,,,,,,,,,Highlight row that you want to delete ,,Row is highlighted in Blue 
+,,,,,,,,,Click Remove ,,Row should be removed 
+,,,,,,,,,Click save ,,Close the window and reopen (record should be deleted  )
+Routing onDemand Frame tab (Do Not Route These Frame Remove (Multiple line ) ),Functional,Critical,15M,None,Final,Megh Thapa,Verification of OnDemand UI matches with production  ,Log in to EOR ,Click Routing on Demand from the Menu ,1,new Routing on demand window should open 
+,,,,,,,,,Click Frame tab ,,Is opened 
+ ,,,,,,,,,"Verify Do Not Route These Frames section have data (If not , add a item from Add option )",,Data  is available
+,,,,,,,,,Highlight row that you want to delete ,,Row is highlighted in Blue 
+,,,,,,,,,Click Remove ,,Row should be removed 
+,,,,,,,,,Click save ,,Close the window and reopen (record should be deleted  )
+Routing onDemand Frame tab (Route These Frame only Add ),Functional,Critical,15M,None,Final,Megh Thapa,Verification of OnDemand UI matches with production  ,Log in to EOR ,Click Routing on Demand from the Menu ,1,new Routing on demand window should open 
+,,,,,,,,,Click Frame tab ,,new screen should open and all the field should be filled from selected Routing on demand main screen 
+ ,,,,,,,,,Click Add button ,,New window should open 
+,,,,,,,,,Click SKU/UPC radio button ,,
+,,,,,,,,,Enter Frame number = 1071921 and click search ,,Search result is displayed 
+,,,,,,,,,Click Frame number and select ,,should be added in Do Not Route These Frames section 
+,,,,,,,,,Click save ,,Close the window and reopen (Frame number with description and type is displayed on Do Not Route These Frames section  )
+Routing onDemand Frame tab (Route These Frame only  Add Multiple Frames),Functional,Critical,15M,None,Final,Megh Thapa,Verification of OnDemand UI matches with production  ,Log in to EOR ,Click Routing on Demand from the Menu ,1,new Routing on demand window should open 
+,,,,,,,,,Click Frame tab ,,new screen should open and all the field should be filled from selected Routing on demand main screen 
+ ,,,,,,,,,Click Add button ,,New window should open 
+,,,,,,,,,Click SKU/UPC radio button ,,
+,,,,,,,,,Add multiple Frames and click search(From WorkOrderFrame table ),,Frames are added 
+,,,,,,,,,Click save ,,Close the window and reopen (Frames number with description and type is displayed on Do Not Route These Frames section  )
+Routing onDemand Frame tab (Route These Frame only Add iClass ),Functional,Critical,15M,None,Final,Megh Thapa,Verification of OnDemand UI matches with production  ,Log in to EOR ,Click Routing on Demand from the Menu ,1,new Routing on demand window should open 
+,,,,,,,,,Click Frame tab ,,new screen should open and all the field should be filled from selected Routing on demand main screen 
+ ,,,,,,,,,Click Add button ,,New window should open 
+,,,,,,,,,Click iClass,,
+,,,,,,,,,Enter Frame number = 705 and click search ,,Return search result 
+,,,,,,,,,Double click  Frame result from a search result,,iClass is added on Do not route These Frames section 
+,,,,,,,,,Click save ,,Close the window and reopen (Frames number with description and type is displayed on Do Not Route These Frames section  )
+Routing onDemand Frame tab (Route These Frame only Add iClass Multiple Frames  ),Functional,Critical,15M,None,Final,Megh Thapa,Verification of OnDemand UI matches with production  ,Log in to EOR ,Click Routing on Demand from the Menu ,1,new Routing on demand window should open 
+,,,,,,,,,Click Frame tab ,,new screen should open and all the field should be filled from selected Routing on demand main screen 
+ ,,,,,,,,,Click Add button ,,New window should open 
+,,,,,,,,,Click iClass,,
+,,,,,,,,,Add multiple Frames ,,Return search result 
+,,,,,,,,,Click save ,,Close the window and reopen (Frames number with description and type is displayed on Do Not Route These Frames section  )
+Routing onDemand Frame tab (Route These Frame only Remove (single line)  ),Functional,Critical,15M,None,Final,Megh Thapa,Verification of OnDemand UI matches with production  ,Log in to EOR ,Click Routing on Demand from the Menu ,1,new Routing on demand window should open 
+,,,,,,,,,Click Frame tab ,,Is opened 
+ ,,,,,,,,,"Verify Do Not Route These Frames section have data (If not , add a item from Add option )",,Data  is available
+,,,,,,,,,Highlight row that you want to delete ,,Row is highlighted in Blue 
+,,,,,,,,,Click Remove ,,Row should be removed 
+,,,,,,,,,Click save ,,Close the window and reopen (record should be deleted  )
+Routing onDemand Frame tab (Route These Frame only Remove (Multiple line ) ),Functional,Critical,15M,None,Final,Megh Thapa,Verification of OnDemand UI matches with production  ,Log in to EOR ,Click Routing on Demand from the Menu ,1,new Routing on demand window should open 
+,,,,,,,,,Click Frame tab ,,Is opened 
+ ,,,,,,,,,"Verify Do Not Route These Frames section have data (If not , add a item from Add option )",,Data  is available
+,,,,,,,,,Highlight row that you want to delete ,,Row is highlighted in Blue 
+,,,,,,,,,Click Remove ,,Row should be removed 
+,,,,,,,,,Click save ,,Close the window and reopen (record should be deleted  )
+Routing onDemand Lens tab (Check Include Uncut Job & Include Cut Job  ),Functional,Critical,15M,None,Final,Megh Thapa,Verification of OnDemand UI matches with production  ,Log in to EOR ,Click Routing on Demand from the Menu ,1,new Routing on demand window should open 
+,,,,,,,,,Click Lens tab ,,Is opened 
+ ,,,,,,,,,Check Include Uncut Job & Include Cut Job,,Checkbox is enable
+,,,,,,,,,Click save ,,Close the window and reopen (Include Uncut Job & Include Cut Job should be checked   )
+Routing onDemand Lens tab (Check All Lens Codes -Route ),Functional,Critical,15M,None,Final,Megh Thapa,Verification of OnDemand UI matches with production  ,Log in to EOR ,Click Routing on Demand from the Menu ,1,new Routing on demand window should open 
+,,,,,,,,,Click Lens tab ,,Is opened 
+ ,,,,,,,,,Check All Lens Codes -Route,,Checkbox is enable
+,,,,,,,,,Click save ,,Close the window and reopen (Check All Lens Codes -Route should be checked   )
+Routing onDemand Lens tab (Check Assist Multi-Check/Uncheck for Selected Lens Type ),Functional,Critical,15M,None,Final,Megh Thapa,Verification of OnDemand UI matches with production  ,Log in to EOR ,Click Routing on Demand from the Menu ,1,new Routing on demand window should open 
+,,,,,,,,,Click Lens tab ,,Is opened 
+ ,,,,,,,,,Check Assist Multi-Check/Uncheck for Selected Lens Type,,Checkbox is enable
+,,,,,,,,,Select All Lens Types - Route from a dropdown ,,All Route column checkbox is checked 
+,,,,,,,,,Click save ,,Close the window and reopen (  Assist Multi-Check/Uncheck for Selected Lens Type & Select All Lens Types - Route from a dropdown are displayed as expected  )
+Routing onDemand Lens tab (Check Assist Multi-Check/Uncheck for Selected Lens Type Biofocal ),Functional,Critical,15M,None,Final,Megh Thapa,Verification of OnDemand UI matches with production  ,Log in to EOR ,Click Routing on Demand from the Menu ,1,new Routing on demand window should open 
+,,,,,,,,,Click Lens tab ,,Is opened 
+ ,,,,,,,,,Check Assist Multi-Check/Uncheck for Selected Lens Type,,Checkbox is enable
+,,,,,,,,,Select Bifocal -Route/All/-Route ,,All Bifocal lens type are displayed on top  row and checkbox is checked 
+,,,,,,,,,Click save ,,Close the window and reopen (  Assist Multi-Check/Uncheck for Selected Lens Type & Select All Lens Types - Route from a dropdown are displayed as expected  )
+Routing onDemand Lens tab (Assist Multi- Check/Uncheck for selectedLens Material CR39 ),Functional,Critical,15M,None,Final,Megh Thapa,Verification of OnDemand UI matches with production  ,Log in to EOR ,Click Routing on Demand from the Menu ,1,new Routing on demand window should open 
+,,,,,,,,,Click Lens tab ,,Is opened 
+ ,,,,,,,,,Check Assist Multi-Check/Uncheck for Selected Lens Type,,Checkbox is enable
+,,,,,,,,,Select CR39(p)-Route,,Check only CR39 (P) on route column 
+Routing onDemand Service/Coating  tab (Include No service Job  ),Functional,Critical,15M,None,Final,Megh Thapa,Verification of OnDemand UI matches with production  ,Log in to EOR ,Click Routing on Demand from the Menu ,1,new Routing on demand window should open 
+,,,,,,,,,Click Service/Coating,,Is opened 
+ ,,,,,,,,,Check No-Service Job ,,Checkbox is enable
+,,,,,,,,,Click Save ,,Close the window and reopen (  No-Service Job  checkbox is checked   )
+Routing onDemand Service/Coating  tab (Add Button  ),Functional,Critical,15M,None,Final,Megh Thapa,Verification of OnDemand UI matches with production  ,Log in to EOR ,Click Routing on Demand from the Menu ,1,new Routing on demand window should open 
+,,,,,,,,,Click Service/Coating,,Is opened 
+ ,,,,,,,,,Click Add button ,,Another window is opened
+,,,,,,,,,Select Coating - AR  from Service/Coating  dropdown,,Dropdown option is available
+,,,,,,,,,Select coating - AR + Edge Polish from Combine 1 dropdown,,Dropdown option is available
+,,,,,,,,,Select coating -BKSD CRIZAL from Combine 2 dropdown,,Dropdown option is available
+,,,,,,,,,Check Route checkBox ,,is checked 
+,,,,,,,,,Click save ,,new row should be added on Service/Coating table 
+Routing onDemand Service/Coating  tab (Add Button Route  ),Functional,Critical,15M,None,Final,Megh Thapa,Verification of OnDemand UI matches with production  ,Log in to EOR ,Click Routing on Demand from the Menu ,1,new Routing on demand window should open 
+,,,,,,,,,Click Service/Coating,,Is opened 
+ ,,,,,,,,,Click Add button ,,Another window is opened
+,,,,,,,,,Select Coating - AR  from Service/Coating  dropdown,,Dropdown option is available
+,,,,,,,,,Select coating - AR + Edge Polish from Combine 1 dropdown,,Dropdown option is available
+,,,,,,,,,Select coating -BKSD CRIZAL from Combine 2 dropdown,,Dropdown option is available
+,,,,,,,,,Check Route checkBox ,,is checked 
+,,,,,,,,,Click save ,,new row should be added on Service/Coating table 
+Routing onDemand Service/Coating  tab (Add Button Not Route  ),Functional,Critical,15M,None,Final,Megh Thapa,Verification of OnDemand UI matches with production  ,Log in to EOR ,Click Routing on Demand from the Menu ,1,new Routing on demand window should open 
+,,,,,,,,,Click Service/Coating,,Is opened 
+ ,,,,,,,,,Click Add button ,,Another window is opened
+,,,,,,,,,Select Coating -BKSD Essilor Advnc  from Service/Coating  dropdown,,Dropdown option is available
+,,,,,,,,,Select coating - Clear Shield + UV from Combine 1 dropdown,,Dropdown option is available
+,,,,,,,,,Select coating -Clearshield/Backside from Combine 2 dropdown,,Dropdown option is available
+,,,,,,,,,Check  not Route checkBox ,,is checked 
+,,,,,,,,,Click save ,,new row should be added on Service/Coating table 
+Routing onDemand Service/Coating  tab (Add Button Apply To any Lens   ),Functional,Critical,15M,None,Final,Megh Thapa,Verification of OnDemand UI matches with production  ,Log in to EOR ,Click Routing on Demand from the Menu ,1,new Routing on demand window should open 
+,,,,,,,,,Click Service/Coating,,Is opened 
+ ,,,,,,,,,Click Add button ,,Another window is opened
+,,,,,,,,,Select Coating -UV  from Service/Coating  dropdown,,Dropdown option is available
+,,,,,,,,,Select coating - CZ Pure Coat(PCT) from Combine 1 dropdown,,Dropdown option is available
+,,,,,,,,,Select coating - Double Grad Mirror from Combine 2 dropdown,,Dropdown option is available
+,,,,,,,,,Check  Apply to any Lens  checkBox ,,is checked 
+,,,,,,,,,Click save ,,new row should be added on Service/Coating table 
+Routing onDemand Service/Coating  tab (Edit Button    ),Functional,Critical,15M,None,Final,Megh Thapa,Verification of OnDemand UI matches with production  ,Log in to EOR ,Click Routing on Demand from the Menu ,1,new Routing on demand window should open 
+,,,,,,,,,Click Service/Coating,,Is opened 
+ ,,,,,,,,,Highlight row that you want to edit from table ,,Row is highlighted in Blue 
+,,,,,,,,,Click EDIT button ,,New window should open with all the combination 
+,,,,,,,,,Edit combine 1 and 2 dropdown  ,,Dropdown option is available
+,,,,,,,,,Click save ,,new row should be added on Service/Coating table 
+Routing onDemand Service/Coating  tab (Save  Button    ),Functional,Critical,15M,None,Final,Megh Thapa,Verification of OnDemand UI matches with production  ,Log in to EOR ,Click Routing on Demand from the Menu ,1,new Routing on demand window should open 
+,,,,,,,,,Click Service/Coating,,Is opened 
+ ,,,,,,,,,Highlight row that you want to edit from table ,,Row is highlighted in Blue 
+,,,,,,,,,Click EDIT button ,,New window should open with all the combination 
+,,,,,,,,,Edit combine 1 and 2 dropdown  ,,Dropdown option is available
+,,,,,,,,,Click save ,,new row should be added on Service/Coating table 
+,,,,,,,,,Close and reopen routing onDemand ,,All items is saved 
+Routing onDemand Account tab (Save  Button    ),Functional,Critical,15M,None,Final,Megh Thapa,Verification of OnDemand UI matches with production  ,Log in to EOR ,Click Routing on Demand from the Menu ,1,new Routing on demand window should open 
+,,,,,,,,,Click Account tab ,,Is opened 
+,,,,,,,,,Click Not Apply radio button ,,Is clicked 
+,,,,,,,,,Close and reopen routing onDemand ,,"Not apply radio button option is selected and Add, Edit button is disable"
+Routing onDemand Account tab (Add  Button VW),Functional,Critical,15M,None,Final,Megh Thapa,Verification of OnDemand UI matches with production  ,Log in to EOR ,Click Routing on Demand from the Menu ,1,new Routing on demand window should open 
+,,,,,,,,,Click Account tab ,,Is opened 
+,,,,,,,,,Click Include radio button ,,All the buttons are enabled 
+,,,,,,,,,Click Add button ,,New window should open
+,,,,,,,,,Select VisionWorks from Account Type,,VisionWorks option is displayed in dropdown 
+,,,,,,,,,Select Account # 1 from Account #,,Should display all VW Account into dropdown
+,,,,,,,,,Check Active button ,,CheckBox is checked 
+,,,,,,,,,Click Ok ,,Account is added into Account tab table 
+,,,,,,,,,Click save ,,
+,,,,,,,,,Close and reopen ,,Account info is displayed in Account tab table 
+Routing onDemand Account tab ( Add Button EV   ),Functional,Critical,15M,None,Final,Megh Thapa,Verification of OnDemand UI matches with production  ,Log in to EOR ,Click Routing on Demand from the Menu ,1,new Routing on demand window should open 
+,,,,,,,,,Click Account tab ,,Is opened 
+,,,,,,,,,Click Include radio button ,,All the buttons are enabled 
+,,,,,,,,,Click Add button ,,New window should open
+,,,,,,,,,Select EV from Account Type,,VisionWorks option is displayed in dropdown 
+,,,,,,,,,Select Account =1034  from Account #,,Should display all EW Account into dropdown
+,,,,,,,,,Check Active button ,,CheckBox is checked 
+,,,,,,,,,Click Ok ,,Account is added into Account tab table 
+,,,,,,,,,Click save ,,
+,,,,,,,,,Close and reopen ,,Account info is displayed in Account tab table 
+Routing onDemand Account tab ( Add Button DV   ),Functional,Critical,15M,None,Final,Megh Thapa,Verification of OnDemand UI matches with production  ,Log in to EOR ,Click Routing on Demand from the Menu ,1,new Routing on demand window should open 
+,,,,,,,,,Click Account tab ,,Is opened 
+,,,,,,,,,Click Include radio button ,,All the buttons are enabled 
+,,,,,,,,,Click Add button ,,New window should open
+,,,,,,,,,Select DV from Account Type,,VisionWorks option is displayed in dropdown 
+,,,,,,,,,Select Account =42522  from Account #,,Should display all EW Account into dropdown
+,,,,,,,,,Check Active button ,,CheckBox is checked 
+,,,,,,,,,Click Ok ,,Account is added into Account tab table 
+,,,,,,,,,Click save ,,
+,,,,,,,,,Close and reopen ,,Account info is displayed in Account tab table 
+Routing onDemand Account tab ( Add Button ECOM   ),Functional,Critical,15M,None,Final,Megh Thapa,Verification of OnDemand UI matches with production  ,Log in to EOR ,Click Routing on Demand from the Menu ,1,new Routing on demand window should open 
+,,,,,,,,,Click Account tab ,,Is opened 
+,,,,,,,,,Click Include radio button ,,All the buttons are enabled 
+,,,,,,,,,Click Add button ,,New window should open
+,,,,,,,,,Select e-Commerce from Account Type,,VisionWorks option is displayed in dropdown 
+,,,,,,,,,Select Account = 3000 from Account #,,Should display all EW Account into dropdown
+,,,,,,,,,Check Active button ,,CheckBox is checked 
+,,,,,,,,,Click Ok ,,Account is added into Account tab table 
+,,,,,,,,,Click save ,,
+,,,,,,,,,Close and reopen ,,Account info is displayed in Account tab table 
+Routing onDemand Account tab (Exclude  Button VW),Functional,Critical,15M,None,Final,Megh Thapa,Verification of OnDemand UI matches with production  ,Log in to EOR ,Click Routing on Demand from the Menu ,1,new Routing on demand window should open 
+,,,,,,,,,Click Account tab ,,Is opened 
+,,,,,,,,,Click Exclude radio button ,,All the buttons are enabled 
+,,,,,,,,,Click Add button ,,New window should open
+,,,,,,,,,Select VisionWorks from Account Type,,VisionWorks option is displayed in dropdown 
+,,,,,,,,,Select Account # 1 from Account #,,Should display all VW Account into dropdown
+,,,,,,,,,Check Active button ,,CheckBox is checked 
+,,,,,,,,,Click Ok ,,Account is added into Account tab table 
+,,,,,,,,,Click save ,,
+,,,,,,,,,Close and reopen ,,Account info is displayed in Account tab table 
+Routing onDemand Account tab ( Exclude  Button EV   ),Functional,Critical,15M,None,Final,Megh Thapa,Verification of OnDemand UI matches with production  ,Log in to EOR ,Click Routing on Demand from the Menu ,1,new Routing on demand window should open 
+,,,,,,,,,Click Account tab ,,Is opened 
+,,,,,,,,,Click Exclude radio button ,,All the buttons are enabled 
+,,,,,,,,,Click Add button ,,New window should open
+,,,,,,,,,Select EV from Account Type,,VisionWorks option is displayed in dropdown 
+,,,,,,,,,Select Account =1034  from Account #,,Should display all EW Account into dropdown
+,,,,,,,,,Check Active button ,,CheckBox is checked 
+,,,,,,,,,Click Ok ,,Account is added into Account tab table 
+,,,,,,,,,Click save ,,
+,,,,,,,,,Close and reopen ,,Account info is displayed in Account tab table 
+Routing onDemand Account tab ( Exclude  Button DV   ),Functional,Critical,15M,None,Final,Megh Thapa,Verification of OnDemand UI matches with production  ,Log in to EOR ,Click Routing on Demand from the Menu ,1,new Routing on demand window should open 
+,,,,,,,,,Click Account tab ,,Is opened 
+,,,,,,,,,Click Exclude radio button ,,All the buttons are enabled 
+,,,,,,,,,Click Add button ,,New window should open
+,,,,,,,,,Select DV from Account Type,,VisionWorks option is displayed in dropdown 
+,,,,,,,,,Select Account =42522  from Account #,,Should display all EW Account into dropdown
+,,,,,,,,,Check Active button ,,CheckBox is checked 
+,,,,,,,,,Click Ok ,,Account is added into Account tab table 
+,,,,,,,,,Click save ,,
+,,,,,,,,,Close and reopen ,,Account info is displayed in Account tab table 
+Routing onDemand Account tab ( Exclude  Button ECOM   ),Functional,Critical,15M,None,Final,Megh Thapa,Verification of OnDemand UI matches with production  ,Log in to EOR ,Click Routing on Demand from the Menu ,1,new Routing on demand window should open 
+,,,,,,,,,Click Account tab ,,Is opened 
+,,,,,,,,,Click Exclude radio button ,,All the buttons are enabled 
+,,,,,,,,,Click Add button ,,New window should open
+,,,,,,,,,Select e-Commerce from Account Type,,VisionWorks option is displayed in dropdown 
+,,,,,,,,,Select Account = 3000 from Account #,,Should display all EW Account into dropdown
+,,,,,,,,,Check Active button ,,CheckBox is checked 
+,,,,,,,,,Click Ok ,,Account is added into Account tab table 
+,,,,,,,,,Click save ,,
+,,,,,,,,,Close and reopen ,,Account info is displayed in Account tab table 
+Routing onDemand Account tab ( Edit Button ECOM   ),Functional,Critical,15M,None,Final,Megh Thapa,Verification of OnDemand UI matches with production  ,Log in to EOR ,Click Routing on Demand from the Menu ,1,new Routing on demand window should open 
+,,,,,,,,,Click Account tab ,,Is opened 
+,,,,,,,,,Click Exclude radio button ,,All the buttons are enabled 
+,,,,,,,,,Highlight row and click edit button ,,New window should open
+,,,,,,,,,Uncheck Active button ,,CheckBox is checked 
+,,,,,,,,,Click Ok ,,Account is added into Account tab table 
+,,,,,,,,,Click save ,,
+,,,,,,,,,Close and reopen ,,Account info is displayed in Account tab table 
+Routing onDemand Contact Lens tab ,Functional,Critical,15M,None,Final,Megh Thapa,Verification of OnDemand UI matches with production  ,Log in to EOR ,Click Routing on Demand from the Menu ,1,new Routing on demand window should open 
+,,,,,,,,,Click Contact tab ,,Is opened 
+,,,,,,,,,Check allow all Contacts ,,is checked 
+,,,,,,,,,Verify add and delete button are disable,,Buttons should be disable 

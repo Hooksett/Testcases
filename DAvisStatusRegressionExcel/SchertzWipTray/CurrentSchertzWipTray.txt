@@ -1,0 +1,4 @@
+38942          70129740   MANUH,ELVIS       10/30/17 16:33    MFG Complete       129740  P    HFT04005079 38942 Q#1                  HFP    H                                         MFG Complete       38942   
+43871          71394681   KASA,DASHAMIR     02/06/18 17:03    WAITING FOR MAT    394681  PLY  BJL00503876 43871 Q#1                  BJL    H                                         WAITING FOR MAT    43871   
+43756          71387077   BURK,CAROL        02/06/18 13:04    WAITING FOR MAT    387077  PRY  GMU01904173 43756 Q#1                  GMU    O                                         WAITING FOR MAT    43756   
+44070          71381492   WILSON,MATTHEW    02/06/18 10:04    WAITING FOR MAT    381492  P    HFB04081099 44070 Q#1                  HFP    O                                         WAITING FOR MAT    44070   

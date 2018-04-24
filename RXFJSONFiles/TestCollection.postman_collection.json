@@ -1,0 +1,104 @@
+{
+	"info": {
+		"name": "TestCollection",
+		"_postman_id": "e74cf5d1-ecb6-33a2-9b78-eddc696e5571",
+		"description": "This is a test collection ",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Feature1",
+			"description": "",
+			"item": [
+				{
+					"name": "Yahoo_curr_conversion_request",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"postman.setNextRequest(\"request_name\");"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://www.visionworks.com/",
+							"protocol": "https",
+							"host": [
+								"www",
+								"visionworks",
+								"com"
+							],
+							"path": [
+								""
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Feature2",
+			"description": "This is another feature in collection ",
+			"item": [
+				{
+					"name": "Yahoo_curr_conversion_request copy",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"postman.setNextRequest(\"request_name\");"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://www.visionworks.com/",
+							"protocol": "https",
+							"host": [
+								"www",
+								"visionworks",
+								"com"
+							],
+							"path": [
+								""
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

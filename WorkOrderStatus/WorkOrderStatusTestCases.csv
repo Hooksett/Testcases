@@ -1,0 +1,159 @@
+"Title 
+(Denotes new test case)","Type 
+(Automated, Compatibility, Functional, Other, Performance, Functional)","Priority 
+(Critical, High, Medium, Low)","Estimate
+(1-59M in Min
+1H + in Hours)",References (Link user stories or bugs),"Status
+(Draft, Ready for Review, Final)","Owner
+(FirstName LastName)","Objective
+(Describe the Overall Objective this case is designed to achieve)","Preconditions
+(List prerequisite conditions for this test case)",Steps (One step per row),Number,"Expected Result (Per step, Expected for whole test case list on last step)"
+/api/application/WorkOrderStatus/SetShipment,Functional,Critical,15M,None,Final,Megh Thapa,"Validation of application during search endpoint displays, write and update Correct data",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/WorkOrderStatus/SetShipment,1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section and provide workorderID= 27898356",,Api-Key and JSON properties is accepted 
+ ,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,Status  should change to shipped (Verify  WorkorderDCShip and  WorkorderDCShipDavisVision table)
+/api/application/WorkOrderStatus/SetShipment1,Functional,Critical,15M,None,Final,Megh Thapa,"Validation of application during search endpoint displays, write and update Correct data",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/WorkOrderStatus/SetShipment,1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section and provide workorderID= 27845880",,Api-Key and JSON properties is accepted 
+ ,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,Status  should change to shipped (Verify  WorkorderDCShip and  WorkorderDCShipDavisVision table)
+/api/application/WorkOrderStatus/SetShipment2,Functional,Critical,15M,None,Final,Megh Thapa,"Validation of application during search endpoint displays, write and update Correct data",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/WorkOrderStatus/SetShipment,1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section and provide workorderID= 27785217",,Api-Key and JSON properties is accepted 
+ ,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,Status  should change to shipped (Verify  WorkorderDCShip and  WorkorderDCShipDavisVision table)
+/api/application/WorkOrderStatus/SetShipment3,Functional,Critical,15M,None,Final,Megh Thapa,"Validation of application during search endpoint displays, write and update Correct data",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/WorkOrderStatus/SetShipment,1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section and provide workorderID= 27812532",,Api-Key and JSON properties is accepted 
+ ,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,Status  should change to shipped (Verify  WorkorderDCShip and  WorkorderDCShipDavisVision table)
+/api/application/WorkOrderStatus/SetStatus(VW),Functional,Critical,15M,None,Final,Megh Thapa,"Validation of application during search endpoint displays, write and update Correct data",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/WorkOrderStatus/SetStatus,1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section and paste below JSON on body {
+  ""orderId"": 19251262,
+  ""statusDate"": ""2018-02-14T16:05:51.536Z"",
+  ""statusName"": ""TEST"",
+  ""allowMultiple"": true
+}",,Api-Key and JSON properties is accepted 
+ ,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,"Staus should chage to ""TEST "" (Verify  ManufacturingJobStatusForNightlyDownload) table"
+/api/application/WorkOrderStatus/SetStatus(EV),Functional,Critical,15M,None,Final,Megh Thapa,"Validation of application during search endpoint displays, write and update Correct data",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/WorkOrderStatus/SetStatus,1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section and paste below JSON on body {
+  ""orderId"": 11134199,
+  ""statusDate"": ""2018-02-14T16:05:51.536Z"",
+  ""statusName"": ""TESTEV"",
+  ""allowMultiple"": true
+}",,Api-Key and JSON properties is accepted 
+ ,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,"Staus should chage to ""TESTEV "" (Verify  ManufacturingJobStatusForNightlyDownload) table"
+/api/application/WorkOrderStatus/SetStatus(DV),Functional,Critical,15M,None,Final,Megh Thapa,"Validation of application during search endpoint displays, write and update Correct data",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/WorkOrderStatus/SetStatus,1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section andand paste below JSON on body {
+  ""orderId"": 11593592,
+  ""statusDate"": ""2018-02-14T16:05:51.536Z"",
+  ""statusName"": ""TESTDV"",
+  ""allowMultiple"": true
+}",,Api-Key and JSON properties is accepted 
+ ,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,"Staus should chage to ""TESTDV "" (Verify  ManufacturingJobStatusForNightlyDownload) table"
+/api/application/WorkOrderStatus/SetStatus(ECom),Functional,Critical,15M,None,Final,Megh Thapa,"Validation of application during search endpoint displays, write and update Correct data",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/WorkOrderStatus/SetStatus,1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section and paste below JSON on body {
+  ""orderId"": 22170098,
+  ""statusDate"": ""2018-02-14T16:05:51.536Z"",
+  ""statusName"": ""TESTECOM"",
+  ""allowMultiple"": true
+}",,Api-Key and JSON properties is accepted 
+ ,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,"Staus should chage to ""TESTECOM "" (Verify  ManufacturingJobStatusForNightlyDownload) table"
+/api/application/WorkOrderStatus/LastEORStatusNameByWorkOrderID/30760524/Visionworks,Functional,Critical,15M,None,Final,Megh Thapa,"Validation of application during search endpoint displays, write and update Correct data",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/WorkOrderStatus/LastEORStatusNameByWorkOrderID/{workOrderID},1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section and provide workorderID= 30760524",,Api-Key and JSON properties is accepted 
+ ,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,Matches with WorkorderStatus table and UI 
+/api/application/WorkOrderStatus/LastEORStatusNameByWorkOrderID/30759849/EV,Functional,Critical,15M,None,Final,Megh Thapa,"Validation of application during search endpoint displays, write and update Correct data",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/WorkOrderStatus/LastEORStatusNameByWorkOrderID/{workOrderID},1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section and provide workorderID= 30759849",,Api-Key and JSON properties is accepted 
+ ,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,Matches with WorkorderStatus table and UI 
+/api/application/WorkOrderStatus/LastEORStatusNameByWorkOrderID/30761364DV,Functional,Critical,15M,None,Final,Megh Thapa,"Validation of application during search endpoint displays, write and update Correct data",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/WorkOrderStatus/LastEORStatusNameByWorkOrderID/{workOrderID},1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section and provide workorderID= 30761364",,Api-Key and JSON properties is accepted 
+ ,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,Matches with WorkorderStatus table and UI 
+/api/application/WorkOrderStatus/LastEORStatusNameByWorkOrderID/30754257/ECom,Functional,Critical,15M,None,Final,Megh Thapa,"Validation of application during search endpoint displays, write and update Correct data",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/WorkOrderStatus/LastEORStatusNameByWorkOrderID/{workOrderID},1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section and provide workorderID= 30754257",,Api-Key and JSON properties is accepted 
+ ,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,Matches with WorkorderStatus table and UI 
+/api/application/WorkOrderStatus/LastEORStatusNameByTransaction(VW),Functional,Critical,15M,None,Final,Megh Thapa,"Validation of application during search endpoint displays, write and update Correct data",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/WorkOrderStatus/LastEORStatusNameByTransaction,1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section and  paste below workorderStatusRequest in body section {
+  ""storeNumber"": 81,
+  ""transactionNumber"":  227244,
+  ""pairNumber"": 1,
+  ""remakeNumber"": 0,
+  ""accountTypeID"": 1
+}",,Api-Key and JSON properties is accepted 
+ ,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,Should  match with DB table and UI 
+/api/application/WorkOrderStatus/LastEORStatusNameByTransaction(EV),Functional,Critical,15M,None,Final,Megh Thapa,"Validation of application during search endpoint displays, write and update Correct data",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/WorkOrderStatus/LastEORStatusNameByTransaction,1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section and  paste below workorderStatusRequest in body section {
+  ""storeNumber"": 1232,
+  ""transactionNumber"":  5014024,
+  ""pairNumber"": 1,
+  ""remakeNumber"": 0,
+  ""accountTypeID"": 2
+}",,Api-Key and JSON properties is accepted 
+ ,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,Should  match with DB table and UI 
+/api/application/WorkOrderStatus/LastEORStatusNameByTransaction(DV),Functional,Critical,15M,None,Final,Megh Thapa,"Validation of application during search endpoint displays, write and update Correct data",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/WorkOrderStatus/LastEORStatusNameByTransaction,1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section and  paste below workorderStatusRequest in body section {
+  ""storeNumber"": 44722,
+  ""transactionNumber"":  53168201,
+  ""pairNumber"": 1,
+  ""remakeNumber"": 0,
+  ""accountTypeID"": 3
+}",,Api-Key and JSON properties is accepted 
+ ,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,Should  match with DB table and UI 
+/api/application/WorkOrderStatus/LastEORStatusNameByTransaction(ECOM),Functional,Critical,15M,None,Final,Megh Thapa,"Validation of application during search endpoint displays, write and update Correct data",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/WorkOrderStatus/LastEORStatusNameByTransaction,1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section and  paste below workorderStatusRequest in body section {
+  ""storeNumber"": 1006,
+  ""transactionNumber"":  10008,
+  ""pairNumber"": 1,
+  ""remakeNumber"": 0,
+  ""accountTypeID"": 5
+}",,Api-Key and JSON properties is accepted 
+ ,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,Should  match with DB table and UI 
+/api/application/WorkOrderStatus/IsTerminalStatus/Shipped,Functional,Critical,15M,None,Final,Megh Thapa,"Validation of application during search endpoint displays, write and update Correct data",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/WorkOrderStatus/IsTerminalStatus/{status},1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section and provide status = Shipped",,Api-Key and JSON properties is accepted 
+ ,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,should be ture 
+/api/application/WorkOrderStatus/IsTerminalStatus/CancelPend DC,Functional,Critical,15M,None,Final,Megh Thapa,"Validation of application during search endpoint displays, write and update Correct data",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/WorkOrderStatus/IsTerminalStatus/{status},1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section and provide status = CancelPend DC ",,Api-Key and JSON properties is accepted 
+ ,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,should be ture 
+/api/application/WorkOrderStatus/IsTerminalStatus/{status},Functional,Critical,15M,None,Final,Megh Thapa,"Validation of application during search endpoint displays, write and update Correct data",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/WorkOrderStatus/IsTerminalStatus/{status},1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section and provide status = A/R Shipped",,Api-Key and JSON properties is accepted 
+ ,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,should be ture 
+/api/application/WorkOrderStatus/IsTerminalStatus/MFG Complete,Functional,Critical,15M,None,Final,Megh Thapa,"Validation of application during search endpoint displays, write and update Correct data",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/WorkOrderStatus/IsTerminalStatus/{status},1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section and provide status = MFG Complete",,Api-Key and JSON properties is accepted 
+ ,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,should be false
+/api/application/WorkOrderStatus/IsTerminalStatus/FTC-FRM TO COME,Functional,Critical,15M,None,Final,Megh Thapa,"Validation of application during search endpoint displays, write and update Correct data",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/WorkOrderStatus/IsTerminalStatus/{status},1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section and provide status = FTC-FRM TO COME",,Api-Key and JSON properties is accepted 
+ ,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,should be false

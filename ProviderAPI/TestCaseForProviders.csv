@@ -1,0 +1,433 @@
+"Title 
+(Denotes new test case)","Type 
+(Automated, Compatibility, Functional, Other, Performance, Functional)","Priority 
+(Critical, High, Medium, Low)","Estimate
+(1-59M in Min
+1H + in Hours)",References (Link user stories or bugs),"Status
+(Draft, Ready for Review, Final)","Owner
+(FirstName LastName)","Objective
+(Describe the Overall Objective this case is designed to achieve)","Preconditions
+(List prerequisite conditions for this test case)",Steps (One step per row),Number,"Expected Result (Per step, Expected for whole test case list on last step)",,
+Update Name,Functional,Critical,15M,None,Final,Megh Thapa,To Verify Davis Providers API update and insert function,Log in to Postman,Select PUT from the drop down and paste following API link into the address bar.http://txs-q-eorweb01.hvhcvision.com:8083/api/davis/Providers,1.1,Should accept the API link,,
+,,,,,,,,,"Provide api-key = ""VGhpcyBpcyB0aGUgc2VjdXJlIERhdmlzIEtleQ=="" in header section",,,,
+,,,,,,,,,"Click Body ,check raw section and update name.
+
+Example ""name"": ""Test "",
+is changed to ""name"": ""AutoTest1 "",",,Code should accept parameters without any error message,,
+,,,,,,,,,Click send,,Status code should be 200,,
+,,,,,,,,,Verify changes in Davis_Provider_Scrub and AccountInfo table,,name should be updated to AutoTest1,,
+Update Address1,Functional,Critical,15M,None,Final,Megh Thapa,To Verify Davis Providers API update and insert function,Log in to Postman,Select PUT from the drop down and paste following API link into the address bar.http://txs-q-eorweb01.hvhcvision.com:8083/api/davis/Providers,2.2,Should accept the API link,,
+,,,,,,,,,"Provide api-key = ""VGhpcyBpcyB0aGUgc2VjdXJlIERhdmlzIEtleQ=="" in header section",,,,
+,,,,,,,,,"Click Body ,check raw section and  update Address1.
+
+Example ""address1"": ""123 test st"",,
+is changed to ""name"": ""123 AutoTest St "",",,Code should accept parameters without any error message,,
+,,,,,,,,,Click send,,Status code should be 200,,
+,,,,,,,,,Verify changes in Davis_Provider_Scrub and AccountInfo table,,Address1 should be updated to 123 AutoTest St,,
+Update Address2,Functional,Critical,15M,None,Final,Megh Thapa,To Verify Davis Providers API update and insert function,Log in to Postman,Select PUT from the drop down and paste following API link into the address bar.http://txs-q-eorweb01.hvhcvision.com:8083/api/davis/Providers,2.3,Should accept the API link,,
+,,,,,,,,,"Provide api-key = ""VGhpcyBpcyB0aGUgc2VjdXJlIERhdmlzIEtleQ=="" in header section",,,,
+,,,,,,,,,"Click Body ,check raw section and update Address2.
+
+Example ""address2"": null,
+is changed to ""name"": ""124 test st "",",,Code should accept parameters without any error message,,
+,,,,,,,,,Click send,,Status code should be 200,,
+,,,,,,,,,Verify changes in Davis_Provider_Scrub and AccountInfo table,,Address1 should be updated to 124 test st,,
+Update city,Functional,Critical,15M,None,Final,Megh Thapa,To Verify Davis Providers API update and insert function,Log in to Postman,Select PUT from the drop down and paste following API link into the address bar.http://txs-q-eorweb01.hvhcvision.com:8083/api/davis/Providers,2.4,Should accept the API link,,
+,,,,,,,,,"Provide api-key = ""VGhpcyBpcyB0aGUgc2VjdXJlIERhdmlzIEtleQ=="" in header section",,,,
+,,,,,,,,,"Click Body ,check raw section and update city.
+
+Example ""city"": ""San Antonio "",,
+is changed to ""name"": ""New York "",",,Code should accept parameters without any error message,,
+,,,,,,,,,Click send,,Status code should be 200,,
+,,,,,,,,,Verify changes in Davis_Provider_Scrub and AccountInfo table,,City should be updated to New York,,
+Update StateCode,Functional,Critical,15M,None,Final,Megh Thapa,To Verify Davis Providers API update and insert function,Log in to Postman,Select PUT from the drop down and paste following API link into the address bar.http://txs-q-eorweb01.hvhcvision.com:8083/api/davis/Providers,2.4,Should accept the API link,,
+,,,,,,,,,"Provide api-key = ""VGhpcyBpcyB0aGUgc2VjdXJlIERhdmlzIEtleQ=="" in header section",,,,
+,,,,,,,,,"Click Body ,check raw section and update StateCode.
+
+Example ""stateCode"": ""TX"",,
+is changed to ""stateCode"": "" NY"",",,Code should accept parameters without any error message,,
+,,,,,,,,,Click send,,Status code should be 200,,
+,,,,,,,,,Verify changes in Davis_Provider_Scrub and AccountInfo table,,StateCode should be updated to NY ,,
+Update zip,Functional,Critical,15M,None,Final,Megh Thapa,To Verify Davis Providers API update and insert function,Log in to Postman,Select PUT from the drop down and paste following API link into the address bar.http://txs-q-eorweb01.hvhcvision.com:8083/api/davis/Providers,2.5,Should accept the API link,,
+,,,,,,,,,"Provide api-key = ""VGhpcyBpcyB0aGUgc2VjdXJlIERhdmlzIEtleQ=="" in header section",,,,
+,,,,,,,,,"Click Body ,check raw section and update zip.
+
+Example ""zip"": ""78229""
+is changed to ""zip"": ""78201 "",",,Code should accept parameters without any error message,,
+,,,,,,,,,Click send,,Status code should be 200,,
+,,,,,,,,,Verify changes in Davis_Provider_Scrub and AccountInfo table,,Zip should be updated to 78201,,
+Update countryCode,Functional,Critical,15M,None,Final,Megh Thapa,To Verify Davis Providers API update and insert function,Log in to Postman,Select PUT from the drop down and paste following API link into the address bar.http://txs-q-eorweb01.hvhcvision.com:8083/api/davis/Providers,2.6,Should accept the API link,,
+,,,,,,,,,"Provide api-key = ""VGhpcyBpcyB0aGUgc2VjdXJlIERhdmlzIEtleQ=="" in header section",,,,
+,,,,,,,,,"Click Body ,check raw section and update name.
+
+Example ""countryCode"": ""US"",
+is changed to ""countryCode"": ""NP"",",,Code should accept parameters without any error message,,
+,,,,,,,,,Click send,,Status code should be 200,,
+,,,,,,,,,Verify changes in Davis_Provider_Scrub and AccountInfo table,,CountryCode  should be updated to NP,,
+Update Phone,Functional,Critical,15M,None,Final,Megh Thapa,To Verify Davis Providers API update and insert function,Log in to Postman,Select PUT from the drop down and paste following API link into the address bar.http://txs-q-eorweb01.hvhcvision.com:8083/api/davis/Providers,2.7,Should accept the API link,,
+,,,,,,,,,"Provide api-key = ""VGhpcyBpcyB0aGUgc2VjdXJlIERhdmlzIEtleQ=="" in header section",,,,
+,,,,,,,,,"Click Body ,check raw section and update phone.
+
+Example ""phone"": ""1234567890"",
+is changed to ""phone"": ""1234567890"",",,Code should accept parameters without any error message,,
+,,,,,,,,,Click send,,Status code should be 200,,
+,,,,,,,,,Verify changes in Davis_Provider_Scrub and AccountInfo table,,phone  should be updated to 1234567890,,
+Update secondPhone,Functional,Critical,15M,None,Final,Megh Thapa,To Verify Davis Providers API update and insert function,Log in to Postman,Select PUT from the drop down and paste following API link into the address bar.http://txs-q-eorweb01.hvhcvision.com:8083/api/davis/Providers,2.7,Should accept the API link,,
+,,,,,,,,,"Provide api-key = ""VGhpcyBpcyB0aGUgc2VjdXJlIERhdmlzIEtleQ=="" in header section",,,,
+,,,,,,,,,"Click Body ,check raw section and update secondPhone.
+
+Example ""secondPhone"": ""1234567890"",
+is changed to ""secondPhone"": ""2105464457 """,,Code should accept parameters without any error message,,
+,,,,,,,,,Click send,,Status code should be 200,,
+,,,,,,,,,Verify changes in Davis_Provider_Scrub and AccountInfo table,,phone  should be updated to 2105464457,,
+Update thirdPhone,Functional,Critical,15M,None,Final,Megh Thapa,To Verify Davis Providers API update and insert function,Log in to Postman,Select PUT from the drop down and paste following API link into the address bar.http://txs-q-eorweb01.hvhcvision.com:8083/api/davis/Providers,2.7,Should accept the API link,,
+,,,,,,,,,"Provide api-key = ""VGhpcyBpcyB0aGUgc2VjdXJlIERhdmlzIEtleQ=="" in header section",,,,
+,,,,,,,,,"Click Body ,check raw section and update thirdPhone.
+
+Example ""thirdPhone"": ""1345677890""
+is changed to ""thirdPhone"": ""2104567785"",",,Code should accept parameters without any error message,,
+,,,,,,,,,Click send,,Status code should be 200,,
+,,,,,,,,,Verify changes in Davis_Provider_Scrub and AccountInfo table,,ThirdPhoneshould be updated to 2105464457,,
+Update fax,Functional,Critical,15M,None,Final,Megh Thapa,To Verify Davis Providers API update and insert function,Log in to Postman,Select PUT from the drop down and paste following API link into the address bar.http://txs-q-eorweb01.hvhcvision.com:8083/api/davis/Providers,2.7,Should accept the API link,,
+,,,,,,,,,"Provide api-key = ""VGhpcyBpcyB0aGUgc2VjdXJlIERhdmlzIEtleQ=="" in header section",,,,
+,,,,,,,,,"Click Body ,check raw section and update fax.
+
+Example ""fax"": ""123456789"",
+is changed to ""fax"": ""1556584456"",",,Code should accept parameters without any error message,,
+,,,,,,,,,Click send,,Status code should be 200,,
+,,,,,,,,,Verify changes in Davis_Provider_Scrub and AccountInfo table,,fax should be updated to 1556584456,,
+Update secondfax,Functional,Critical,15M,None,Final,Megh Thapa,To Verify Davis Providers API update and insert function,Log in to Postman,Select PUT from the drop down and paste following API link into the address bar.http://txs-q-eorweb01.hvhcvision.com:8083/api/davis/Providers,2.7,Should accept the API link,,
+,,,,,,,,,"Provide api-key = ""VGhpcyBpcyB0aGUgc2VjdXJlIERhdmlzIEtleQ=="" in header section",,,,
+,,,,,,,,,"Click Body ,check raw section and update secondFax.
+
+Example ""secondFax"": ""123456789"",
+is changed to ""secondFax"": ""123456789"",",,Code should accept parameters without any error message,,
+,,,,,,,,,Click send,,Status code should be 200,,
+,,,,,,,,,Verify changes in Davis_Provider_Scrub and AccountInfo table,,secondfax should be updated to 123456789,,
+Update Thirdfax,Functional,Critical,15M,None,Final,Megh Thapa,To Verify Davis Providers API update and insert function,Log in to Postman,Select PUT from the drop down and paste following API link into the address bar.http://txs-q-eorweb01.hvhcvision.com:8083/api/davis/Providers,2.7,Should accept the API link,,
+,,,,,,,,,"Provide api-key = ""VGhpcyBpcyB0aGUgc2VjdXJlIERhdmlzIEtleQ=="" in header section",,,,
+,,,,,,,,,"Click Body ,check raw section and update thirdFax.
+
+Example ""thirdFax"": ""123456789"",
+is changed to ""thirdFax"": ""2101234569"",",,Code should accept parameters without any error message,,
+,,,,,,,,,Click send,,Status code should be 200,,
+,,,,,,,,,Verify changes in Davis_Provider_Scrub and AccountInfo table,,thirdfax should be updated to 2101234569,,
+Update contact,Functional,Critical,15M,None,Final,Megh Thapa,To Verify Davis Providers API update and insert function,Log in to Postman,Select PUT from the drop down and paste following API link into the address bar.http://txs-q-eorweb01.hvhcvision.com:8083/api/davis/Providers,2.7,Should accept the API link,,
+,,,,,,,,,"Provide api-key = ""VGhpcyBpcyB0aGUgc2VjdXJlIERhdmlzIEtleQ=="" in header section",,,,
+,,,,,,,,,"Click Body ,check raw section and update contacts.
+
+Example ""contact"": ""Test"",
+is changed to ""contact"": ""Dr test "",",,Code should accept parameters without any error message,,
+,,,,,,,,,Click send,,Status code should be 200,,
+,,,,,,,,,Verify changes in Davis_Provider_Scrub and AccountInfo table,,contact should be updated to Dr Test,,
+Update contactType,Functional,Critical,15M,None,Final,Megh Thapa,To Verify Davis Providers API update and insert function,Log in to Postman,Select PUT from the drop down and paste following API link into the address bar.http://txs-q-eorweb01.hvhcvision.com:8083/api/davis/Providers,2.7,Should accept the API link,,
+,,,,,,,,,"Provide api-key = ""VGhpcyBpcyB0aGUgc2VjdXJlIERhdmlzIEtleQ=="" in header section",,,,
+,,,,,,,,,"Click Body ,check raw section and update name.
+
+Example ""contactType"": ""M"",
+is changed to ""contacType"": ""S "",",,Code should accept parameters without any error message,,
+,,,,,,,,,Click send,,Status code should be 200,,
+,,,,,,,,,Verify changes in Davis_Provider_Scrub and AccountInfo table,,contactType should be updated to S,,
+Update activeDate,Functional,Critical,15M,None,Final,Megh Thapa,To Verify Davis Providers API update and insert function,Log in to Postman,Select PUT from the drop down and paste following API link into the address bar.http://txs-q-eorweb01.hvhcvision.com:8083/api/davis/Providers,2.7,Should accept the API link,,
+,,,,,,,,,"Provide api-key = ""VGhpcyBpcyB0aGUgc2VjdXJlIERhdmlzIEtleQ=="" in header section",,,,
+,,,,,,,,,"Click Body ,check raw section and update activeDate.
+
+Example ""activeDate"": null,
+is changed to ""activeDate"": ""01/01/2012"",",,Code should accept parameters without any error message,,
+,,,,,,,,,Click send,,Status code should be 200,,
+,,,,,,,,,Verify changes in Davis_Provider_Scrub and AccountInfo table,,active date should be updated to 01/01/2012,,
+Update termDate,Functional,Critical,15M,None,Final,Megh Thapa,To Verify Davis Providers API update and insert function,Log in to Postman,Select PUT from the drop down and paste following API link into the address bar.http://txs-q-eorweb01.hvhcvision.com:8083/api/davis/Providers,2.7,Should accept the API link,,
+,,,,,,,,,"Provide api-key = ""VGhpcyBpcyB0aGUgc2VjdXJlIERhdmlzIEtleQ=="" in header section",,,,
+,,,,,,,,,"Click Body ,check raw section and update termDate.
+
+Example ""termDate"": null,
+is changed to ""termDate"": ""01/01/2016"",",,Code should accept parameters without any error message,,
+,,,,,,,,,Click send,,Status code should be 200,,
+,,,,,,,,,Verify changes in Davis_Provider_Scrub and AccountInfo table,,Term date date should be updated to 01/01/2016,,
+Update deletedDate,Functional,Critical,15M,None,Final,Megh Thapa,To Verify Davis Providers API update and insert function,Log in to Postman,Select PUT from the drop down and paste following API link into the address bar.http://txs-q-eorweb01.hvhcvision.com:8083/api/davis/Providers,2.7,Should accept the API link,,
+,,,,,,,,,"Provide api-key = ""VGhpcyBpcyB0aGUgc2VjdXJlIERhdmlzIEtleQ=="" in header section",,,,
+,,,,,,,,,"Click Body ,check raw section and update deletedDate.
+
+Example ""deletedDate"": null,
+is changed to ""deleteddate"": ""01/01/2015"",",,Code should accept parameters without any error message,,
+,,,,,,,,,Click send,,Status code should be 200,,
+,,,,,,,,,Verify changes in Davis_Provider_Scrub and AccountInfo table,,Term date date should be updated to 01/01/2015,,
+Update futureTerm,Functional,Critical,15M,None,Final,Megh Thapa,To Verify Davis Providers API update and insert function,Log in to Postman,Select PUT from the drop down and paste following API link into the address bar.http://txs-q-eorweb01.hvhcvision.com:8083/api/davis/Providers,2.7,Should accept the API link,,
+,,,,,,,,,"Provide api-key = ""VGhpcyBpcyB0aGUgc2VjdXJlIERhdmlzIEtleQ=="" in header section",,,,
+,,,,,,,,,"Click Body ,check raw section and update futureDate.
+
+Example ""futureTerm"": null,
+is changed to ""futureTerm"": ""01/01/2015"",",,Code should accept parameters without any error message,,
+,,,,,,,,,Click send,,Status code should be 200,,
+,,,,,,,,,Verify changes in Davis_Provider_Scrub and AccountInfo table,,Term date  should be updated to 01/01/2015,,
+Update centralLabCode,Functional,Critical,15M,None,Final,Megh Thapa,To Verify Davis Providers API update and insert function,Log in to Postman,Select PUT from the drop down and paste following API link into the address bar.http://txs-q-eorweb01.hvhcvision.com:8083/api/davis/Providers,2.7,Should accept the API link,,
+,,,,,,,,,"Provide api-key = ""VGhpcyBpcyB0aGUgc2VjdXJlIERhdmlzIEtleQ=="" in header section",,,,
+,,,,,,,,,"Click Body ,check raw section and update centralLabCode.
+
+Example ""centralLabCode"": null,
+is changed to ""centralLabCode"": ""R"",",,Code should accept parameters without any error message,,
+,,,,,,,,,Click send,,Status code should be 200,,
+,,,,,,,,,Verify changes in Davis_Provider_Scrub and AccountInfo table,,centralLabCode should be updated to R,,
+Update shipAddress1,Functional,Critical,15M,None,Final,Megh Thapa,To Verify Davis Providers API update and insert function,Log in to Postman,Select PUT from the drop down and paste following API link into the address bar.http://txs-q-eorweb01.hvhcvision.com:8083/api/davis/Providers,2.7,Should accept the API link,,
+,,,,,,,,,"Provide api-key = ""VGhpcyBpcyB0aGUgc2VjdXJlIERhdmlzIEtleQ=="" in header section",,,,
+,,,,,,,,,"Click Body ,check raw section and update shipAddress1.
+
+Example ""shipAddress1"": ""134 Test street"",
+is changed to ""shipAddress"": ""1234 address st "",",,Code should accept parameters without any error message,,
+,,,,,,,,,Click send,,Status code should be 200,,
+,,,,,,,,,Verify changes in Davis_Provider_Scrub and AccountInfo table,,shipaddress1 should be updated to 1234 address st,,
+Update shipAddress2,Functional,Critical,15M,None,Final,Megh Thapa,To Verify Davis Providers API update and insert function,Log in to Postman,Select PUT from the drop down and paste following API link into the address bar.http://txs-q-eorweb01.hvhcvision.com:8083/api/davis/Providers,2.7,Should accept the API link,,
+,,,,,,,,,"Provide api-key = ""VGhpcyBpcyB0aGUgc2VjdXJlIERhdmlzIEtleQ=="" in header section",,,,
+,,,,,,,,,"Click Body ,check raw section and update shipAddress2.
+
+Example ""shipAddress2"": ""1234 Address st"",
+is changed to ""shipAddress2"": ""1234 Test st "",",,Code should accept parameters without any error message,,
+,,,,,,,,,Click send,,Status code should be 200,,
+,,,,,,,,,Verify changes in Davis_Provider_Scrub and AccountInfo table,,shipaddress2 should be updated to 1234 Test st ,,
+Update term date within 180 days,Functional,Critical,15M,None,Final,Megh Thapa,To Verify Davis Providers API update and insert function,Log in to Postman,Select PUT from the drop down and paste following API link into the address bar.http://txs-q-eorweb01.hvhcvision.com:8083/api/davis/Providers,2.7,Should accept the API link,,
+,,,,,,,,,"Provide api-key = ""VGhpcyBpcyB0aGUgc2VjdXJlIERhdmlzIEtleQ=="" in header section",,,,
+,,,,,,,,,"Click Body ,check raw section and update termDate.
+
+Example  ""termDate"": ""within 180 days""
+",,Code should accept parameters without any error message,,
+,,,,,,,,,Click send,,Status code should be 200,,
+,,,,,,,,,Verify changes in Davis_Provider_Scrub and AccountInfo table,,Active date  should be updated ,,
+Update term date more than  180 days in future,Functional,Critical,15M,None,Final,Megh Thapa,To Verify Davis Providers API update and insert function,Log in to Postman,Select PUT from the drop down and paste following API link into the address bar.http://txs-q-eorweb01.hvhcvision.com:8083/api/davis/Providers,2.7,Should accept the API link,,
+,,,,,,,,,"Provide api-key = ""VGhpcyBpcyB0aGUgc2VjdXJlIERhdmlzIEtleQ=="" in header section",,,,
+,,,,,,,,,"Click Body ,check raw section and update termDate
+
+Example  ""termDate"":""should be more than 180 from today""
+",,Code should accept parameters without any error message,,
+,,,,,,,,,Click send,,Status code should be 200,,
+,,,,,,,,,Verify changes in Davis_Provider_Scrub and AccountInfo table,, term date  should be updated ,,
+Update term date  less than 180 days in the past ,Functional,Critical,15M,None,Final,Megh Thapa,To Verify Davis Providers API update and insert function,Log in to Postman,Select PUT from the drop down and paste following API link into the address bar.http://txs-q-eorweb01.hvhcvision.com:8083/api/davis/Providers,2.7,Should accept the API link,,
+,,,,,,,,,"Provide api-key = ""VGhpcyBpcyB0aGUgc2VjdXJlIERhdmlzIEtleQ=="" in header section",,,,
+,,,,,,,,,"Click Body ,check raw section and update termDate.
+
+Example  ""termDate"":""term date  less than 180 days in the past""
+",,Code should accept parameters without any error message,,
+,,,,,,,,,Click send,,Status code should be 200,,
+,,,,,,,,,Verify changes in Davis_Provider_Scrub and AccountInfo table,, term date  should be updated ,,
+Update term date  more than 180 days in the past ,Functional,Critical,15M,None,Final,Megh Thapa,To Verify Davis Providers API update and insert function,Log in to Postman,Select PUT from the drop down and paste following API link into the address bar.http://txs-q-eorweb01.hvhcvision.com:8083/api/davis/Providers,2.7,Should accept the API link,,
+,,,,,,,,,"Provide api-key = ""VGhpcyBpcyB0aGUgc2VjdXJlIERhdmlzIEtleQ=="" in header section",,,,
+,,,,,,,,,"Click Body ,check raw section and update termDate.
+
+Example  ""termDate"":"" more than 180 days in the past""
+",,Code should accept parameters without any error message,,
+,,,,,,,,,Click send,,Status code should be 400,,
+,,,,,,,,,Verify changes in Davis_Provider_Scrub and AccountInfo table,, term date  should not update ,,
+Update ShipCity,Functional,Critical,15M,None,Final,Megh Thapa,To Verify Davis Providers API update and insert function,Log in to Postman,Select PUT from the drop down and paste following API link into the address bar.http://txs-q-eorweb01.hvhcvision.com:8083/api/davis/Providers,2.7,Should accept the API link,,
+,,,,,,,,,"Provide api-key = ""VGhpcyBpcyB0aGUgc2VjdXJlIERhdmlzIEtleQ=="" in header section",,,,
+,,,,,,,,,"Click Body ,check raw section and update shipCity.
+
+Example ""shipCity"": ""San Antonio"",
+is changed to ""shipCity"": ""New York "",
+",,Code should accept parameters without any error message,,
+,,,,,,,,,Click send,,Status code should be 400,,
+,,,,,,,,,Verify changes in Davis_Provider_Scrub and AccountInfo table,, ShipCity  should updated to New York,,
+Update ShipStateCode,Functional,Critical,15M,None,Final,Megh Thapa,To Verify Davis Providers API update and insert function,Log in to Postman,Select PUT from the drop down and paste following API link into the address bar.http://txs-q-eorweb01.hvhcvision.com:8083/api/davis/Providers,2.7,Should accept the API link,,
+,,,,,,,,,"Provide api-key = ""VGhpcyBpcyB0aGUgc2VjdXJlIERhdmlzIEtleQ=="" in header section",,,,
+,,,,,,,,,"Click Body ,check raw section and update shipStateCode.
+
+Example ""shipStateCode"": ""NY"",
+is changed to ""shipAddress2"": ""TX "",
+",,Code should accept parameters without any error message,,
+,,,,,,,,,Click send,,Status code should be 200,,
+,,,,,,,,,Verify changes in Davis_Provider_Scrub and AccountInfo table,, ShipStateCode  should updated to TX,,
+Update ShipZIp,Functional,Critical,15M,None,Final,Megh Thapa,To Verify Davis Providers API update and insert function,Log in to Postman,Select PUT from the drop down and paste following API link into the address bar.http://txs-q-eorweb01.hvhcvision.com:8083/api/davis/Providers,2.7,Should accept the API link,,
+,,,,,,,,,"Provide api-key = ""VGhpcyBpcyB0aGUgc2VjdXJlIERhdmlzIEtleQ=="" in header section",,,,
+,,,,,,,,,"Click Body ,check raw section and update shipZip.
+
+Example ""shipZIP"": ""11368"",
+is changed to ""shipZip"": ""78229 "",
+",,Code should accept parameters without any error message,,
+,,,,,,,,,Click send,,Status code should be 200,,
+,,,,,,,,,Verify changes in Davis_Provider_Scrub and AccountInfo table,, ShipZIP  should updated o 78229,,
+Update ShipCountryCode,Functional,Critical,15M,None,Final,Megh Thapa,To Verify Davis Providers API update and insert function,Log in to Postman,Select PUT from the drop down and paste following API link into the address bar.http://txs-q-eorweb01.hvhcvision.com:8083/api/davis/Providers,2.7,Should accept the API link,,
+,,,,,,,,,"Provide api-key = ""VGhpcyBpcyB0aGUgc2VjdXJlIERhdmlzIEtleQ=="" in header section",,,,
+,,,,,,,,,"Click Body ,check raw section and update shipCountryCode.
+
+Example ""shipCountryCode"": ""NP"",
+is changed to ""ShipCountryCode"": ""US "",
+",,Code should accept parameters without any error message,,
+,,,,,,,,,Click send,,Status code should be 200,,
+,,,,,,,,,Verify changes in Davis_Provider_Scrub and AccountInfo table,,ShipCountryCode  should updated to US,,
+Update doesEyeExams,Functional,Critical,15M,None,Final,Megh Thapa,To Verify Davis Providers API update and insert function,Log in to Postman,Select PUT from the drop down and paste following API link into the address bar.http://txs-q-eorweb01.hvhcvision.com:8083/api/davis/Providers,2.7,Should accept the API link,,
+,,,,,,,,,"Provide api-key = ""VGhpcyBpcyB0aGUgc2VjdXJlIERhdmlzIEtleQ=="" in header section",,,,
+,,,,,,,,,"Click Body ,check raw section and update doesEyeExams.
+
+Example ""doesEyeExams"": ""0"",
+is changed to ""doesEyeExams"": ""1 "",
+",,Code should accept parameters without any error message,,
+,,,,,,,,,Click send,,Status code should be 200,,
+,,,,,,,,,Verify changes in Davis_Provider_Scrub and AccountInfo table,,doesEyeExams  should update to 1,,
+Update dispensesGlasses,Functional,Critical,15M,None,Final,Megh Thapa,To Verify Davis Providers API update and insert function,Log in to Postman,Select PUT from the drop down and paste following API link into the address bar.http://txs-q-eorweb01.hvhcvision.com:8083/api/davis/Providers,2.7,Should accept the API link,,
+,,,,,,,,,"Provide api-key = ""VGhpcyBpcyB0aGUgc2VjdXJlIERhdmlzIEtleQ=="" in header section",,,,
+,,,,,,,,,"Click Body ,check raw section and update dispensesGlasses.
+
+Example ""dispensesGlases"": ""0"",
+is changed to ""dispensesGlases"": ""4 "",
+",,Code should accept parameters without any error message,,
+,,,,,,,,,Click send,,Status code should be 200,,
+,,,,,,,,,Verify changes in Davis_Provider_Scrub and AccountInfo table,,DispensesGlasses  should updated to 4,,
+Update ownlab,Functional,Critical,15M,None,Final,Megh Thapa,To Verify Davis Providers API update and insert function,Log in to Postman,Select PUT from the drop down and paste following API link into the address bar.http://txs-q-eorweb01.hvhcvision.com:8083/api/davis/Providers,2.7,Should accept the API link,,
+,,,,,,,,,"Provide api-key = ""VGhpcyBpcyB0aGUgc2VjdXJlIERhdmlzIEtleQ=="" in header section",,,,
+,,,,,,,,,"Click Body ,check raw section and update name.
+
+Example ""ownLab"": ""0"",
+is changed to ""ownLab"": ""1 "",
+",,Code should accept parameters without any error message,,
+,,,,,,,,,Click send,,Status code should be 200,,
+,,,,,,,,,Verify changes in Davis_Provider_Scrub and AccountInfo table,,ownLab  should updated to 1,,
+Update ownFrames,Functional,Critical,15M,None,Final,Megh Thapa,To Verify Davis Providers API update and insert function,Log in to Postman,Select PUT from the drop down and paste following API link into the address bar.http://txs-q-eorweb01.hvhcvision.com:8083/api/davis/Providers,2.7,Should accept the API link,,
+,,,,,,,,,"Provide api-key = ""VGhpcyBpcyB0aGUgc2VjdXJlIERhdmlzIEtleQ=="" in header section",,,,
+,,,,,,,,,"Click Body ,check raw section and update ownFrames.
+
+Example ""ownFrames"": ""0"",
+is changed to ""ownFrames"": ""1 "",
+",,Code should accept parameters without any error message,,
+,,,,,,,,,Click send,,Status code should be 200,,
+,,,,,,,,,Verify changes in Davis_Provider_Scrub and AccountInfo table,,ownFrames should update to 1,,
+Update groupMedicareid,Functional,Critical,15M,None,Final,Megh Thapa,To Verify Davis Providers API update and insert function,Log in to Postman,Select PUT from the drop down and paste following API link into the address bar.http://txs-q-eorweb01.hvhcvision.com:8083/api/davis/Providers,2.7,Should accept the API link,,
+,,,,,,,,,"Provide api-key = ""VGhpcyBpcyB0aGUgc2VjdXJlIERhdmlzIEtleQ=="" in header section",,,,
+,,,,,,,,,"Click Body ,check raw section and update groupMedicaidid.
+
+Example ""groupMedicaidid"": null,
+is changed to ""groupMedicaidid"": ""12345678 "",
+",,Code should accept parameters without any error message,,
+,,,,,,,,,Click send,,Status code should be 200,,
+,,,,,,,,,Verify changes in Davis_Provider_Scrub and AccountInfo table,,groupMedicaidid should update to 12345678,,
+Update groupMedicaidSt,Functional,Critical,15M,None,Final,Megh Thapa,To Verify Davis Providers API update and insert function,Log in to Postman,Select PUT from the drop down and paste following API link into the address bar.http://txs-q-eorweb01.hvhcvision.com:8083/api/davis/Providers,2.7,Should accept the API link,,
+,,,,,,,,,"Provide api-key = ""VGhpcyBpcyB0aGUgc2VjdXJlIERhdmlzIEtleQ=="" in header section",,,,
+,,,,,,,,,"Click Body ,check raw section and update groupMedicaidSt.
+
+Example ""groupMedicaidSt"": null,
+is changed to ""groupMedicaidSt"": ""12345678 "",
+",,Code should accept parameters without any error message,,
+,,,,,,,,,Click send,,Status code should be 200,,
+,,,,,,,,,Verify changes in Davis_Provider_Scrub and AccountInfo table,,groupMedicaidid should updated to 12345678,,
+Update groupMedicaidid2,Functional,Critical,15M,None,Final,Megh Thapa,To Verify Davis Providers API update and insert function,Log in to Postman,Select PUT from the drop down and paste following API link into the address bar.http://txs-q-eorweb01.hvhcvision.com:8083/api/davis/Providers,2.7,Should accept the API link,,
+,,,,,,,,,"Provide api-key = ""VGhpcyBpcyB0aGUgc2VjdXJlIERhdmlzIEtleQ=="" in header section",,,,
+,,,,,,,,,"Click Body ,check raw section and update groupMedicaidid2.
+
+Example ""groupMedicaidid2"": null,
+is changed to ""groupMedicaidid2"": ""123456789 "",
+",,Code should accept parameters without any error message,,
+,,,,,,,,,Click send,,Status code should be 200,,
+,,,,,,,,,Verify changes in Davis_Provider_Scrub and AccountInfo table,,groupMedicaidid2 should update to 123456789,,
+Update groupMedicaidst2,Functional,Critical,15M,None,Final,Megh Thapa,To Verify Davis Providers API update and insert function,Log in to Postman,Select PUT from the drop down and paste following API link into the address bar.http://txs-q-eorweb01.hvhcvision.com:8083/api/davis/Providers,2.7,Should accept the API link,,
+,,,,,,,,,"Provide api-key = ""VGhpcyBpcyB0aGUgc2VjdXJlIERhdmlzIEtleQ=="" in header section",,,,
+,,,,,,,,,"Click Body ,check raw section and update groupMedicaidst2.
+
+Example ""groupMedicaidst2"": null,
+is changed to ""groupMedicaidst2"": ""1001 "",
+",,Code should accept parameters without any error message,,
+,,,,,,,,,Click send,,Status code should be 200,,
+,,,,,,,,,Verify changes in Davis_Provider_Scrub and AccountInfo table,,groupMedicaidst2 should updated to 1001,,
+Update groupNpiPrefix,Functional,Critical,15M,None,Final,Megh Thapa,To Verify Davis Providers API update and insert function,Log in to Postman,Select PUT from the drop down and paste following API link into the address bar.http://txs-q-eorweb01.hvhcvision.com:8083/api/davis/Providers,2.7,Should accept the API link,,
+,,,,,,,,,"Provide api-key = ""VGhpcyBpcyB0aGUgc2VjdXJlIERhdmlzIEtleQ=="" in header section",,,,
+,,,,,,,,,"Click Body ,check raw section and update groupNpiPrefix.
+
+Example ""groupNpiPrefix"": null,
+is changed to ""groupMedicaidst2"": ""54321 "",
+",,Code should accept parameters without any error message,,
+,,,,,,,,,Click send,,Status code should be 200,,
+,,,,,,,,,Verify changes in Davis_Provider_Scrub and AccountInfo table,,groupNpiPrefix should update to 54321,,
+Update groupNpiNumber,Functional,Critical,15M,None,Final,Megh Thapa,To Verify Davis Providers API update and insert function,Log in to Postman,Select PUT from the drop down and paste following API link into the address bar.http://txs-q-eorweb01.hvhcvision.com:8083/api/davis/Providers,2.7,Should accept the API link,,
+,,,,,,,,,"Provide api-key = ""VGhpcyBpcyB0aGUgc2VjdXJlIERhdmlzIEtleQ=="" in header section",,,,
+,,,,,,,,,"Click Body ,check raw section and update groupNpiNumber.
+
+Example ""groupNpiNumber"": null,
+is changed to ""groupNpiNumber"": ""1034567894 "",
+",,Code should accept parameters without any error message,,
+,,,,,,,,,Click send,,Status code should be 200,,
+,,,,,,,,,Verify changes in Davis_Provider_Scrub and AccountInfo table,,groupNpiNumber should updated to 1034567894,,
+Update groupMedicareId,Functional,Critical,15M,None,Final,Megh Thapa,To Verify Davis Providers API update and insert function,Log in to Postman,Select PUT from the drop down and paste following API link into the address bar.http://txs-q-eorweb01.hvhcvision.com:8083/api/davis/Providers,2.7,Should accept the API link,,
+,,,,,,,,,"Provide api-key = ""VGhpcyBpcyB0aGUgc2VjdXJlIERhdmlzIEtleQ=="" in header section",,,,
+,,,,,,,,,"Click Body ,check raw section and update groupMedicareId.
+
+Example ""groupMedicareId"": null,
+is changed to ""groupNpiNumber"": ""54321"",
+",,Code should accept parameters without any error message,,
+,,,,,,,,,Click send,,Status code should be 200,,
+,,,,,,,,,Verify changes in Davis_Provider_Scrub and AccountInfo table,,groupMedicareId should update to 54321,,
+"Update name,Address,State,zip countryCode and phone",Functional,Critical,15M,None,Final,Megh Thapa,To Verify Davis Providers API update and insert function,Log in to Postman,Select PUT from the drop down and paste following API link into the address bar.http://txs-q-eorweb01.hvhcvision.com:8083/api/davis/Providers,2.7,Should accept the API link,,
+,,,,,,,,,"Provide api-key = ""VGhpcyBpcyB0aGUgc2VjdXJlIERhdmlzIEtleQ=="" in header section",,,,
+,,,,,,,,,"Click Body ,check raw section and update Update name,Address,State,zip countryCode and phone
+
+
+",,Code should accept parameters without any error message,,
+,,,,,,,,,Click send,,Status code should be 200,,
+,,,,,,,,,Verify changes in Davis_Provider_Scrub and AccountInfo table,,"name,Address,State,zip countryCode and phone should be updated ",,
+Update all JSON properties ,Functional,Critical,15M,None,Final,Megh Thapa,To Verify Davis Providers API update and insert function,Log in to Postman,Select PUT from the drop down and paste following API link into the address bar.http://txs-q-eorweb01.hvhcvision.com:8083/api/davis/Providers,2.7,Should accept the API link,,
+,,,,,,,,,"Provide api-key = ""VGhpcyBpcyB0aGUgc2VjdXJlIERhdmlzIEtleQ=="" in header section",,,,
+,,,,,,,,,"Update name,Address,State,zip countryCode,phone,secondPhone,thirdPhone,fax,secondfax,thirdFax,contact,contactType,activeDate,termDate,deletedDate,futureTerm,centralLabCode,shipAddress1,shipAddress2,shipCity,shipStateCode,shipZip,shipCountryCode,doesEyeExam,dispensesGlases,inMedicare,ownLab,ownFrames,groupMedicareid,groupMedicalid,groupmedicaidst,groupmedicaidst2,groupNpiPrefix,groupNpiNumber
+
+
+",,Code should accept parameters without any error message,,
+,,,,,,,,,Click send,,Status code should be 200,,
+,,,,,,,,,Verify changes in Davis_Provider_Scrub and AccountInfo table,,"Update name,Address,State,zip countryCode,phone,secondPhone,thirdPhone,fax,secondfax,thirdFax,contact,contactType,activeDate,termDate,deletedDate,futureTerm,centralLabCode,shipAddress1,shipAddress2,shipCity,shipStateCode,shipZip,shipCountryCode,doesEyeExam,dispensesGlases,inMedicare,ownLab,ownFrames,groupMedicareid,groupMedicalid,groupmedicaidst,groupmedicaidst2,groupNpiPrefix,groupNpiNumber should be updated ",,
+Update all JSON properties  as null,Functional,Critical,15M,None,Final,Megh Thapa,To Verify Davis Providers API update and insert function,Log in to Postman,Select PUT from the drop down and paste following API link into the address bar.http://txs-q-eorweb01.hvhcvision.com:8083/api/davis/Providers,2.7,Should accept the API link,,
+,,,,,,,,,"Provide api-key = ""VGhpcyBpcyB0aGUgc2VjdXJlIERhdmlzIEtleQ=="" in header section",,,,
+,,,,,,,,,"Update name,Address,State,zip countryCode,phone,secondPhone,thirdPhone,fax,secondfax,thirdFax,contact,contactType,activeDate,termDate,deletedDate,futureTerm,centralLabCode,shipAddress1,shipAddress2,shipCity,shipStateCode,shipZip,shipCountryCode,doesEyeExam,dispensesGlases,inMedicare,ownLab,ownFrames,groupMedicareid,groupMedicalid,groupmedicaidst,groupmedicaidst2,groupNpiPrefix,groupNpiNumber as null
+
+
+",,Code should accept parameters without any error message,,
+,,,,,,,,,Click send,,Status code should be 200,,
+,,,,,,,,,Verify changes in Davis_Provider_Scrub and AccountInfo table,,all columns  should be update as null,,
+Update all JSON properties  as null,Functional,Critical,15M,None,Final,Megh Thapa,To Verify Davis Providers API update and insert function,Log in to Postman,Select PUT from the drop down and paste following API link into the address bar.http://txs-q-eorweb01.hvhcvision.com:8083/api/davis/Providers,2.7,Should accept the API link,,
+,,,,,,,,,"Provide api-key = ""VGhpcyBpcyB0aGUgc2VjdXJlIERhdmlzIEtleQ=="" in header section",,,,
+,,,,,,,,,"Update name,Address,State,zip countryCode,phone,secondPhone,thirdPhone,fax,secondfax,thirdFax,contact,contactType,activeDate,termDate,deletedDate,futureTerm,centralLabCode,shipAddress1,shipAddress2,shipCity,shipStateCode,shipZip,shipCountryCode,doesEyeExam,dispensesGlases,inMedicare,ownLab,ownFrames,groupMedicareid,groupMedicalid,groupmedicaidst,groupmedicaidst2,groupNpiPrefix,groupNpiNumber as null
+
+
+",,Code should accept parameters without any error message,,
+,,,,,,,,,Click send,,Status code should be 200,,
+,,,,,,,,,Verify changes in Davis_Provider_Scrub and AccountInfo table,,all columns should update as null,,
+Insert  new account ,Functional,Critical,15M,None,Final,Megh Thapa,To Verify Davis Providers API update and insert function,Log in to Postman,Select PUT from the drop down and paste following API link into the address bar.http://txs-q-eorweb01.hvhcvision.com:8083/api/davis/Providers,2.7,Should accept the API link,,
+,,,,,,,,,"Provide api-key = ""VGhpcyBpcyB0aGUgc2VjdXJlIERhdmlzIEtleQ=="" in header section",,,,
+,,,,,,,,,"Insert office number, name,Address,State,zip countryCode,phone,secondPhone,thirdPhone,fax,secondfax,thirdFax,contact,contactType,activeDate,termDate,deletedDate,futureTerm,centralLabCode,shipAddress1,shipAddress2,shipCity,shipStateCode,shipZip,shipCountryCode,doesEyeExam,dispensesGlases,inMedicare,ownLab,ownFrames,groupMedicareid,groupMedicalid,groupmedicaidst,groupmedicaidst2,groupNpiPrefix,groupNpiNumber 
+
+
+",,Code should accept parameters without any error message,,
+,,,,,,,,,Click send,,Status code should be 200,,
+,,,,,,,,,Verify changes in Davis_Provider_Scrub and AccountInfo table,,all parameters should be inserted into the table ,,
+Send request without any parameters inside the quote ,Functional,Critical,15M,None,Final,Megh Thapa,To Verify Davis Providers API update and insert function,Log in to Postman,Select PUT from the drop down and paste following API link into the address bar.http://txs-q-eorweb01.hvhcvision.com:8083/api/davis/Providers,2.7,Should accept the API link,,
+,,,,,,,,,"Provide api-key = ""VGhpcyBpcyB0aGUgc2VjdXJlIERhdmlzIEtleQ=="" in header section",,,,
+,,,,,,,,,"name,Address,State and zip  
+
+
+",,Code should accept parameters without any error message,,
+,,,,,,,,,Click send,,Status code should be 200,,
+,,,,,,,,,Verify changes in Davis_Provider_Scrub and AccountInfo table,,"name,Address,State and zip columnss should be empty ",,
+Send request without any parameters ,Functional,Critical,15M,None,Final,Megh Thapa,To Verify Davis Providers API update and insert function,Log in to Postman,Select PUT from the drop down and paste following API link into the address bar.http://txs-q-eorweb01.hvhcvision.com:8083/api/davis/Providers,2.7,Should accept the API link,,
+,,,,,,,,,"Provide api-key = ""VGhpcyBpcyB0aGUgc2VjdXJlIERhdmlzIEtleQ=="" in header section",,,,
+,,,,,,,,,"Update name,Address,State and zip  as empty
+
+
+",,Code should not accept parameters ,,
+,,,,,,,,,Click send,,Status code should be 400 with error message ,,
+,,,,,,,,,Verify changes in Davis_Provider_Scrub and AccountInfo table,,"name,Address,State and zip columns should not update",,
+Send request with office number as null,Functional,Critical,15M,None,Final,Megh Thapa,To Verify Davis Providers API update and insert function,Log in to Postman,Select PUT from the drop down and paste following API link into the address bar.http://txs-q-eorweb01.hvhcvision.com:8083/api/davis/Providers,2.7,Should accept the API link,,
+,,,,,,,,,"Provide api-key = ""VGhpcyBpcyB0aGUgc2VjdXJlIERhdmlzIEtleQ=="" in header section",,,,
+,,,,,,,,,"officeNumber =null 
+
+
+",,Code should accept parameters without any error message,,
+,,,,,,,,,Click send,,Status code should be 500,,
+,,,,,,,,,Verify changes in Davis_Provider_Scrub and AccountInfo table,,"name,Address,State and zip columns should not  update",,
+OfficeNumber length should not exceed more than 5 character ,Functional,Critical,15M,None,Final,Megh Thapa,To Verify Davis Providers API update and insert function,Log in to Postman,Select PUT from the drop down and paste following API link into the address bar.http://txs-q-eorweb01.hvhcvision.com:8083/api/davis/Providers,2.7,Should accept the API link,,
+,,,,,,,,,"Provide api-key = ""VGhpcyBpcyB0aGUgc2VjdXJlIERhdmlzIEtleQ=="" in header section",,,,
+,,,,,,,,,"insert officeNumber =""123456""
+
+
+",,Code should accept parameters without any error message,,
+,,,,,,,,,Click send,,"Status code should be 400 with {""message"":""Providers did not match acceptance criteria""}",,
+,,,,,,,,,Verify changes in Davis_Provider_Scrub and AccountInfo table,,OfficeNumber should not be updated ,,
+send all order as one request in JSON,Functional,Critical,15M,None,Final,Megh Thapa,To Verify Davis Providers API update and insert function,Log in to Postman,Select PUT from the drop down and paste following API link into the address bar.http://txs-q-eorweb01.hvhcvision.com:8083/api/davis/Providers,2.7,Should accept the API link,,
+,,,,,,,,,"Provide api-key = ""VGhpcyBpcyB0aGUgc2VjdXJlIERhdmlzIEtleQ=="" in header section",,,,
+,,,,,,,,,"Send all orders at once 
+
+
+",,Code should accept parameters without any error message,,
+,,,,,,,,,Click send,,Status code should be 200,,
+,,,,,,,,,Verify changes in Davis_Provider_Scrub and AccountInfo table,,Order should be updated with different row for each order request,,

@@ -1,0 +1,185 @@
+"Title 
+(Denotes new test case)","Type 
+(Automated, Compatibility, Functional, Other, Performance, Functional)","Priority 
+(Critical, High, Medium, Low)","Estimate
+(1-59M in Min
+1H + in Hours)",References (Link user stories or bugs),"Status
+(Draft, Ready for Review, Final)","Owner
+(FirstName LastName)","Objective
+(Describe the Overall Objective this case is designed to achieve)","Preconditions
+(List prerequisite conditions for this test case)",Steps (One step per row),Number,"Expected Result (Per step, Expected for whole test case list on last step)"
+/api/application/WorkOrderCancel,Functional,Critical,15M,None,Final,Megh Thapa,"Validation of application during search endpoint displays, write and update Correct data",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/WorkOrderCancel,1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section and provide workorderID= 30754257",,Api-Key and JSON properties is accepted 
+ ,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,Matches with WorkorderStatus table and UI 
+/api/application/WorkOrderCancel/InnovationsAccount/30713626(VW),Functional,Critical,15M,None,Final,Megh Thapa,"Validation of application during search endpoint displays, write and update Correct data",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/WorkOrderCancel/InnovationsAccount/{WorkOrderId},1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section and provide workorderID= 30713626",,Api-Key and JSON properties is accepted 
+ ,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,Return store number should be 661 (Verify WorkOrderCancel table)
+/api/application/WorkOrderCancel/InnovationsAccount/12034207(EV),Functional,Critical,15M,None,Final,Megh Thapa,"Validation of application during search endpoint displays, write and update Correct data",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/WorkOrderCancel/InnovationsAccount/{WorkOrderId},1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section and provide workorderID= 12034207",,Api-Key and JSON properties is accepted 
+ ,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,Return store number should be 1254 (Verify WorkOrderCancel table)
+/api/application/WorkOrderCancel/WorkOrderLab/5883058(DV),Functional,Critical,15M,None,Final,Megh Thapa,"Validation of application during search endpoint displays, write and update Correct data",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/WorkOrderCancel/InnovationsAccount/{WorkOrderId},1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section and provide workorderID= 5883058",,Api-Key and JSON properties is accepted 
+ ,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,Return store number should be 44722 (Verify WorkOrderCancel table)
+/api/application/WorkOrderCancel/WorkOrderLab/22202717(ECOM),Functional,Critical,15M,None,Final,Megh Thapa,"Validation of application during search endpoint displays, write and update Correct data",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/WorkOrderCancel/InnovationsAccount/{WorkOrderId},1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section and provide workorderID= 22202717",,Api-Key and JSON properties is accepted 
+ ,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,, store number should be 1006 (Verify WorkOrderCancel table)
+/api/application/WorkOrderCancel/WorkOrderLab/{WorkOrderId},Functional,Critical,15M,None,Final,Megh Thapa,"Validation of application during search endpoint displays, write and update Correct data",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/WorkOrderCancel/WorkOrderLab/{WorkOrderId},1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section and provide workorderID= 11301136",,Api-Key and JSON properties is accepted 
+ ,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,Return ManufacturingFacilityDC = 890  (Verify [WorkOrderManufacturing and  ManufacturingFacility table)
+/api/application/WorkOrderCancel/WorkorderInnovationsTray/{WorkOrderId},Functional,Critical,15M,None,Final,Megh Thapa,"Validation of application during search endpoint displays, write and update Correct data",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/WorkOrderCancel/WorkOrderLab/{WorkOrderId},1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section and provide workorderID= 27216239",,Api-Key and JSON properties is accepted 
+ ,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,"Should return OSHTrayNumber = ""197810 ""  (Verify OSFItemInfo and workorderkeyxref table)"
+/api/application/WorkOrderCancel/WorkorderInnovationsTray/{WorkOrderId},Functional,Critical,15M,None,Final,Megh Thapa,"Validation of application during search endpoint displays, write and update Correct data",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/WorkOrderCancel/WorkorderInnovationsTray/{WorkOrderId},1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section and provide workorderID= 25356688",,Api-Key and JSON properties is accepted 
+ ,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,"Should return OSHTrayNumber = ""523657 ""  (Verify OSFItemInfo and workorderkeyxref table)"
+/api/application/WorkOrderCancel/WorkorderInnovationsTray/{WorkOrderId},Functional,Critical,15M,None,Final,Megh Thapa,"Validation of application during search endpoint displays, write and update Correct data",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/WorkOrderCancel/WorkorderInnovationsTray/{WorkOrderId},1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section and provide workorderID= 27763497",,Api-Key and JSON properties is accepted 
+ ,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,"Should return OSHTrayNumber = ""276978 ""  (Verify OSFItemInfo and workorderkeyxref table)"
+/api/application/WorkOrderCancel/InnovationsTrayByWorkOrderID/{WorkOrderId},Functional,Critical,15M,None,Final,Megh Thapa,"Validation of application during search endpoint displays, write and update Correct data",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/WorkOrderCancel/InnovationsTrayByWorkOrderID/{WorkOrderId},1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section and provide workorderID= 30759089",,Api-Key and JSON properties is accepted 
+ ,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,"Should return OSHInnovRXNumber = ""04099D71216217 "" (Verify OSFItemInfo and workorderkeyxref table)"
+/api/application/WorkOrderCancel/InnovationsTrayByWorkOrderID/{WorkOrderId},Functional,Critical,15M,None,Final,Megh Thapa,"Validation of application during search endpoint displays, write and update Correct data",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/WorkOrderCancel/InnovationsTrayByWorkOrderID/{WorkOrderId},1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section and provide workorderID= 8184759",,Api-Key and JSON properties is accepted 
+ ,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,"Should return OSHInnovRXNumber = ""04099-D71214922"" (Verify OSFItemInfo and workorderkeyxref table)"
+/api/application/WorkOrderCancel/ManhattanRxNumber/{WorkOrderId}DV,Functional,Critical,15M,None,Final,Megh Thapa,"Validation of application during search endpoint displays, write and update Correct data",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/WorkOrderCancel/ManhattanRxNumber/{WorkOrderId},1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section and provide workorderID= 30762564",,Api-Key and JSON properties is accepted 
+ ,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,Data should match with WorkOrderManufacturing  and WorkOrder table (validate facilityDC : null)
+/api/application/WorkOrderCancel/ManhattanRxNumber/{WorkOrderId}1,Functional,Critical,15M,None,Final,Megh Thapa,"Validation of application during search endpoint displays, write and update Correct data",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/WorkOrderCancel/ManhattanRxNumber/{WorkOrderId},1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section and provide workorderID= 30760519",,Api-Key and JSON properties is accepted 
+ ,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,Data should match with WorkOrderManufacturing  and WorkOrder table (validate facilityDC : 290)
+/api/application/WorkOrderCancel/ManhattanRxNumber/{WorkOrderId}2,Functional,Critical,15M,None,Final,Megh Thapa,"Validation of application during search endpoint displays, write and update Correct data",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/WorkOrderCancel/ManhattanRxNumber/{WorkOrderId},1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section and provide workorderID= 11301136",,Api-Key and JSON properties is accepted 
+ ,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,Data should match with WorkOrderManufacturing  and WorkOrder table (validate facilityDC : 890)
+/api/application/WorkOrderCancel/findMaxStartLineTime/30269471,Functional,Critical,15M,None,Final,Megh Thapa,"Validation of application during search endpoint displays, write and update Correct data",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/WorkOrderCancel/findMaxStartLineTime/{WorkOrderId},1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section and provide workorderID= 30269471",,Api-Key and JSON properties is accepted 
+ ,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,Should return MaxStartLineTime for ''Start Line '' status(verify UI or WorkOrderManufacturing )
+/api/application/WorkOrderCancel/findMaxStartLineTime/30426371,Functional,Critical,15M,None,Final,Megh Thapa,"Validation of application during search endpoint displays, write and update Correct data",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/WorkOrderCancel/ManhattanRxNumber/{WorkOrderId},1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section and provide workorderID= 30426371",,Api-Key and JSON properties is accepted 
+ ,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,Should return MaxStartLineTime for ''Start Line '' status(verify UI or WorkOrderManufacturing )
+/api/application/WorkOrderCancel/findMaxStatusTime/VW,Functional,Critical,15M,None,Final,Megh Thapa,"Validation of application during search endpoint displays, write and update Correct data",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/WorkOrderCancel/findMaxStatusTime/{WorkOrderId},1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section and provide workorderID= 11301136",,Api-Key and JSON properties is accepted 
+ ,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,Should return findMaxstatusTime for ''Shipped '' status(verify UI or WorkOrderManufacturing )
+/api/application/WorkOrderCancel/findMaxStatusTime/{WorkOrderId},Functional,Critical,15M,None,Final,Megh Thapa,"Validation of application during search endpoint displays, write and update Correct data",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/WorkOrderCancel/findMaxStatusTime/{WorkOrderId},1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section and provide workorderID= 30425195",,Api-Key and JSON properties is accepted 
+ ,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,Should return findMaxstatusTime for ''Shipped '' status(verify UI or WorkOrderManufacturing )
+/api/application/WorkOrderCancel/findMaxWaveTime/{WorkOrderId},Functional,Critical,15M,None,Final,Megh Thapa,"Validation of application during search endpoint displays, write and update Correct data",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/WorkOrderCancel/findMaxStatusTime/{WorkOrderId},1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section and provide workorderID= 27914274",,Api-Key and JSON properties is accepted 
+ ,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,Should return findMaxWAVETime for ''WAVE '' status(verify UI or WorkOrderManufacturing )
+/api/application/WorkOrderCancel/findMaxWaveTime/{WorkOrderId},Functional,Critical,15M,None,Final,Megh Thapa,"Validation of application during search endpoint displays, write and update Correct data",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/WorkOrderCancel/findMaxStatusTime/{WorkOrderId},1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section and provide workorderID= 27918016",,Api-Key and JSON properties is accepted 
+ ,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,Should return findMaxWAVETime for ''WAVE '' status(verify UI or WorkOrderManufacturing )
+/api/application/WorkOrderCancel/WorkOrderWarehouse/30759338,Functional,Critical,15M,None,Final,Megh Thapa,"Validation of application during search endpoint displays, write and update Correct data",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/WorkOrderCancel/findMaxStatusTime/{WorkOrderId},1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section and provide workorderID= 30759338",,Api-Key and JSON properties is accepted 
+ ,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,"should return 290 WorkOrderManufacturing  and WorkOrder table (verify ManufacturingFacility, WorkOrderManufacturingID and WorkOrderCancel table)"
+/api/application/WorkOrderCancel/WorkOrderWarehouse/30759338,Functional,Critical,15M,None,Final,Megh Thapa,"Validation of application during search endpoint displays, write and update Correct data",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/WorkOrderCancel/findMaxStatusTime/{WorkOrderId},1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section and provide workorderID= 30759338",,Api-Key and JSON properties is accepted 
+ ,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,"should return 290 (verify ManufacturingFacility, WorkOrderManufacturingID and WorkOrderCancel table)"
+/api/application/WorkOrderCancel/WorkOrderWarehouse/918620407,Functional,Critical,15M,None,Final,Megh Thapa,"Validation of application during search endpoint displays, write and update Correct data",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/WorkOrderCancel/findMaxStatusTime/{WorkOrderId},1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section and provide workorderID= 918620407",,Api-Key and JSON properties is accepted 
+ ,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,"should return 290 (verify ManufacturingFacility, WorkOrderManufacturingID and WorkOrderCancel table)"
+/api/application/WorkOrderCancel/WorkOrderWarehouse/30762556,Functional,Critical,15M,None,Final,Megh Thapa,"Validation of application during search endpoint displays, write and update Correct data",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/WorkOrderCancel/findMaxStatusTime/{WorkOrderId},1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section and provide workorderID= 30762556",,Api-Key and JSON properties is accepted 
+ ,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,"should return 890 (verify ManufacturingFacility, WorkOrderManufacturingID and WorkOrderCancel table)"
+/api/application/WorkOrderCancel/OSFOrder/25186219,Functional,Critical,15M,None,Final,Megh Thapa,"Validation of application during search endpoint displays, write and update Correct data",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/WorkOrderCancel/findMaxStatusTime/{WorkOrderId},1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section and provide workorderID= 25186219",,Api-Key and JSON properties is accepted 
+ ,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,"should return OSHOrderNumber= ""AA2AF8659T""(verify WorkOrderKeyXref table)"
+/api/application/WorkOrderCancel/OSFOrder/25186219,Functional,Critical,15M,None,Final,Megh Thapa,"Validation of application during search endpoint displays, write and update Correct data",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/WorkOrderCancel/findMaxStatusTime/{WorkOrderId},1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section and provide workorderID= 25186219",,Api-Key and JSON properties is accepted 
+ ,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,"should return OSHOrderNumber= ""AA2AG4QI79""(verify WorkOrderKeyXref table)"
+/api/application/WorkOrderCancel/WorkOrderIDFromInnovationsKey/00386-38681892,Functional,Critical,15M,None,Final,Megh Thapa,"Validation of application during search endpoint displays, write and update Correct data",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/WorkOrderCancel/findMaxStatusTime/{WorkOrderId},1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section and provide Transaction= 00386-38681892",,Api-Key and JSON properties is accepted 
+ ,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,"should return WorkOrderID= ""25186219""(verify WorkOrderKeyXref and OSFItemInfo table)"
+/api/application/WorkOrderCancel/WorkOrderIDFromInnovationsKey/04099-N68079578     ,Functional,Critical,15M,None,Final,Megh Thapa,"Validation of application during search endpoint displays, write and update Correct data",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/WorkOrderCancel/findMaxStatusTime/{WorkOrderId},1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section and provide Transaction= 04099-N68079578",,Api-Key and JSON properties is accepted 
+ ,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,"should return WorkOrderID= ""27216239""(verify WorkOrderKeyXref and OSFItemInfo table)"
+/api/application/WorkOrderCancel/WorkorderIDFromInnovationsTray/04099-N68079574           ,Functional,Critical,15M,None,Final,Megh Thapa,"Validation of application during search endpoint displays, write and update Correct data",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/WorkOrderCancel/findMaxStatusTime/{WorkOrderId},1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section and provide Transaction= 04099-N68079574         ",,Api-Key and JSON properties is accepted 
+ ,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,"should return WorkOrderID= ""27216237""(verify WorkOrderKeyXref and OSFItemInfo table)"
+/api/application/WorkOrderCancel/WorkorderIDFromInnovationsTray/00001-1115351R               ,Functional,Critical,15M,None,Final,Megh Thapa,"Validation of application during search endpoint displays, write and update Correct data",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/WorkOrderCancel/findMaxStatusTime/{WorkOrderId},1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section and provide Transaction= 00001-1115351R       ",,Api-Key and JSON properties is accepted 
+ ,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,"should return WorkOrderID= ""25356688""(verify WorkOrderKeyXref and OSFItemInfo table)"
+/api/application/WorkOrderCancel/OrderByWorkOrderID/30758672             ,Functional,Critical,15M,None,Final,Megh Thapa,"Validation of application during search endpoint displays, write and update Correct data",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/WorkOrderCancel/findMaxStatusTime/{WorkOrderId},1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section and provide WorkOrderid= 30758672      ",,Api-Key and JSON properties is accepted 
+ ,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,Data should match with workorder and workordercancel table 
+/api/application/WorkOrderCancel/OrderByWorkOrderID/VW            ,Functional,Critical,15M,None,Final,Megh Thapa,"Validation of application during search endpoint displays, write and update Correct data",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/WorkOrderCancel/findMaxStatusTime/{WorkOrderId},1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section and provide WorkOrderid= 30758672      ",,Api-Key and JSON properties is accepted 
+ ,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,Data should match with workorder and workordercancel table 
+/api/application/WorkOrderCancel/OrderByWorkOrderID/EV           ,Functional,Critical,15M,None,Final,Megh Thapa,"Validation of application during search endpoint displays, write and update Correct data",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/WorkOrderCancel/findMaxStatusTime/{WorkOrderId},1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section and provide WorkOrderid= 12768738     ",,Api-Key and JSON properties is accepted 
+ ,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,Data should match with workorder and workordercancel table 
+/api/application/WorkOrderCancel/OrderByWorkOrderID/DV         ,Functional,Critical,15M,None,Final,Megh Thapa,"Validation of application during search endpoint displays, write and update Correct data",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/WorkOrderCancel/findMaxStatusTime/{WorkOrderId},1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section and provide WorkOrderid= 11593591  ",,Api-Key and JSON properties is accepted 
+ ,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,Data should match with workorder and workordercancel table 
+/api/application/WorkOrderCancel/OrderByWorkOrderID/ECOM         ,Functional,Critical,15M,None,Final,Megh Thapa,"Validation of application during search endpoint displays, write and update Correct data",Log in to Postman,Select GET from the drop down and paste following API link into the address bar.http://txs-d-eorweb01.hvhcvision.com:8083/api/application/WorkOrderCancel/findMaxStatusTime/{WorkOrderId},1,Should accept the API link
+,,,,,,,,,"Provide api-key = ""237wRH/9jruc1pokfamU/Nk/IH6/fD6R8zwr12VM8ZY="" in header section and provide WorkOrderid= 22098974 ",,Api-Key and JSON properties is accepted 
+ ,,,,,,,,,"
+Click send",,Status code should be 200
+,,,,,,,,,Verify response JSON data,,Data should match with workorder and workordercancel table 

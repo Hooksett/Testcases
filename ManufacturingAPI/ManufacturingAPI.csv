@@ -1,0 +1,1435 @@
+"Title 
+(Denotes new test case)","Type 
+(Automated, Compatibility, Functional, Other, Performance, Functional)","Priority 
+(Critical, High, Medium, Low)","Estimate
+(1-59M in Min
+1H + in Hours)",References (Link user stories or bugs),"Status
+(Draft, Ready for Review, Final)","Owner
+(FirstName LastName)","Objective
+(Describe the Overall Objective this case is designed to achieve)","Preconditions
+(List prerequisite conditions for this test case)",Steps (One step per row),Number,"Expected Result (Per step, Expected for whole test case list on last step)",Section
+"Primary Lab has DNR for Combine 3 (Slab off, AR, UV), Is Not Active, Primary Lab is Active, Does not accepts Union Jobs, Secondary Lab is Null, Manufacturing Facility Offload Sequence 1 set",Functional,Critical,15M,None,Final,Megh Thapa,Primary Lab DNR - Offload Capacity,"Primary Lab: Richland Hills
+Secondary Lab: Do Not Use","Set-up Primary Lab Facilty Rules: 
+General Tab:
+Facility Is Active is Checked
+Accepts Union Job is unchecked
+Manufacturing Facility Offload Sequence Selection:
+Schertz is selected as Sequence 1
+Job Offload Capacity is set ""20""
+Job Block Count is equal to Job Offload Capacity
+Service Coating Tab: 
+Check Do Not Reroute for Service Add on Slab off , Combine 1: Coating AR, Combine 2: Coating UV
+Is Active is unchecked",1,"Primary Lab has DNR for Combine 3 (Slab off, AR, UV), Is Not Active, Primary Lab is Active, Does not accepts Union Jobs, Secondary Lab is Null, Manufacturing Facility Offload Sequence 1 set",35845
+,,,,,,,,,Enter JSON workorder ,,,
+,,,,,,,,,"Enter the EOR, Select Search Workorder",,,
+,,,,,,,,,Validate all fields of file.,,Under the Communication Tab Validate File Path: ,
+,,,,,,,,,Select RX Number,,Validate all fields translate over to EOR accurately in the Frames & Lens Tab and Add On and Comment Tab.,
+,,,,,,,,,Validate Current WIP Count increments by 1 for the Manufacturing Facility job the was routed to.,,,
+,,,,,,,,,Validate Current Receiving Count increments by 1 for the Manufacturing Facility job was routed to.,,,
+,,,,,,,,,Validate Current Received Job Offload Count increments by 1 for the Manufacturing Facility job was routed to.,,,
+,,,,,,,,,Validate Current Sent Job Offload Count increments by 1 for Manufacturing Facility job was routed from.,,,
+,,,,,,,,,Validate Current Sent Job Block Count increments by 1 for Manufacturing Facility job was routed from.,,,
+"Primary Lab has DNR for Combine 3 (Slab off, AR, UV), Is Not Active, Primary Lab is Active, Does not accepts Union Jobs, Secondary Lab is Null, Manufacturing Facility Offload Sequence 1 set",Functional,Critical,15M,None,Final,Megh Thapa,Primary Lab DNR - Offload Capacity,"Primary Lab: Richland Hills
+Secondary Lab: Do Not Use
+","Set-up Primary Lab Facilty Rules: 
+General Tab:
+Facility Is Active is unchecked
+Accepts Union Job is unchecked
+Manufacturing Facility Offload Sequence Selection:
+Schertz is selected as Sequence 1
+Job Offload Capacity is set ""High Number""
+Job Block Count is equal to Job Offload Capacity
+Service Coating Tab: 
+Check Do Not Reroute for Service Add on Slab off , Combine 1: Coating AR, Combine 2: Coating UV
+Is Active is unchecked
+",1,"Primary Lab has DNR for Combine 3 (Slab off, AR, UV), Is Not Active, Primary Lab is Active, Does not accepts Union Jobs, Secondary Lab is Null, Manufacturing Facility Offload Sequence 1 set",35845
+,,,,,,,,,Enter JSON workorder ,,,
+,,,,,,,,,"Enter the EOR, Select Search Workorder",,,
+,,,,,,,,,Select RX Number,,Validate all fields translate over to EOR accurately in the Frames & Lens Tab and Add On and Comment Tab.,
+,,,,,,,,,Validate all fields of file.,,Under the Communication Tab Validate File Path: ,
+,,,,,,,,,Validate Current WIP Count increments by 1 for the Manufacturing Facility job the was routed to.,,,
+,,,,,,,,,Validate Current Receiving Count increments by 1 for the Manufacturing Facility job was routed to.,,,
+,,,,,,,,,Validate Current Received Job Offload Count increments by 1 for the Manufacturing Facility job was routed to.,,,
+,,,,,,,,,Validate Current Sent Job Offload Count increments by 1 for Manufacturing Facility job was routed from.,,,
+,,,,,,,,,Validate Current Sent Job Block Count increments by 1 for Manufacturing Facility job was routed from.,,,
+"Primary Lab has DNR Lens Code but not within the ranges, Primary Lab is Active, Does not accepts union jobs, Secondary Lab is Null, Manufacturing Facility Offload Sequence 1 set",Functional,Critical,15M,None,Final,Megh Thapa,Primary Lab DNR - Offload Capacity,"Primary Lab: Schertz
+Secondary Lab: Do Not Use","Set-up Primary Lab Facilty Rules: 
+General Tab:
+Facility is Active: Is checked
+Accept Union Jobs: unchecked
+Manufacturing Facility Offload Sequence Selection:
+Richland Hills is selected as Sequence 1
+Job Offload Capacity is set ""20""
+Job Block Count is equal to Job Offload Capacity
+Lens Tab: 
+For Lens Code: 104062  ADAPT POLY set:  
+Sph 1 From: -1.00 
+Sph 1 To:  +1 .00
+
+Set-up Associated Lab Facility Rules:
+Lens Tab:
+For Lens Code: 104062  ADAPT POLY set:  
+Sph 1 From: -2.00 
+Sph 1 To:  +2 .00",TC135,"Primary Lab has DNR Lens Code but not within the ranges, Primary Lab is Active, Does not accepts union jobs, Secondary Lab is Null, Manufacturing Facility Offload Sequence 1 set",35845
+,,,,,,,,,Enter JSON workorder ,,,
+,,,,,,,,,"Enter the EOR, Select Search Workorder",,,
+,,,,,,,,,Select RX Number,,Validate all fields translate over to EOR accurately in the Frames & Lens Tab and Add On and Comment Tab.,
+,,,,,,,,,Validate all fields of file.,,Under the Communication Tab Validate File Path: ,
+,,,,,,,,,Validate Current WIP Count increments by 1 for the Manufacturing Facility job the was routed to.,,,
+,,,,,,,,,Validate Current Receiving Count increments by 1 for the Manufacturing Facility job was routed to.,,,
+,,,,,,,,,Validate Current Received Job Offload Count increments by 1 for the Manufacturing Facility job was routed to.,,,
+,,,,,,,,,Validate Current Sent Job Offload Count increments by 1 for Manufacturing Facility job was routed from.,,,
+,,,,,,,,,Validate Current Sent Job Block Count increments by 1 for Manufacturing Facility job was routed from.,,,
+"Primary Lab has DNR Lens Code within the ranges, Primary Lab is Active, Does not accepts union jobs, Secondary Lab is Null, Manufacturing Facility Offload Sequence 1 set",Functional,Critical,15M,None,Final,Megh Thapa,Primary Lab DNR - Offload Capacity,"Primary Lab: Schertz
+Secondary Lab: Do Not Use
+","Set-up Primary Lab Facilty Rules:
+General Tab:
+Facility is Active is checked
+Accepts Union Jobs is checked
+Manufacturing Facility Offload Sequence Selection:
+Richland Hills is selected as Sequence 1
+Job Offload Capacity is set ""20""
+Job Block Count is equal to Job Offload Capacity 
+Lens Tab: 
+For Lens Code: 104062  ADAPT POLY set:  
+Sph 1 From: -1.00 
+Sph 1 To:  +1 .00
+
+Set-up Secondary Lab Facility Rules:
+Lens Tab:
+For Lens Code: 104062  ADAPT POLY set:  
+Sph 1 From: -2.00 
+Sph 1 To:  +2 .00",1,"Primary Lab has DNR Lens Code within the ranges, Primary Lab is Active, Accepts union jobs, Secondary Lab is Null, Manufacturing Facility Offload Sequence 1 set",35845
+,,,,,,,,,Enter JSON workorder ,,,
+,,,,,,,,,"Enter the EOR, Select Search Workorder",,,
+,,,,,,,,,Select RX Number,,Validate all fields translate over to EOR accurately in the Frames & Lens Tab and Add On and Comment Tab.,
+,,,,,,,,,Validate all fields of file.,,Under the Communication Tab Validate File Path: ,
+,,,,,,,,,Validate Current WIP Count increments by 1 for the Manufacturing Facility job the was routed to.,,,
+,,,,,,,,,Validate Current Receiving Count increments by 1 for the Manufacturing Facility job was routed to.,,,
+,,,,,,,,,Validate Current Received Job Offload Count increments by 1 for the Manufacturing Facility job was routed to.,,,
+,,,,,,,,,Validate Current Sent Job Offload Count increments by 1 for Manufacturing Facility job was routed from.,,,
+,,,,,,,,,Validate Current Sent Job Block Count increments by 1 for Manufacturing Facility job was routed from.,,,
+"Primary Lab has DNR Lens Code (7X28 PGX), Primary Lab is Active, Does not accept Union Jobs, Secondary Lab is Null, Manufacturing Facility Offload Sequence 1 set",Functional,Critical,15M,None,Final,Megh Thapa,Primary Lab DNR - Offload Capacity,"Primary Lab: Schertz
+Secondary Lab: Do Not Use","Set-up Primary Lab Facilty Rules: 
+General Tab:
+Facility Is Active is unchecked
+Union Jobs is unchecked
+Manufacturing Facility Offload Sequence Selection:
+Richland Hills is selected as Sequence 1
+Job Offload Capacity is set ""20""
+Job Block Count is equal to Job Offload Capacity
+Lens Tab: 
+Check Do Not Reroute for Lens Code: 205040",TC146,"Primary Lab has DNR for Combine 3 (Slab off, AR, UV), Is Not Active, Primary Lab is Active, Does not accepts Union Jobs, Secondary Lab is Null, Manufacturing Facility Offload Sequence 1 set",35845
+,,,,,,,,,Enter JSON workorder ,,,
+,,,,,,,,,"Enter the EOR, Select Search Workorder",,,
+,,,,,,,,,Select RX Number,,Validate all fields translate over to EOR accurately in the Frames & Lens Tab and Add On and Comment Tab.,
+,,,,,,,,,Validate all fields of file.,,Under the Communication Tab Validate File Path: ,
+,,,,,,,,,Validate Current WIP Count increments by 1 for the Manufacturing Facility job the was routed to.,,,
+,,,,,,,,,Validate Current Receiving Count increments by 1 for the Manufacturing Facility job was routed to.,,,
+,,,,,,,,,Validate Current Received Job Offload Count increments by 1 for the Manufacturing Facility job was routed to.,,,
+,,,,,,,,,Validate Current Sent Job Offload Count increments by 1 for Manufacturing Facility job was routed from.,,,
+,,,,,,,,,Validate Current Sent Job Block Count increments by 1 for Manufacturing Facility job was routed from.,,,
+"Remake of TC76, Secondary Lab is Null, Manufacturing Facility Offload Sequence 1 set",Functional,Critical,15M,None,Final,Megh Thapa,Remake - Offload Capacity,"Primary Lab: Schertz
+Secondary Lab: Do Not Use
+","Set-up Primary Lab Facilty Rules: 
+General Tab: 
+Facility Is Active is checked
+Accepts Union Jobs is checked
+Manufacturing Facility Offload Sequence Selection:
+Richland Hills is selected as Sequence 1
+Job Offload Capacity is set ""20""
+Job Block Count is equal to Job Offload Capacity
+Frame Tab:
+Accept Safety Jobs is checked
+Add iClass to the Do Not Reroute these Frames",TC159,"Remake of TC76, Secondary Lab is Null, Manufacturing Facility Offload Sequence 1 set.
+Primary Lab has DNR iClass, Primary Lab is Active, Accepts Union Jobs.",35846
+,,,,,,,,,Enter JSON workorder ,,,
+,,,,,,,,,"Enter the EOR, Select Search Workorder",,,
+,,,,,,,,,Select RX Number,,Validate all fields translate over to EOR accurately in the Frames & Lens Tab and Add On and Comment Tab.,
+,,,,,,,,,Validate all fields of file.,,Under the Communication Tab Validate File Path: ,
+,,,,,,,,,Validate Other Info Tab,,"Under Remake Info Remake Reason: Doctor Change
+Under Original Trans Data
+Store Number
+Transaction Number
+Associate Name
+Associate Number",
+,,,,,,,,,Validate Current WIP Count increments by 1 for the Manufacturing Facility job the was routed to.,,,
+,,,,,,,,,Validate Current Receiving Count increments by 1 for the Manufacturing Facility job was routed to.,,,
+,,,,,,,,,Validate Current Received Job Offload Count increments by 1 for the Manufacturing Facility job was routed to.,,,
+,,,,,,,,,Validate Current Sent Job Offload Count increments by 1 for Manufacturing Facility job was routed from.,,,
+,,,,,,,,,Validate Current Sent Job Block Count increments by 1 for Manufacturing Facility job was routed from.,,,
+"Retransmittal of TC, Secondary Lab is Null, Manufacturing Facility Offload Sequence 1 set",Functional,Critical,15M,None,Final,Megh Thapa,Retransmittal - Offload Capacity,"Primary Lab: Schertz
+Secondary Lab: Do Not Use","Set-up Primary Lab Facilty Rules: 
+General Tab: 
+Facility Is Active is checked
+Accepts Union Jobs is checked
+Manufacturing Facility Offload Sequence Selection:
+Schertz is selected as Sequence 1
+Job Offload Capacity is set ""20""
+Job Block Count is equal to Job Offload Capacity
+Frame Tab:
+Accept Safety Jobs is checked
+Add iClass to the Do Not Reroute these Frames",TC160,"Retransmittal of TC159, Secondary Lab is Null, Manufacturing Facility Offload Sequence 1 set
+Primary Lab has DNR iClass, Primary Lab is Active, Accepts Union Jobs",35860
+,,,,,,,,,Enter JSON workorder ,,,
+,,,,,,,,,"Enter the EOR, Select Search Workorder",,,
+,,,,,,,,,Select RX Number,,Validate all fields translate over to EOR accurately in the Frames & Lens Tab and Add On and Comment Tab.,
+,,,,,,,,,Validate all fields of file.,,Under the Communication Tab Validate File Path: ,
+,,,,,,,,,Validate Other Info Tab,,"Under Remake Info Remake Reason: Doctor Change
+Under Original Trans Data
+Store Number
+Transaction Number
+Associate Name
+Associate Number",
+,,,,,,,,,Validate Current WIP Count increments by 1 for the Manufacturing Facility job the was routed to.,,,
+,,,,,,,,,Validate Current Receiving Count increments by 1 for the Manufacturing Facility job was routed to.,,,
+,,,,,,,,,Validate Current Received Job Offload Count increments by 1 for the Manufacturing Facility job was routed to.,,,
+,,,,,,,,,Validate Current Sent Job Offload Count increments by 1 for Manufacturing Facility job was routed from.,,,
+,,,,,,,,,Validate Current Sent Job Block Count increments by 1 for Manufacturing Facility job was routed from.,,,
+"Primary Lab does accept Frame to Come and is Active, Secondary Lab does accept Frame to Come and is Active",Functional,Critical,15M,None,Final,Megh Thapa,Selected Lab - Primary Lab,"Primary Lab: Richland Hills
+Secondary Lab: Schertz
+","Set-up Primary Lab Facilty Rules: 
+General Tab:
+Facility is Active is checked
+Frame Tab:
+Accept Frame to Come is checked
+
+Set-up Secondary Lab Facilty Rules: 
+General Tab:
+Facility is Active is checked
+Frame Tab:
+Accept Frame to Come is checked",TC170,"Account Type has DNR, Account Type is Active, Primary Lab has no active DNRs, Manufacturing Facilty is Active, Secondary Lab is Null, Manufacturing Facility Offload Sequence 1 set",35845
+,,,,,,,,,Enter JSON workorder ,,,
+,,,,,,,,,"Enter the EOR, Select Search Workorder",,,
+,,,,,,,,,Select RX Number,,Validate all fields translate over to EOR accurately in the Frames & Lens Tab and Add On and Comment Tab.,
+,,,,,,,,,Validate all fields of file.,,Under the Communication Tab Validate File Path: ,
+,,,,,,,,,Validate Current WIP Count increments by 1 for the Manufacturing Facility job the was routed to.,,,
+,,,,,,,,,Validate Current Receiving Count increments by 1 for the Manufacturing Facility job was routed to.,,,
+,,,,,,,,,Validate Current Received Job Offload Count increments by 1 for the Manufacturing Facility job was routed to.,,,
+,,,,,,,,,Validate Current Sent Job Offload Count increments by 1 for Manufacturing Facility job was routed from.,,,
+,,,,,,,,,Validate Current Sent Job Block Count increments by 1 for Manufacturing Facility job was routed from.,,,
+"Primary Lab does accept Frame to Come, Primary Lab is Active, Secondary Lab is Null, Manufacturing Facility Offload Sequence 1 set
+Sequence 1 lab does accept Frame to Come, Primary Lab is Active",Functional,Critical,15M,None,Final,Megh Thapa,Selected Lab - Primary Lab,"Primary Lab: Richland Hills
+Secondary Lab: Do Not Use
+","Set-up Primary Lab Facility Rules: 
+General Tab:
+Facility is Active is checked
+Manufacturing Facility Offload Sequence Selection:
+Schertz is selected as Sequence 1
+Job Offload Capacity is set ""High Number""
+Job Block Count is equal to Job Offload Capacity
+Frame Tab:
+Accept Frame to Come is checked
+
+Set-up Associated Lab Facility Rules: 
+General Tab:
+Facility is Active is checked
+Manufacturing Facility Offload Sequence Selection:
+Richland Hills is selected as Sequence 1
+Job Offload Capacity is set ""High Number""
+Job Block Count is equal to Job Offload Capacity
+Frame Tab:
+Accept Frame to Come is checked",TC184,,35845
+,,,,,,,,,Enter JSON workorder ,,,
+,,,,,,,,,"Enter the EOR, Select Search Workorder",,,
+,,,,,,,,,Select RX Number,,Validate all fields translate over to EOR accurately in the Frames & Lens Tab and Add On and Comment Tab.,
+,,,,,,,,,Validate all fields of file.,,Under the Communication Tab Validate File Path: ,
+,,,,,,,,,Validate Current WIP Count increments by 1 for the Manufacturing Facility job the was routed to.,,,
+,,,,,,,,,Validate Current Receiving Count increments by 1 for the Manufacturing Facility job was routed to.,,,
+,,,,,,,,,Validate Current Received Job Offload Count increments by 1 for the Manufacturing Facility job was routed to.,,,
+,,,,,,,,,Validate Current Sent Job Offload Count increments by 1 for Manufacturing Facility job was routed from.,,,
+,,,,,,,,,Validate Current Sent Job Block Count increments by 1 for Manufacturing Facility job was routed from.,,,
+"Primary lab does not accept Lens Code, Richland Hills is set as Sequence 2 for Associated Labs and does accept Lens Code",Functional,Critical,15M,None,Final,Megh Thapa,Account Rules - Primary Lab w/Associated Lab (Seq 2),"Primary Lab: Schertz
+Secondary Lab: Do Not Use
+Associate Labs:
+Sequence 1 is Syracuse, Sequence 2 is Richland Hills, Sequence 3 is Test Location, Sequence 4 is Test Location 2 ","Set-up Primary Lab Facility Rules: 
+Account Set Up
+Do Not Reroute must be unchecked.
+General Tab:
+Manufacturing Facility Offload Sequence Selection:
+Syracuse is selected as Sequence 1
+Richland Hills is selected as Sequence 2
+Test Location is selected as Sequence 3 
+Test Location 2 is selected as Sequence 4
+Frame Tab:
+Supply Frame is checked
+Lens Tab:
+Deselect the Accept check box for Lens Code: 205040, Lens Description: 7X28 PGX
+
+Set-up Associated Lab Facility Rules: 
+Lens Tab:  Lens Code 205040, Lens Description: 7x28 PGX
+Syracuse is unchecked
+Richland Hills is checked
+Frame Tab:
+Supply Frame is checked
+Test Location  is unchecked
+Test Location 2  is unchecked
+",TC258,"Primary lab does not accept Lens Code, Richland Hills is set as Sequence 2 for Associated Labs and does accept Lens Code",35851
+,,,,,,,,,Enter JSON workorder ,,,
+,,,,,,,,,"Enter the EOR, Select Search Workorder",,,
+,,,,,,,,,Select RX Number,,Validate all fields translate over to EOR accurately in the Frames & Lens Tab and Add On and Comment Tab.,
+,,,,,,,,,Validate all fields of file.,,Under the Communication Tab Validate File Path: ,
+"Primary lab does not accept Lens Code within RX range, Richland Hills is set as Sequence 2 for Associated Labs and does accept Lens Code within RX range",Functional,Critical,15M,None,Final,Megh Thapa,Account Rules - Primary Lab w/Associated Lab (Seq 2),"Primary Lab: Schertz
+Secondary Lab: Do Not Use
+Associate Labs:
+Sequence 1 is Syracuse, Sequence 2 is Richland Hills, Sequence 3 is Test Location, Sequence 4 is Test Location 2 ","Set-up Primary Lab Facility Rules: 
+Account Set Up
+Do Not Reroute must be unchecked.
+General Tab:
+Manufacturing Facility Offload Sequence Selection:
+Syracuse is selected as Sequence 1
+Richland Hills is selected as Sequence 2
+Test Location is selected as Sequence 3 
+Test Location 2 is selected as Sequence 4
+Lens Tab:
+Accept Uncut Job is checked
+For Lens Code: 104062  ADAPT POLY set:  
+Sph 1 From: +1.00 
+Sph 1 To:  -1 .00
+
+Set-up Associated Lab Facility Rules: 
+Lens Tab:  Lens Code 104062 ADAPT POLY
+Syracuse is unchecked
+Richland Hills is checked
+Lens Tab:
+Accept Uncut Job is checked
+For Lens Code 104062  ADAPT POLY set:  
+Sph 1 From: +2.00 
+Sph 1 To:  -2 .00
+Test Location  is unchecked
+Test Location 2  is unchecked
+",TC260,"Primary lab does not accept Lens Code within RX range, Richland Hills is set as Sequence 2 for Associated Labs and does accept Lens Code within RX range",35851
+,,,,,,,,,Enter JSON workorder ,,,
+,,,,,,,,,"Enter the EOR, Select Search Workorder",,,
+,,,,,,,,,Select RX Number,,Validate all fields translate over to EOR accurately in the Frames & Lens Tab and Add On and Comment Tab.,
+,,,,,,,,,Validate all fields of file.,,Under the Communication Tab Validate File Path: ,
+"Primary lab does not accept Lens Code within RX range, Richland Hills is set as Sequence 2 for Associated Labs and does not accept Lens Code within RX range",Functional,Critical,15M,None,Final,Megh Thapa,Account Rules - Primary Lab w/Associated Lab (Seq 2),"Primary Lab: Schertz
+Secondary Lab: Do Not Use
+Associate Labs:
+Sequence 1 is Syracuse, Sequence 2 is Richland Hills, Sequence 3 is Test Location, Sequence 4 is Test Location 2 ","Set-up Primary Lab Facility Rules: 
+Account Set Up
+Do Not Reroute must be unchecked.
+General Tab:
+Manufacturing Facility Offload Sequence Selection:
+Syracuse is selected as Sequence 1
+Richland Hills is selected as Sequence 2
+Test Location is selected as Sequence 3 
+Test Location 2 is selected as Sequence 4
+Lens Tab:
+Accept Uncut Job is checked
+For Lens Code: 104062  ADAPT POLY set:  
+Sph 1 From: +1.00 
+Sph 1 To:  -1 .00
+
+Set-up Associated Lab Facility Rules: 
+Lens Tab:  Lens Code 104062 ADAPT POLY
+Syracuse is unchecked
+Richland Hills is checked
+Lens Tab:
+Accept Uncut Job is checked
+For Lens Code 104062  ADAPT POLY set:  
+Sph 1 From: +1.00 
+Sph 1 To:  -1 .00
+Test Location  is unchecked
+Test Location 2  is unchecked",TC261,"Primary lab does not accept Lens Code within RX range, Richland Hills is set as Sequence 2 for Associated Labs and does not accept Lens Code within RX range",35851
+,,,,,,,,,Enter JSON workorder ,,,
+,,,,,,,,,"Enter the EOR, Select Search Workorder",,,
+,,,,,,,,,Select RX Number,,Validate all fields translate over to EOR accurately in the Frames & Lens Tab and Add On and Comment Tab.,
+,,,,,,,,,Validate all fields of file.,,Under the Communication Tab Validate File Path: ,
+"Primary lab does not accept Service (Tint - Solid), Richland Hills is set as Sequence 2 for Associated Labs and does accept Service (Tint - Solid)",Functional,Critical,15M,None,Final,Megh Thapa,Account Rules - Primary Lab w/Associated Lab (Seq 2),"Primary Lab: Schertz
+Secondary Lab: Do Not Use
+Associate Labs:
+Sequence 1 is Syracuse, Sequence 2 is Richland Hills, Sequence 3 is Test Location, Sequence 4 is Test Location 2 ","Set-up Primary Lab Facility Rules: 
+Account Set Up
+Do Not Reroute must be unchecked.
+General Tab:
+Manufacturing Facility Offload Sequence Selection:
+Syracuse is selected as Sequence 1
+Richland Hills is selected as Sequence 2
+Test Location is selected as Sequence 3 
+Test Location 2 is selected as Sequence 4
+Service Tab:
+Tint - Solid is unchecked
+
+Set-up Associated Lab Facility Rules: 
+Service Tab: Tint - Solid 
+Syracuse is unchecked
+Richland Hills is checked
+Test Location  is unchecked
+Test Location 2  is unchecked",TC262,"Primary lab does not accept Service (Tint - Solid), Richland Hills is set as Sequence 2 for Associated Labs and does accept Service (Tint - Solid)",35851
+,,,,,,,,,Enter JSON workorder ,,,
+,,,,,,,,,"Enter the EOR, Select Search Workorder",,,
+,,,,,,,,,Select RX Number,,Validate all fields translate over to EOR accurately in the Frames & Lens Tab and Add On and Comment Tab.,
+,,,,,,,,,Validate all fields of file.,,Under the Communication Tab Validate File Path: ,
+"Primary lab does not accept Service (Tint - Solid), Richland Hills is set as Sequence 2 for Associated Labs and does not accept Service (Tint - Solid)",Functional,Critical,15M,None,Final,Megh Thapa,Account Rules - Primary Lab w/Associated Lab (Seq 2),"Primary Lab: Schertz
+Secondary Lab: Do Not Use
+Associate Labs:
+Sequence 1 is Syracuse, Sequence 2 is Richland Hills, Sequence 3 is Test Location, Sequence 4 is Test Location 2 ","Set-up Primary Lab Facility Rules: 
+Account Set Up
+Do Not Reroute must be unchecked.
+General Tab:
+Manufacturing Facility Offload Sequence Selection:
+Syracuse is selected as Sequence 1
+Richland Hills is selected as Sequence 2
+Test Location is selected as Sequence 3 
+Test Location 2 is selected as Sequence 4
+Service Tab:
+Tint - Solid is unchecked
+
+Set-up Associated Lab Facility Rules: 
+Service Tab: Tint - Solid 
+Syracuse is unchecked
+Richland Hills is unchecked
+Test Location  is unchecked
+Test Location 2  is unchecked",TC263,"Primary lab does not accept Service (Tint - Solid), Richland Hills is set as Sequence 2 for Associated Labs and does not accept Service (Tint - Solid)",35851
+,,,,,,,,,Enter JSON workorder ,,,
+,,,,,,,,,"Enter the EOR, Select Search Workorder",,,
+,,,,,,,,,Select RX Number,,Validate all fields translate over to EOR accurately in the Frames & Lens Tab and Add On and Comment Tab.,
+,,,,,,,,,Validate all fields of file.,,Under the Communication Tab Validate File Path: ,
+"Primary lab does not accept Lens Code, Richland Hills is set as Sequence 3 for Associated Labs and does accept Lens Code",Functional,Critical,15M,None,Final,Megh Thapa,Account Rules - Primary Lab w/Associated Lab (Seq 2),"Primary Lab: Schertz
+Secondary Lab: Do Not Use
+Associate Labs:
+Sequence 1 is Syracuse, Sequence 2 is Test Location, Sequence 3 is Richland Hills, Sequence 4 is Test Location 2 ","Set-up Primary Lab Facility Rules: 
+Account Set Up
+Do Not Reroute must be unchecked.
+General Tab:
+Manufacturing Facility Offload Sequence Selection:
+Syracuse is selected as Sequence 1
+Test Location is selected as Sequence 2 
+Richland Hills is selected as Sequence 3
+Test Location 2 is selected as Sequence 4
+Frame Tab:
+Supply Frame is checked
+Lens Tab:
+Deselect the Accept check box for Lens Code: 205040, Lens Description: 7X28 PGX
+
+Set-up Associated Lab Facility Rules: 
+Lens Tab:  Lens Code 205040, Lens Description: 7x28 PGX
+Syracuse is unchecked
+Richland Hills is checked
+Frame Tab:
+Supply Frame is checked
+Test Location  is unchecked
+Test Location 2  is unchecked",TC278,"Primary lab does not accept Lens Code, Richland Hills is set as Sequence 3 for Associated Labs and does accept Lens Code",35851
+,,,,,,,,,Enter JSON workorder ,,,
+,,,,,,,,,"Enter the EOR, Select Search Workorder",,,
+,,,,,,,,,Select RX Number,,Validate all fields translate over to EOR accurately in the Frames & Lens Tab and Add On and Comment Tab.,
+,,,,,,,,,Validate all fields of file.,,Under the Communication Tab Validate File Path and Order should end up at Richland Hills.,
+"Primary lab does not accept Lens Code, Richland Hills is set as Sequence 3 for Associated Labs and does not accept Lens Code",Functional,Critical,15M,None,Final,Megh Thapa,Account Rules - Primary Lab w/Associated Lab (Seq 3),"Primary Lab: Schertz
+Secondary Lab: Do Not Use
+Associate Labs:
+Sequence 1 is Syracuse, Sequence 2 is Test Location, Sequence 3 is Richland Hills, Sequence 4 is Test Location 2 ","Set-up Primary Lab Facility Rules: 
+Account Set Up
+Do Not Reroute must be unchecked.
+General Tab:
+Manufacturing Facility Offload Sequence Selection:
+Syracuse is selected as Sequence 1
+Test Location is selected as Sequence 2 
+Richland Hills is selected as Sequence 3
+Test Location 2 is selected as Sequence 4
+Frame Tab:
+Supply Frame is checked
+Lens Tab:
+Deselect the Accept check box for Lens Code: 205040, Lens Description: 7X28 PGX
+
+Set-up Associated Lab Facility Rules: 
+Lens Tab:  Lens Code 205040, Lens Description: 7x28 PGX
+Syracuse is unchecked
+Richland Hills is unchecked
+Frame Tab:
+Supply Frame is checked
+Test Location  is unchecked
+Test Location 2  is unchecked
+",TC279,"Primary lab does not accept Lens Code, Richland Hills is set as Sequence 3 for Associated Labs and does accept Lens Code",35851
+,,,,,,,,,Enter JSON workorder ,,,
+,,,,,,,,,"Enter the EOR, Select Search Workorder",,,
+,,,,,,,,,Select RX Number,,Validate all fields translate over to EOR accurately in the Frames & Lens Tab and Add On and Comment Tab.,
+,,,,,,,,,Validate all fields of file.,,Under the Communication Tab Validate File Path and Order should end up at Schertz 2nd round.,
+"Primary lab does not accept Lens Code within RX range, Richland Hills is set as Sequence 3 for Associated Labs and does accept Lens Code within RX range",Functional,Critical,15M,None,Final,Megh Thapa,Account Rules - Primary Lab w/Associated Lab (Seq 3),"Primary Lab: Schertz
+Secondary Lab: Do Not Use
+Associate Labs:
+Sequence 1 is Syracuse, Sequence 2 is Test Location, Sequence 3 is Richland Hills, Sequence 4 is Test Location 2 ","Set-up Primary Lab Facility Rules: 
+Account Set Up
+Do Not Reroute must be unchecked.
+General Tab:
+Manufacturing Facility Offload Sequence Selection:
+Syracuse is selected as Sequence 1
+Test Location is selected as Sequence 2 
+Richland Hills is selected as Sequence 3
+Test Location 2 is selected as Sequence 4
+Lens Tab:
+Accept Uncut Job is checked
+For Lens Code: 104062  ADAPT POLY set:  
+Sph 1 From: +1.00 
+Sph 1 To:  -1 .00
+
+Set-up Associated Lab Facility Rules: 
+Lens Tab:  Lens Code 104062 ADAPT POLY
+Syracuse is unchecked
+Richland Hills is checked
+Lens Tab:
+Accept Uncut Job is checked
+For Lens Code 104062  ADAPT POLY set:  
+Sph 1 From: +2.00 
+Sph 1 To:  -2 .00
+Test Location  is unchecked
+Test Location 2  is unchecked
+",TC280,"Primary lab does not accept Lens Code within RX range, Richland Hills is set as Sequence 3 for Associated Labs and does accept Lens Code within RX range",35851
+,,,,,,,,,Enter JSON workorder ,,,
+,,,,,,,,,"Enter the EOR, Select Search Workorder",,,
+,,,,,,,,,Select RX Number,,Validate all fields translate over to EOR accurately in the Frames & Lens Tab and Add On and Comment Tab.,
+,,,,,,,,,Validate all fields of file.,,Under the Communication Tab Validate File Path and Order should end up at Richland Hills.,
+Offload Block Count,Functional,Critical,15M,None,Final,Megh Thapa,Primary Lab w/ Associated Lab - Offload Block Count,"Primary Lab: Schertz
+Secondary Lab: Do Not Use
+Associated Labs:
+Richland Hills as Sequence 1
+Syracuse as Sequence 2
+Plainview as Sequence 3
+New Towne Square as Sequence 4","
+Set-up Primary Lab Facility Rules: Schertz
+Account Set Up
+Do Not Reroute must be unchecked.
+General Tab:
+*Facility is Active is unchecked
+*Max Daily Offload Receiving Capacity is set at 300
+Manufacturing Facility Offload Sequence Selection:
+Richland Hills is selected as Sequence 1
+* Max Daily Offload Count set at 2
+* Offload Block Count set at 1
+Syracuse is selected as Sequence 2
+* Max Daily Offload Count set at 2
+* Offload Block Count set at 1
+Plainview is selected as Sequence 3
+* Max Daily Offload Count set at 2
+* Offload Block Count set at 1
+New Towne Square is selected as Sequence 4
+* Max Daily Offload Count set at 2
+* Offload Block Count set at 1
+
+Set-up Associated Lab Facility Rules:
+General Tab:
+Richland Hills Facility is Active is checked
+* Max Daily Offload Receiving Capacity set at 200
+Syracuse Facility is Active is checked
+* Max Daily Offload Receiving Capacity set at 100
+Plainview Facility is Active is checked
+* Max Daily Offload Receiving Capacity set at 100
+New Towne Square Facility is Active is checked
+* Max Daily Offload Receiving Capacity set at 100
+
+",TC687,Offload Block Count,35845
+,,,,,,,,,Enter PF3. Employee System and obtain Voucher authorization for a patient,,,
+,,,,,,,,,Enter JSON workorder ,,,
+,,,,,,,,,"Enter the EOR, Select Search Workorder",,,
+,,,,,,,,,Enter RX Number and click search,,Validate all fields translate over to EOR accurately in the Frames & Lens Tab and Add On and Comment Tab.,
+,,,,,,,,,Validate all fields of file.,,Under the Communication Tab Validate File Path and Order should stay at Schertz,
+,,,,,,,,,Validate path and RXF and RXI in the Communications Tab,,"Patient A will end up at Richland Hills
+Patient B will end up at Syracuse
+Patient C will end up at Plainview
+Patient D will end up at New Towne Square
+Patient E will end up at Richland Hills
+Patient F will end up at Syracuse
+Patient G will end up at Plainview
+Patient H will end up at New Towne Square
+Patient I will not route and stay at Primary - Schertz.",
+,,,,,,,,,Validate Routing Log,,,
+,,,,,,,,,Validate Current WIP Count increments by 1 for the Manufacturing Facility job the was routed to.,,,
+,,,,,,,,,Validate Current Receiving Count increments by 1 for the Manufacturing Facility job was routed to.,,,
+,,,,,,,,,Validate Current Received Job Offload Count increments by 1 for the Manufacturing Facility job was routed to. If applicable,,,
+,,,,,,,,,Validate Current Sent Job Offload Count increments by 1 for Manufacturing Facility job was routed from.  If applicable,,,
+,,,,,,,,,Validate Current Sent Job Block Count increments by 1 for Manufacturing Facility job was routed from.  If applicable,,,
+"Primary Lab does not accept Frame to Come, Secondary Lab accepts Frame to Come and is active",Functional,Critical,15m,None,Final,Lisa Roselle,Facility Rules - Frame to Come,"Primary Lab: Schertz
+Secondary Lab: Richland Hills
+(See Setup Tab for details)","Set-up Primary Lab Facility Rules: 
+General Tab:
+Facility is Active is checked
+Frame Tab:
+Accept Frame to Come is unchecked
+
+Set-up Secondary Lab Facility Rules: 
+General Tab:
+Facility is Active is checked
+Frame Tab:
+Accept Frame to Come is checked",7A,,35841
+,,,,,,,,,JSON Work Order,,INSERT ORDER HERE,
+,,,,,,,,,"Enter the EOR, Select Search Workorder",,,
+,,,,,,,,,"Enter RX Number, click Search",,Validate all fields translate over to EOR accurately in the Frames & Lens Tab and Add On and Comment Tab.,
+,,,,,,,,,Validate all fields of file,,Under the Communication Tab Validate File Path:,
+"Primary Lab does not accept Frame to Come, Primary Lab is not Active, Secondary Lab accepts Frame to Come and is Active",Functional,Critical,15m,None,Final,Lisa Roselle,Priority of Facility Rules based on Account Type,"Primary Lab: Schertz
+Secondary Lab: Richland Hills
+(See Setup Tab for details)","Set-up Primary Lab Facilty Rules: 
+General Tab:
+Facility is Active is unchecked
+Frame Tab:
+Accept Frame to Come is unchecked
+
+
+Set-up Seconday Lab Facilty Rules: 
+General Tab:
+Facility is Active is checked
+Frame Tab:
+Accept Frame to Come is checked",7B,,35841
+,,,,,,,,,JSON Work Order,,INSERT ORDER HERE,
+,,,,,,,,,"Enter the EOR, Select Search Workorder",,,
+,,,,,,,,,"Enter RX Number, click Search",,Validate all fields translate over to EOR accurately in the Frames & Lens Tab and Add On and Comment Tab.,
+,,,,,,,,,Validate all fields of file,,Under the Communication Tab Validate File Path:,
+Primary Lab does not accept SKU (w/o zeros),Functional,Critical,15m,None,Final,Lisa Roselle,Facility Rules - SKU,"Primary Lab: Schertz
+Secondary Lab: Richland Hills
+(See Setup Tab for details)","Set-up Primary Lab Facilty Rules: 
+Frame Tab 
+Add sku that is not accepted at Primary Lab
+Supply Frame: checked",8A,,35841
+,,,,,,,,,JSON Work Order,,INSERT ORDER HERE,
+,,,,,,,,,"Enter the EOR, Select Search Workorder",,,
+,,,,,,,,,"Enter RX Number, click Search",,Validate all fields translate over to EOR accurately in the Frames & Lens Tab and Add On and Comment Tab.,
+,,,,,,,,,Validate all fields of file,,Under the Communication Tab Validate File Path:,
+Primary Lab is Down,Functional,Critical,15m,None,Final,Lisa Roselle,Facility Rules - Operational Status,"Primary Lab: Schertz
+Secondary Lab: Richland Hills
+(See Setup Tab for details)","Set-up Primary Lab Facilty Rules:
+General Tab:
+Facility is Active is unchecked",9,,35841
+,,,,,,,,,JSON Work Order,,INSERT ORDER HERE,
+,,,,,,,,,"Enter the EOR, Select Search Workorder",,,
+,,,,,,,,,"Enter RX Number, click Search",,Validate all fields translate over to EOR accurately in the Frames & Lens Tab and Add On and Comment Tab.s,
+,,,,,,,,,Validate all fields of file,,Under the Communication Tab Validate File Path:,
+Primary Lab does not accept Service (Tint-Solid),Functional,Critical,15m,None,Final,Lisa Roselle,Facility Rules - Service,"Primary Lab: Schertz
+Secondary Lab: Richland Hills
+(See Setup Tab for details)","Set-up Primary Lab Facility Rules: 
+Service Coating Tab:
+Tint - Solid is unchecked",10,,35841
+,,,,,,,,,JSON Work Order,,INSERT ORDER HERE,
+,,,,,,,,,"Enter the EOR, Select Search Workorder",,,
+,,,,,,,,,"Enter RX Number, click Search",,Validate all fields translate over to EOR accurately in the Frames & Lens Tab and Add On and Comment Tab.,
+,,,,,,,,,Validate all fields of file,,Under the Communication Tab Validate File Path:,
+"Primary Lab not below max WIP, Apply This Rule is checked",Functional,Critical,15m,None,Final,Lisa Roselle,Facility Rules - Maximum WIP ,"Primary Lab: Schertz
+Secondary Lab: Richland Hills
+(See Setup Tab for details)
+Need to determine current WIP to set maximum WIP for this test case.","Set-up Primary Lab Facility Rules: 
+General Tab:
+Set the max WIP capacity @ ""X"" 
+Apply This Rule is checked",11,,35841
+,,,,,,,,,JSON Work Order,,INSERT ORDER HERE,
+,,,,,,,,,"Enter the EOR, Select Search Workorder",,,
+,,,,,,,,,"Enter RX Number, click Search",,Validate all fields translate over to EOR accurately in the Frames & Lens Tab and Add On and Comment Tab.,
+,,,,,,,,,Validate all fields of file,,Under the Communication Tab Validate File Path:,
+Primary Lab does not accept Combine 2 (Tint & CS),Functional,Critical,15m,None,Final,Lisa Roselle,Facility Rules - Combine2 ,"Primary Lab: Schertz
+Secondary Lab: Richland Hills
+(See Setup Tab for details)","Set-up Primary Lab Facility Rules: 
+Service Coating Tab: 
+Service: Tint 
+Combine 1: UV
+Accept is unchecked",12,,35841
+,,,,,,,,,JSON Work Order,,INSERT ORDER HERE,
+,,,,,,,,,"Enter the EOR, Select Search Workorder",,,
+,,,,,,,,,"Enter RX Number, click Search",,Validate all fields translate over to EOR accurately in the Frames & Lens Tab and Add On and Comment Tab.,
+,,,,,,,,,Validate all fields of file,,Under the Communication Tab Validate File Path:,
+"Primary Lab does not accept Combine 3 (Slab off, AR, UV)",Functional,Critical,15m,None,Final,Lisa Roselle,Facility Rules - Combine3 ,"Primary Lab: Schertz
+Secondary Lab: Richland Hills
+(See Setup Tab for details)","Set-up Primary Lab Facility Rules: 
+Service Coating Tab: 
+Service: Add on Slab off
+Combine 1: Coating AR
+Combine 2: Coating UV
+Accept check box is unchecked",13,,35841
+,,,,,,,,,JSON Work Order,,INSERT ORDER HERE,
+,,,,,,,,,"Enter the EOR, Select Search Workorder",,,
+,,,,,,,,,"Enter RX Number, click Search",,Validate all fields translate over to EOR accurately in the Frames & Lens Tab and Add On and Comment Tab.,
+,,,,,,,,,Validate all fields of file,,Under the Communication Tab Validate File Path:,
+Primary Lab not below Daily Max,Functional,Critical,15m,None,Final,Lisa Roselle,Facility Rules - Daily Maximum,"Primary Lab: Schertz
+Secondary Lab: Richland Hills
+(See Setup Tab for details)
+Need to determine what to set the maximum daily capacity for this test case.","Set-up Primary Lab Facility Rules: 
+General Tab:
+Set the maximum daily receiving capacity to ""X""  Apply This Rule is checked",14,,35841
+,,,,,,,,,JSON Work Order,,INSERT ORDER HERE,
+,,,,,,,,,"Enter the EOR, Select Search Workorder",,,
+,,,,,,,,,"Enter RX Number, click Search",,Validate all fields translate over to EOR accurately in the Frames & Lens Tab and Add On and Comment Tab.s,
+,,,,,,,,,Validate all fields of file,,Under the Communication Tab Validate File Path:,
+Primary Lab does not accept Lens Code (204040- 7X28 PGX),Functional,Critical,15m,None,Final,Lisa Roselle,Facility Rules - Lens Code,"Primary Lab: Schertz
+Secondary Lab: Richland Hills
+(See Setup Tab for details)","Set-up Primary Lab Facility Rules: 
+Lens Tab: 
+Deselect the Accept check box for Lens Code: 205040, Lens Description: 7X28 PGX",15,,35841
+,,,,,,,,,JSON Work Order,,INSERT ORDER HERE,
+,,,,,,,,,"Enter the EOR, Select Search Workorder",,,
+,,,,,,,,,"Enter RX Number, click Search",,Validate all fields translate over to EOR accurately in the Frames & Lens Tab and Add On and Comment Tab.,
+,,,,,,,,,Validate all fields of file,,Under the Communication Tab Validate File Path:,
+Primary Lab accepts Lens Type but not within the ranges,Functional,Critical,15m,None,Final,Lisa Roselle,Facility Rules - RX Range,"Primary Lab: Schertz
+Secondary Lab: Richland Hills
+(See Setup Tab for details)","Set-up Primary Lab Facility Rules: 
+Lens Tab: 
+For Lens Code: 104062  ADAPT POLY set:  
+Sph 1 From: -1.00 
+Sph 1 To:  1 .00
+
+Set-up Secondary Lab Facility Rules:
+Lens Tab:
+For Lens Code: 104062  ADAPT POLY set:  
+Sph 1 From: -2.00 
+Sph 1 To:  2 .00",16,,35841
+,,,,,,,,,JSON Work Order,,INSERT ORDER HERE,
+,,,,,,,,,"Enter the EOR, Select Search Workorder",,,
+,,,,,,,,,"Enter RX Number, click Search",,Validate all fields translate over to EOR accurately in the Frames & Lens Tab and Add On and Comment Tab.,
+,,,,,,,,,Validate all fields of file,,Under the Communication Tab Validate File Path:,
+"Primary Lab has DNR for Frame to Come, Primary Lab is Active, Does not accepts Union Jobs",Functional,Critical,15m,None,Final,Lisa Roselle,Primary Lab DNR - Frame to Come,"Primary Lab: Richland Hills
+Secondary Lab: Schertz
+(See Setup Tab for details","Set-up Primary Lab Facility Rules: 
+Frame Tab:
+Check Do Not Reroute Frame to Come
+General Tab 
+Primary Lab Is Active
+Accepts Union Jobs unchecked
+",18,"Primary Lab has DNR for Frame to Come, Primary Lab is Active, Does not accepts Union Jobs",35845
+,,,,,,,,,JSON Work Order,,INSERT ORDER HERE,
+,,,,,,,,,"Enter the EOR, Select Search Workorder",,,
+,,,,,,,,,"Enter RX Number, click Search",,Validate all fields translate over to EOR accurately in the Frames & Lens Tab and Add On and Comment Tab.,
+,,,,,,,,,Validate all fields of file,,Under the Communication Tab Validate File Path:,
+"Primary Lab has DNR for Frame to Come, Primary Lab is Active, Accepts Union Jobs",Functional,Critical,15m,None,Final,Lisa Roselle,Primary Lab DNR - Frame to Come,"(Order with Union MVC Plan) - Primary Lab: Richland Hills
+Secondary Lab: Schertz
+(See Setup Tab for details)","Set-up Primary Lab Facilty Rules: 
+Frame Tab:
+Check Do No Reroute Frame to Come
+General Tab:
+Primary Lab Is Active
+Accepts Union Jobs is Checked",20,"Primary Lab has DNR for Frame to Come, Primary Lab is Active, Accepts Union Jobs",35845
+,,,,,,,,,JSON Work Order,,INSERT ORDER HERE,
+,,,,,,,,,"Enter the EOR, Select Search Workorder",,,
+,,,,,,,,,"Enter RX Number, click Search",,Validate all fields translate over to EOR accurately in the Frames & Lens Tab and Add On and Comment Tab.,
+,,,,,,,,,Validate all fields of file,,Under the Communication Tab Validate File Path:,
+"Primary Lab has DNR Service (Tint-Solid), Is Active, Primary Lab is Active, Does not accepts Union Jobs",Functional,Critical,15m,None,Final,Lisa Roselle,Primary Lab DNR - Service,"Primary Lab: Richland Hills
+Secondary Lab: Schertz
+(See Setup Tab for details)","Set-up Primary Lab FacilIty Rules: 
+Service Coating Tab:
+Check Do Not Reroute for Service: Tint Solid
+Is Active is checked
+General Tab:
+Facility Is Active is Checked
+Accept Union Job is Unchecked",26,"Primary Lab has DNR Service (Tint-Solid), Is Active, Primary Lab is Active, Does not accepts Union Jobs",35845
+,,,,,,,,,JSON Work Order,,INSERT ORDER HERE,
+,,,,,,,,,"Enter the EOR, Select Search Workorder",,,
+,,,,,,,,,"Enter RX Number, click Search",,Validate all fields translate over to EOR accurately in the Frames & Lens Tab and Add On and Comment Tab.,
+,,,,,,,,,Validate all fields of file,,Under the Communication Tab Validate File Path:,
+"Pr+67:76imary Lab has DNR Lens Code but not within the ranges, Primary Lab is Active, Does not accepts union jobs",Functional,Critical,5m,None,Final,Lisa Roselle,Primary Lab DNR - Lens Code not within RX Range,"(""+"" cylinder - transpositon) - Primary Lab: Schertz
+Secondary Lab: Richland Hills
+(See Setup Tab for details)","Set-up Primary Lab Facility Rules: 
+General Tab:
+Facility is Active is checked
+Accept Union Jobs is unchecked
+Lens Tab: 
+Lens Code: 101011 DISTANCE -  PLASTIC S
+Do Not Reroute is checked
+Sph 1 From: -10.00
+Sph 1 To:  6.00
+Cylinder 1 From: -5.00
+Cylinder 1 To: 0
+
+Set-up Secondary Lab Facility Rules:
+General Tab:
+Facility is Active is checked
+Accept Union Jobs is checked
+Lens Tab:
+Lens Code: 101011 DISTANCE -  PLASTIC S
+Sph 1 From: -12.00
+Sph 1 To:  8.00
+Cylinder 1 From: -5.00
+Cylinder 1 To: 0",56,"Primary Lab has DNR Lens Code but not within the ranges, Primary Lab is Active, Does not accepts union jobs",35845
+,,,,,,,,,JSON Work Order,,INSERT ORDER HERE,
+,,,,,,,,,"Enter the EOR, Select Search Workorder",,,
+,,,,,,,,,"Enter RX Number, click Search",,Validate all fields translate over to EOR accurately in the Frames & Lens Tab and Add On and Comment Tab.,
+,,,,,,,,,Validate all fields of file,,Under the Communication Tab Validate File Path:,
+"Primary Lab has DNR Lens Code but not within the ranges, Primary Lab is Active, Does not accepts union jobs",Functional,Critical,15m,None,Final,Lisa Roselle,Primary Lab DNR - Lens Code not within RX Range,"(""-"" cylinder ) - Primary Lab: Schertz
+Secondary Lab: Richland Hills
+(See Setup Tab for details)","Set-up Primary Lab Facility Rules: 
+General Tab:
+Facility is Active is checked
+Accept Union Jobs is unchecked
+Lens Tab: 
+Lens Code: 101011 DISTANCE -  PLASTIC S
+Do Not Reroute is checked
+Sph 1 From: -10.00
+Sph 1 To:  6.00
+Cylinder 1 From: -5.00
+Cylinder 1 To: 0
+
+Set-up Secondary Lab Facility Rules:
+General Tab:
+Facility is Active is checked
+Accept Union Jobs is checked
+Lens Tab:
+Lens Code: 101011 DISTANCE -  PLASTIC S 
+Sph 1 From: -12.00
+Sph 1 To:  8.00
+Cylinder 1 From: -5.00
+Cylinder 1 To: 0",57,"Primary Lab has DNR Lens Code but not within the ranges, Primary Lab is Not Active, Does not accepts union jobs",35845
+,,,,,,,,,JSON Work Order,,INSERT ORDER HERE,
+,,,,,,,,,"Enter the EOR, Select Search Workorder",,,
+,,,,,,,,,"Enter RX Number, click Search",,Validate all fields translate over to EOR accurately in the Frames & Lens Tab and Add On and Comment Tab.,
+,,,,,,,,,Validate all fields of file,,Under the Communication Tab Validate File Path:,
+"Account Type has DNR, Account Type is Active, Primary Lab has no active DNRs, Manufacturing Facilty is Active",Functional,Critical,15m,None,Final,Lisa Roselle,Account Type - DNR,"Primary Lab: Richland Hills
+Secondary Lab: Do Not Use
+(See Setup Tab for details)","Set-up Account Type:
+Open Account Setup Window
+Under selected Account Type:
+Do Not Reroute: checked
+Is Active: checked",60,"Account Type has DNR, Account Type is Active, Primary Lab has no active DNRs, Manufacturing Facilty is Active",35855
+,,,,,,,,,"Set-up Primary Lab Facility Rules: 
+General:
+Facility Is Active: checked
+Uncheck all Do Not Reroutes:
+Do Not Reroute Union Jobs
+Do Not Reroute Frame to Come
+Remove any frames listed in the Do Not Reroute These Frames
+All Lens Codes - Do Not Reroute
+All Lens Types - Do Not Reroute
+All Lens Materials - Do Not Reroute
+Do Not Reroute (Lens)
+Do Not Reroute (Services)",,,
+,,,,,,,,,JSON Work Order,,INSERT ORDER HERE,
+,,,,,,,,,"Enter the EOR, Select Search Workorder",,,
+,,,,,,,,,"Enter RX Number, click Search",,Validate all fields translate over to EOR accurately in the Frames & Lens Tab and Add On and Comment Tab.,
+,,,,,,,,,Validate all fields of file,,Under the Communication Tab Validate File Path:,
+"Account Type has DNR, Account Type is Active, Primary Lab has no active DNRs, Manufacturing Facilty is Inactive",Functional,Critical,15m,None,Final,Lisa Roselle,Account Type - DNR,"Primary Lab: Richland Hills
+Secondary Lab: Do Not Use
+(See Setup Tab for details)
+Set Schertz as Sequence 1 with Job Offload Capacity and Block Count at 10","Set-up Account Type:
+Open Account Setup Window
+Account Type:
+Do Not Reroute: checked
+Is Active: checked",61,"Account Type has DNR, Account Type is Active, Primary Lab has no active DNRs, Manufacturing Facilty is Inactive",35855
+,,,,,,,,,"Set-up Primary Lab Facility Rules: 
+General Tab:
+Facility Is Active: unchecked
+Uncheck all Do Not Reroutes:
+Do Not Reroute Union Jobs
+Do Not Reroute Frame to Come
+Remove any frames listed in the Do Not Reroute These Frames
+All Lens Codes - Do Not Reroute
+All Lens Types - Do Not Reroute
+All Lens Materials - Do Not Reroute
+Do Not Reroute (Lens)
+Do Not Reroute (Services)",,,
+,,,,,,,,,JSON Work Order,,INSERT ORDER HERE,
+,,,,,,,,,"Enter the EOR, Select Search Workorder",,,
+,,,,,,,,,"Enter RX Number, click Search",,Validate all fields translate over to EOR accurately in the Frames & Lens Tab and Add On and Comment Tab.,
+,,,,,,,,,Validate all fields of file,,Under the Communication Tab Validate File Path:,
+"Primary Lab does not accept Supply Frame, below WIP, Secondary Lab accepts Supply Frame, below WIP",Functional,Critical,15m,None,Final,Lisa Roselle,Facility Rules - Supply Frame,"Primary Lab: Richland Hills
+Secondary Lab: Schertz
+(See Setup Tab for details)
+Need to determine current WIP to set maximum WIP for this test case.","Set-up Primary Lab Facility Rules: 
+General Tab:
+Set the max WIP capacity @ ""X"" 
+Apply This Rule is checked
+Frame Tab 
+Supply Frame: unchecked
+
+Set-up Secondary Lab Facility Rules: 
+General Tab:
+Set the max WIP capacity @ ""X"" 
+Apply This Rule is checked
+Frame Tab 
+Supply Frame: checked",64,"Primary Lab does not accept Supply Frame, below WIP, Secondary Lab accepts Supply Frame, below WIP",35841
+,,,,,,,,,JSON Work Order,,INSERT ORDER HERE,
+,,,,,,,,,"Enter the EOR, Select Search Workorder",,,
+,,,,,,,,,"Enter RX Number, click Search",,Validate all fields translate over to EOR accurately in the Frames & Lens Tab and Add On and Comment Tab.,
+,,,,,,,,,Validate all fields of file,,Under the Communication Tab Validate File Path:,
+"Primary Lab does not accept Safety Jobs, Secondary Lab accepts Safety Jobs",Functional,Critical,15m,None,Final,Lisa Roselle,Facility Rules - Safety Jobs,"Primary Lab: Schertz
+Secondary Lab: Richland Hills
+(See Setup Tab for details)","Set-up Primary Lab Facilty Rules: 
+Frame Tab 
+Accepts Safety Jobs: unchecked
+
+Set-up Secondary Lab Facilty Rules: 
+Frame Tab 
+Accepts Safety Jobs: checked",65,"Primary Lab does not accept Safety Jobs, Secondary Lab accepts Safety Jobs",35841
+,,,,,,,,,JSON Work Order,,INSERT ORDER HERE,
+,,,,,,,,,"Enter the EOR, Select Search Workorder",,,
+,,,,,,,,,"Enter RX Number, click Search",,Validate all fields translate over to EOR accurately in the Frames & Lens Tab and Add On and Comment Tab.,
+,,,,,,,,,Validate all fields of file,,Under the Communication Tab Validate File Path:,
+"Primary Lab does not accept Uncut Jobs, Secondary Lab accepts Uncut Jobs",Functional,Critical,15m,None,Final,Lisa Roselle,Facility Rules - iClass,"Primary Lab: Schertz
+Secondary Lab: Richland Hills
+(See Setup Tab for details)","Set-up Primary Lab Facilty Rules: 
+Lens Tab:
+Accepts Uncut Jobs: unchecked
+
+Set-up Secondary Lab Facilty Rules: 
+Lens Tab:
+Accepts Uncut Jobs: checked
+",66,"Primary Lab does not accept Uncut Jobs, Secondary Lab accepts Uncut Jobs",35841
+,,,,,,,,,JSON Work Order,,INSERT ORDER HERE,
+,,,,,,,,,"Enter the EOR, Select Search Workorder",,,
+,,,,,,,,,"Enter RX Number, click Search",,Validate all fields translate over to EOR accurately in the Frames & Lens Tab and Add On and Comment Tab.,
+,,,,,,,,,Validate all fields of file,,Under the Communication Tab Validate File Path:,
+"Primary Lab does not accept Cut Jobs, Secondary Lab accepts Cut Jobs",Functional,Critical,15m,None,Final,Lisa Roselle,Facility Rules Cut Jobs,"Primary Lab: Schertz
+Secondary Lab: Richland Hills
+(See Setup Tab for details)","Set-up Primary Lab Facilty Rules: 
+Lens Tab:
+Accepts Cut Jobs: unchecked
+
+Set-up Secondary Lab Facilty Rules: 
+Lens Tab:
+Accepts Cut Jobs: checked",67,"Primary Lab does not accept Cut Jobs, Secondary Lab accepts Cut Jobs",35841
+,,,,,,,,,JSON Work Order,,INSERT ORDER HERE,
+,,,,,,,,,"Enter the EOR, Select Search Workorder",,,
+,,,,,,,,,"Enter RX Number, click Search",,Validate all fields translate over to EOR accurately in the Frames & Lens Tab and Add On and Comment Tab.,
+,,,,,,,,,Validate all fields of file,,Under the Communication Tab Validate File Path: ,
+"Primary Lab has DNR Lens Code within the ranges, Primary Lab is Active, Does not accepts union jobs",Functiona,Critical,15m,None,Final,Lisa Roselle,Primary Lab DNR - Lens Code within RX Range,"(""+"" cylinder - transpositon) - Primary Lab: Schertz
+Secondary Lab: Richland Hills
+(See Setup Tab for details)","Set-up Primary Lab Facility Rules: 
+General Tab:
+Facility is Active is checked
+Accept Union Jobs is unchecked
+Lens Tab: 
+Lens Code: 101011 DISTANCE -  PLASTIC S
+Do Not Reroute is checked
+Sph 1 From: -10.00
+Sph 1 To:  6.00
+Cylinder 1 From: -5.00
+Cylinder 1 To: 0
+
+Set-up Secondary Lab Facility Rules:
+General Tab:
+Facility is Active is checked
+Accept Union Jobs is checked
+Lens Tab:
+Lens Code: 101011 DISTANCE -  PLASTIC S
+Sph 1 From: -12.00
+Sph 1 To:  8.00
+Cylinder 1 From: -5.00
+Cylinder 1 To: 0",68,"Primary Lab has DNR Lens Code within the ranges, Primary Lab is Active, Does not accepts union jobs",35845
+,,,,,,,,,JSON Work Order,,INSERT ORDER HERE,
+,,,,,,,,,"Enter the EOR, Select Search Workorder",,,
+,,,,,,,,,"Enter RX Number, click Search",,Validate all fields translate over to EOR accurately in the Frames & Lens Tab and Add On and Comment Tab.,
+,,,,,,,,,Validate all fields of file,,Under the Communication Tab Validate File Path:,
+"Primary Lab has DNR Lens Code within the ranges, Primary Lab is Active, Accepts union jobs",Functional,Critical,15m,None,Final,Lisa Roselle,Primary Lab DNR - Lens Code within RX Range,"Primary Lab: Schertz
+Secondary Lab: Richland Hills
+(See Setup Tab for details)","Set-up Primary Lab Facility Rules: 
+General Tab:
+Facility is Active is checked
+Accept Union Jobs is checked
+Lens Tab: 
+Lens Code: 101011 DISTANCE -  PLASTIC S
+Do Not Reroute is checked
+Sph 1 From: -10.00
+Sph 1 To:  6.00
+Cylinder 1 From: -5.00
+Cylinder 1 To: 0
+
+Set-up Secondary Lab Facility Rules:
+General Tab:
+Facility is Active is checked
+Accept Union Jobs is checked
+Lens Tab:
+Lens Code: 101011 DISTANCE -  PLASTIC S
+Sph 1 From: -12.00
+Sph 1 To:  8.00
+Cylinder 1 From: -5.00
+Cylinder 1 To: 0",70,"Primary Lab has DNR Lens Code within the ranges, Primary Lab is Active, Accepts union jobs",35845
+,,,,,,,,,JSON Work Order,,INSERT ORDER HERE,
+,,,,,,,,,"Enter the EOR, Select Search Workorder",,,
+,,,,,,,,,"Enter RX Number, click Search",,Validate all fields translate over to EOR accurately in the Frames & Lens Tab and Add On and Comment Tab.,
+,,,,,,,,,Validate all fields of file,,Under the Communication Tab Validate File Path:,
+Primary Lab has Do Not Accept iClass Items number,Functional,Critical,15m,None,Final,Lisa Roselle,Facility Rules - iClass,"Primary Lab: Schertz
+Secondary Lab: Richland Hills
+(See Setup Tab for details)","Set-up Primary Lab Facilty Rules: 
+Frame Tab 
+Add iClass that is not accepted at Primary Lab",72,Primary Lab has Do Not Accept iClass Items number,35841
+,,,,,,,,,JSON Work Order,,INSERT ORDER HERE,
+,,,,,,,,,"Enter the EOR, Select Search Workorder",,,
+,,,,,,,,,"Enter RX Number, click Search",,Validate all fields translate over to EOR accurately in the Frames & Lens Tab and Add On and Comment Tab.,
+,,,,,,,,,Validate all fields of file,,Under the Communication Tab Validate File Path: ,
+Remake of TC68,Functional,Critical,Critical,None,Final,Lisa Roselle,Remake,"(""+"" cylinder - transpositon) - Primary Lab: Schertz
+Secondary Lab: Richland Hills
+(See Setup Tab for details)","Set-up Primary Lab Facility Rules: 
+General Tab:
+Facility is Active is checked
+Accept Union Jobs is unchecked
+Lens Tab: 
+Lens Code: 101011 DISTANCE -  PLASTIC S
+Do Not Reroute is checked
+Sph 1 From: -10.00
+Sph 1 To:  6.00
+Cylinder 1 From: -5.00
+Cylinder 1 To: 0
+
+Set-up Secondary Lab Facility Rules:
+General Tab:
+Facility is Active is checked
+Accept Union Jobs is checked
+Lens Tab:
+Lens Code: 101011 DISTANCE -  PLASTIC S
+Sph 1 From: -12.00
+Sph 1 To:  8.00
+Cylinder 1 From: -5.00
+Cylinder 1 To: 0",81,"Primary Lab has DNR Lens Code within the ranges, Primary Lab is Active, Does not accepts union jobs",35846
+,,,,,,,,,JSON Work Order,,INSERT ORDER HERE,
+,,,,,,,,,"Enter the EOR, Select Search Workorder",,,
+,,,,,,,,,"Enter RX Number, click Search",,Validate all fields translate over to EOR accurately in the Frames & Lens Tab and Add On and Comment Tab.,
+,,,,,,,,,Validate all fields of file,,Under the Communication Tab Validate File Path:,
+Retransmittal of TC68,Functional,Critical,Critical,None,Final,Lisa Roselle,Remake,"(""+"" cylinder - transpositon) - Primary Lab: Schertz
+Secondary Lab: Richland Hills
+(See Setup Tab for details)","Set-up Primary Lab Facility Rules: 
+General Tab:
+Facility is Active is checked
+Accept Union Jobs is unchecked
+Lens Tab: 
+Lens Code: 101011 DISTANCE -  PLASTIC S
+Do Not Reroute is checked
+Sph 1 From: -10.00
+Sph 1 To:  6.00
+Cylinder 1 From: -5.00
+Cylinder 1 To: 0
+
+Set-up Secondary Lab Facility Rules:
+General Tab:
+Facility is Active is checked
+Accept Union Jobs is checked
+Lens Tab:
+Lens Code: 101011 DISTANCE -  PLASTIC S
+Sph 1 From: -12.00
+Sph 1 To:  8.00
+Cylinder 1 From: -5.00
+Cylinder 1 To: 0",82,"Primary Lab has DNR Lens Code within the ranges, Primary Lab is Active, Does not accepts union jobs",35846
+,,,,,,,,,JSON Work Order,,INSERT ORDER HERE,
+,,,,,,,,,"Enter the EOR, Select Search Workorder",,,
+,,,,,,,,,"Enter RX Number, click Search",,Validate all fields translate over to EOR accurately in the Frames & Lens Tab and Add On and Comment Tab.,
+,,,,,,,,,Validate all fields of file,,Under the Communication Tab Validate File Path:,
+"Primary Lab does not accept Frame to Come, Primary Lab is Active, Secondary Lab is Null, Manufacturing Facility Offload Sequence 1 set
+Sequence 1 lab does accept Frame to Come, Primary Lab is Active",Functional,Critical,15m,None,Final,Lisa Roselle,Offload Capacity - Frame to Come,"Primary Lab: Schertz
+Secondary Lab: Do Not Use
+(See Setup Tab for details)","Account Setup
+DNR: is unchecked
+
+Set-up Primary Lab Facility Rules: 
+General Tab:
+Facility is Active is checked
+Manufacturing Facility Offload Sequence Selection:
+Richland Hills is selected as Sequence 1
+Job Offload Capacity is set ""20""
+Job Block Count is equal to Job Offload Capacity
+Frame Tab:
+Accept Frame to Come is unchecked
+
+Set-up Associated Lab Facility Rules: 
+General Tab:
+Facility is Active is checked
+Manufacturing Facility Offload Sequence Selection:
+Schertz is selected as Sequence 1
+Job Offload Capacity is set ""20""
+Job Block Count is equal to Job Offload Capacity
+Frame Tab:
+Accept Frame to Come is checked",83,,35849
+,,,,,,,,,JSON Work Order,,INSERT ORDER HERE,
+,,,,,,,,,"Enter the EOR, Select Search Workorder",,,
+,,,,,,,,,"Enter RX Number, click Search",,Validate all fields translate over to EOR accurately in the Frames & Lens Tab and Add On and Comment Tab.,
+,,,,,,,,,Validate all fields of file,,Under the Communication Tab Validate File Path: ,
+,,,,,,,,,Validate Current WIP Count increments by 1 for the Manufacturing Facility job the was routed to.,,,
+,,,,,,,,,Validate Current Receiving Count increments by 1 for the Manufacturing Facility job was routed to.,,,
+,,,,,,,,,Validate Current Received Job Offload Count increments by 1 for the Manufacturing Facility job was routed to.,,,
+,,,,,,,,,Validate Current Sent Job Offload Count increments by 1 for Manufacturing Facility job was routed from.,,,
+,,,,,,,,,Validate Current Sent Job Block Count increments by 1 for Manufacturing Facility job was routed from,,,
+"Primary Lab does not accept Frame to Come, Primary Lab is not Active, Secondary Lab is Null, Manufacturing Facility Offload Sequence 1 set
+Sequence 1 lab does accept Frame to Come, Primary Lab is Active",Functional,Critical,15m,None,Final,Lisa Roselle,Offload Capacity - Frame to Come,"Primary Lab: Schertz
+Secondary Lab: Do Not Use
+(See Setup Tab for details)","Account Setup
+DNR: is unchecked
+
+Set-up Primary Lab Facility Rules: 
+General Tab:
+Facility is Active is unchecked
+Manufacturing Facility Offload Sequence Selection:
+Richland Hills is selected as Sequence 1
+Job Offload Capacity is set ""High Number""
+Job Block Count is equal to Job Offload Capacity
+Frame Tab:
+Accept Frame to Come is unchecked
+
+Set-up Secondary Lab Facility Rules: 
+General Tab:
+Facility is Active is checked
+Manufacturing Facility Offload Sequence Selection:
+Richland Hills is selected as Sequence 1
+Job Offload Capacity is set ""High Number""
+Job Block Count is equal to Job Offload Capacity
+Frame Tab:
+Accept Frame to Come is checked",84,"Primary Lab does not accept Frame to Come, Primary Lab is not Active, Secondary Lab is Null, Manufacturing Facility Offload Sequence 1 set",35849
+,,,,,,,,,JSON Work Order,,INSERT ORDER HERE,
+,,,,,,,,,"Enter the EOR, Select Search Workorder",,,
+,,,,,,,,,"Enter RX Number, click Search",,Validate all fields translate over to EOR accurately in the Frames & Lens Tab and Add On and Comment Tab.,
+,,,,,,,,,Validate all fields of file,,Under the Communication Tab Validate File Path: ,
+,,,,,,,,,Validate Current WIP Count increments by 1 for the Manufacturing Facility job the was routed to.,,,
+,,,,,,,,,Validate Current Receiving Count increments by 1 for the Manufacturing Facility job was routed to.,,,
+,,,,,,,,,Validate Current Received Job Offload Count increments by 1 for the Manufacturing Facility job was routed to.,,,
+,,,,,,,,,Validate Current Sent Job Offload Count increments by 1 for Manufacturing Facility job was routed from.,,,
+,,,,,,,,,Validate Current Sent Job Block Count increments by 1 for Manufacturing Facility job was routed from,,,
+"Primary Lab does not accept SKU (w/o zeros), Secondary Lab is Null, Manufacturing Facility Offload Sequence 1 set",Functional,Critical,15m,None,Final,Lisa Roselle,Offload Capacity - SKU,"Primary Lab: Schertz
+Secondary Lab: Do Not Use
+(See Setup Tab for details)","Account Setup
+DNR: is unchecked
+
+Set-up Primary Lab Facilty Rules: 
+General Tab:
+Manufacturing Facility Offload Sequence Selection:
+Richland Hills is selected as Sequence 1
+Job Offload Capacity is set ""20""
+Job Block Count is equal to Job Offload Capacity
+Frame Tab 
+Add sku that is not accepted at Primary Lab
+Supply Frame: checked",85,"Primary Lab does not accept SKU (w and w/o zeros), Secondary Lab is Null, Manufacturing Facility Offload Sequence 1 set",35849
+,,,,,,,,,JSON Work Order,,INSERT ORDER HERE,
+,,,,,,,,,"Enter the EOR, Select Search Workorder",,,
+,,,,,,,,,"Enter RX Number, click Search",,Validate all fields translate over to EOR accurately in the Frames & Lens Tab and Add On and Comment Tab.,
+,,,,,,,,,Validate all fields of file,,Under the Communication Tab Validate File Path: ,
+,,,,,,,,,Validate Current WIP Count increments by 1 for the Manufacturing Facility job the was routed to,,,
+,,,,,,,,,Validate Current Receiving Count increments by 1 for the Manufacturing Facility job was routed to.,,,
+,,,,,,,,,Validate Current Received Job Offload Count increments by 1 for the Manufacturing Facility job was routed to. ,,,
+,,,,,,,,,Validate Current Sent Job Offload Count increments by 1 for Manufacturing Facility job was routed from.,,,
+,,,,,,,,,Validate Current Sent Job Block Count increments by 1 for Manufacturing Facility job was routed from.,,,
+"Primary Lab is Down, Secondary Lab is Null, Manufacturing Facility Offload Sequence 1 set",Functional,Critical,15m,None,Final,Lisa Roselle,Offload Capacity - Operational Status,"Primary Lab: Schertz
+Secondary Lab: Do Not Use
+(See Setup Tab for details)","Account Setup
+DNR: is unchecked
+
+Set-up Primary Lab Facilty Rules:
+General Tab:
+Facility is Active is unchecked
+Manufacturing Facility Offload Sequence Selection:
+Richland Hills is selected as Sequence 1
+Job Offload Capacity is set ""20""
+Job Block Count is equal to Job Offload Capacity",87,"Primary Lab is Down, Secondary Lab is Null, Manufacturing Facility Offload Sequence 1 set",35849
+,,,,,,,,,JSON Work Order,,INSERT ORDER HERE,
+,,,,,,,,,"Enter the EOR, Select Search Workorder",,,
+,,,,,,,,,"Enter RX Number, click Search",,Validate all fields translate over to EOR accurately in the Frames & Lens Tab and Add On and Comment Tab.,
+,,,,,,,,,Validate all fields of file,,Under the Communication Tab Validate File Path: ,
+,,,,,,,,,Validate Current WIP Count increments by 1 for the Manufacturing Facility job the was routed to.,,,
+,,,,,,,,,Validate Current Receiving Count increments by 1 for the Manufacturing Facility job was routed to.,,,
+,,,,,,,,,Validate Current Received Job Offload Count increments by 1 for the Manufacturing Facility job was routed to.,,,
+,,,,,,,,,Validate Current Sent Job Offload Count increments by 1 for Manufacturing Facility job was routed from.,,,
+,,,,,,,,,Validate Current Sent Job Block Count increments by 1 for Manufacturing Facility job was routed from.,,,
+"Primary Lab does not accept Service (Tint-Solid), Secondary Lab is Null, Manufacturing Facility Offload Sequence 1 set",Functional,Critical,15m,None,Final,Lisa Roselle,Offload Capacity - Service,"Primary Lab: Schertz
+Secondary Lab: Do Not Use
+(See Setup Tab for details)","Account Setup
+DNR: is unchecked
+
+Set-up Primary Lab Facilty Rules: 
+General Tab:
+Manufacturing Facility Offload Sequence Selection:
+Richland Hills is selected as Sequence 1
+Job Offload Capacity is set ""20""
+Job Block Count is equal to Job Offload Capacity
+Service Coating Tab:
+Tint - Solid is unchecked",88,"Primary Lab does not accept Service (Tint-Solid), Secondary Lab is Null, Manufacturing Facility Offload Sequence 1 set",35849
+,,,,,,,,,JSON Work Order,,INSERT ORDER HERE,
+,,,,,,,,,"Enter the EOR, Select Search Workorder",,,
+,,,,,,,,,"Enter RX Number, click Search",,Validate all fields translate over to EOR accurately in the Frames & Lens Tab and Add On and Comment Tab.,
+,,,,,,,,,Validate all fields of file,,Under the Communication Tab Validate File Path: ,
+,,,,,,,,,Validate Current WIP Count increments by 1 for the Manufacturing Facility job the was routed to.,,,
+,,,,,,,,,Validate Current Receiving Count increments by 1 for the Manufacturing Facility job was routed to,,,
+,,,,,,,,,Validate Current Received Job Offload Count increments by 1 for the Manufacturing Facility job was routed to.,,,
+,,,,,,,,,Validate Current Sent Job Offload Count increments by 1 for Manufacturing Facility job was routed from.,,,
+,,,,,,,,,Validate Current Sent Job Block Count increments by 1 for Manufacturing Facility job was routed from,,,
+"Primary Lab not below max WIP, Apply This Rule is checked, Secondary Lab is Null, Manufacturing Facility Offload Sequence 1 set",Functional,Critical,15m,None,Final,Lisa Roselle,Offload Capacity - Maximum WIP,"Primary Lab: Schertz
+Secondary Lab: Do Not Use
+(See Setup Tab for details)
+Need to determine current WIP to set maximum WIP for this test case.","Account Setup
+DNR: is unchecked
+
+Set-up Primary Lab Facility Rules: 
+General Tab:
+Set the max WIP capacity @ ""X"" 
+Apply This Rule is checked
+Manufacturing Facility Offload Sequence Selection:
+Richland Hills is selected as Sequence 1
+Job Offload Capacity is set ""20""
+Job Block Count is equal to Job Offload Capacity",89,"Primary Lab not below max WIP, Apply This Rule is checked, Secondary Lab is Null, Manufacturing Facility Offload Sequence 1 set",35849
+,,,,,,,,,JSON Work Order,,INSERT ORDER HERE,
+,,,,,,,,,"Enter the EOR, Select Search Workorder",,,
+,,,,,,,,,"Enter RX Number, click Search",,Validate all fields translate over to EOR accurately in the Frames & Lens Tab and Add On and Comment Tab.,
+,,,,,,,,,Validate all fields of file,,Under the Communication Tab Validate File Path: ,
+,,,,,,,,,Validate Current WIP Count increments by 1 for the Manufacturing Facility job the was routed to.,,,
+,,,,,,,,,Validate Current Receiving Count increments by 1 for the Manufacturing Facility job was routed to.,,,
+,,,,,,,,,Validate Current Received Job Offload Count increments by 1 for the Manufacturing Facility job was routed to.,,,
+,,,,,,,,,Validate Current Sent Job Offload Count increments by 1 for Manufacturing Facility job was routed from.,,,
+,,,,,,,,,Validate Current Sent Job Block Count increments by 1 for Manufacturing Facility job was routed from.,,,
+"Primary Lab does not accept Combine 2 (Tint & CS), Secondary Lab is Null, Manufacturing Facility Offload Sequence 1 set",Functional,Critical,15m,None,Final,Lisa Roselle,Offload Capacity - Combine 2,"Primary Lab: Schertz
+Secondary Lab: Do Not Use
+(See Setup Tab for details)","Set-up Primary Lab Facilty Rules: 
+General Tab:
+Manufacturing Facility Offload Sequence Selection:
+Richland Hills is selected as Sequence 1
+Job Offload Capacity is set ""High Number""
+Job Block Count is equal to Job Offload Capacity
+Service Coating Tab: 
+Service: Tint 
+Combine 1: UV
+Accept is unchecked",90,"Primary Lab does not accept Combine 2 (Tint & CS), Secondary Lab is Null, Manufacturing Facility Offload Sequence 1 set",35849
+,,,,,,,,,JSON Work Order,,INSERT ORDER HERE,
+,,,,,,,,,"Enter the EOR, Select Search Workorder",,,
+,,,,,,,,,"Enter RX Number, click Search",,Validate all fields translate over to EOR accurately in the Frames & Lens Tab and Add On and Comment Tab.,
+,,,,,,,,,Validate all fields of file,,Under the Communication Tab Validate File Path: ,
+,,,,,,,,,Validate Current WIP Count increments by 1 for the Manufacturing Facility job the was routed to.,,,
+,,,,,,,,,Validate Current Receiving Count increments by 1 for the Manufacturing Facility job was routed to.,,,
+,,,,,,,,,Validate Current Received Job Offload Count increments by 1 for the Manufacturing Facility job was routed to.,,,
+,,,,,,,,,Validate Current Sent Job Offload Count increments by 1 for Manufacturing Facility job was routed from,,,
+,,,,,,,,,Validate Current Sent Job Block Count increments by 1 for Manufacturing Facility job was routed from.,,,
+"Primary Lab does not accept Combine 3 (Slab off, AR, UV), Secondary Lab is Null, Manufacturing Facility Offload Sequence 1 set",Functional,Critical,15m,None,Final,Lisa Roselle,Offload Capacity - Combine 3,"Primary Lab: Schertz
+Secondary Lab: Do Not Use
+(See Setup Tab for details)","Set-up Primary Lab Facilty Rules: 
+General Tab:
+Manufacturing Facility Offload Sequence Selection:
+Richland Hills is selected as Sequence 1
+Job Offload Capacity is set ""High Number""
+Job Block Count is equal to Job Offload Capacity
+Service Coating Tab: 
+Service: Add on Slab off
+Combine 1: Coating AR
+Combine 2: Coating UV
+Accept check box is unchecked",91,"Primary Lab does not accept Combine 3 (Slab off, AR, UV), Secondary Lab is Null, Manufacturing Facility Offload Sequence 1 set",35849
+,,,,,,,,,JSON Work Order,,INSERT ORDER HERE,
+,,,,,,,,,"Enter the EOR, Select Search Workorder",,,
+,,,,,,,,,"Enter RX Number, click Search",,Validate all fields translate over to EOR accurately in the Frames & Lens Tab and Add On and Comment Tab.,
+,,,,,,,,,Validate all fields of file,,Under the Communication Tab Validate File Path: ,
+,,,,,,,,,Validate Current WIP Count increments by 1 for the Manufacturing Facility job the was routed to.,,,
+,,,,,,,,,Validate Current Receiving Count increments by 1 for the Manufacturing Facility job was routed to.,,,
+,,,,,,,,,Validate Current Received Job Offload Count increments by 1 for the Manufacturing Facility job was routed to.,,,
+,,,,,,,,,Validate Current Sent Job Offload Count increments by 1 for Manufacturing Facility job was routed from.,,,
+,,,,,,,,,Validate Current Sent Job Block Count increments by 1 for Manufacturing Facility job was routed from.,,,
+"Primary Lab not below Daily Max, Apply this rule is checked, Secondary Lab is Null, Manufacturing Facility Offload Sequence 1 set",Functional,Critical,15m,None,Final,Lisa Roselle,Offload Capacity - Daily Maximum ,"Primary Lab: Schertz
+Secondary Lab: Do Not Use
+(See Setup Tab for details)
+Need to determine what to set the maximum daily capacity for this test case.","Set-up Primary Lab Facilty Rules: 
+General Tab:
+Set the maximum daily receiving capacity to ""X""  Apply This Rule is checked
+Manufacturing Facility Offload Sequence Selection:
+Richland Hills is selected as Sequence 1
+Job Offload Capacity is set ""High Number""
+Job Block Count is equal to Job Offload Capacity
+",92,"Primary Lab not below Daily Max, Secondary Lab is Null, Manufacturing Facility Offload Sequence 1 set",35849
+,,,,,,,,,JSON Work Order,,INSERT ORDER HERE,
+,,,,,,,,,"Enter the EOR, Select Search Workorder",,,
+,,,,,,,,,"Enter RX Number, click Search",,Validate all fields translate over to EOR accurately in the Frames & Lens Tab and Add On and Comment Tab.,
+,,,,,,,,,Validate all fields of file,,Under the Communication Tab Validate File Path: ,
+,,,,,,,,,Validate Current WIP Count increments by 1 for the Manufacturing Facility job the was routed to.,,,
+,,,,,,,,,Validate Current Receiving Count increments by 1 for the Manufacturing Facility job was routed to.,,,
+,,,,,,,,,Validate Current Received Job Offload Count increments by 1 for the Manufacturing Facility job was routed to.,,,
+,,,,,,,,,Validate Current Sent Job Offload Count increments by 1 for Manufacturing Facility job was routed from.,,,
+,,,,,,,,,Validate Current Sent Job Block Count increments by 1 for Manufacturing Facility job was routed from.,,,
+"Primary Lab does not accept Lens Code (204040- 7X28 PGX), Secondary Lab is Null, Manufacturing Facility Offload Sequence 1 set",Functional,Critical,15m,None,Final,Lisa Roselle,Offload Capacity - Lens Code,"Primary Lab: Schertz
+Secondary Lab: Do Not Use
+(See Setup Tab for details)","Set-up Primary Lab Facilty Rules: 
+General Tab:
+Manufacturing Facility Offload Sequence Selection:
+Richland Hills is selected as Sequence 1
+Job Offload Capacity is set ""20""
+Job Block Count is equal to Job Offload Capacity
+Lens Tab: 
+Deselect the Accept check box for Lens Code: 205040, Lens Description: 7X28 PGX",93,"Primary Lab does not accept Lens Code (204040- 7X28 PGX), Secondary Lab is Null, Manufacturing Facility Offload Sequence 1 set",35849
+,,,,,,,,,JSON Work Order,,INSERT ORDER HERE,
+,,,,,,,,,"Enter the EOR, Select Search Workorder",,,
+,,,,,,,,,"Enter RX Number, click Search",,Validate all fields translate over to EOR accurately in the Frames & Lens Tab and Add On and Comment Tab.,
+,,,,,,,,,Validate all fields of file,,Under the Communication Tab Validate File Path: ,
+,,,,,,,,,Validate Current WIP Count increments by 1 for the Manufacturing Facility job the was routed to.,,,
+,,,,,,,,,Validate Current Receiving Count increments by 1 for the Manufacturing Facility job was routed to,,,
+,,,,,,,,,Validate Current Received Job Offload Count increments by 1 for the Manufacturing Facility job was routed to.,,,
+,,,,,,,,,Validate Current Sent Job Offload Count increments by 1 for Manufacturing Facility job was routed from.,,,
+,,,,,,,,,Validate Current Sent Job Block Count increments by 1 for Manufacturing Facility job was routed from,,,
+"Primary Lab accepts Lens Type but not within the ranges, Secondary Lab is Null, Manufacturing Facility Offload Sequence 1 set",Functional,Critical,15m,None,Final,Lisa Roselle,Offload Capacity - RX Range,"Primary Lab: Schertz
+Secondary Lab: Do Not Use
+(See Setup Tab for details)","Set-up Primary Lab Facility Rules: 
+General Tab:
+Manufacturing Facility Offload Sequence Selection:
+Richland Hills is selected as Sequence 1
+Job Offload Capacity is set ""High Number""
+Job Block Count is equal to Job Offload Capacity
+Under the Lens Tab: 
+For Lens Code: 104062  ADAPT POLY set:  
+Sph 1 From: -1.00 
+Sph 1 To:  +1 .00
+Set-up Secondary Lab Facility Rules:
+Under Lens Tab:
+For Lens Code: 104062  ADAPT POLY set:  
+Sph 1 From: -2.00 
+Sph 1 To:  +2 .00",94,"Primary Lab accepts Lens Type but not within the ranges, Secondary Lab is Null, Manufacturing Facility Offload Sequence 1 set",35849
+,,,,,,,,,JSON Work Order,,INSERT ORDER HERE,
+,,,,,,,,,"Enter the EOR, Select Search Workorder",,,
+,,,,,,,,,"Enter RX Number, click Search",,Validate all fields translate over to EOR accurately in the Frames & Lens Tab and Add On and Comment Tab.,
+,,,,,,,,,Validate all fields of file,,Under the Communication Tab Validate File Path: ,
+,,,,,,,,,Validate Current WIP Count increments by 1 for the Manufacturing Facility job the was routed to.,,,
+,,,,,,,,,Validate Current Receiving Count increments by 1 for the Manufacturing Facility job was routed to.,,,
+,,,,,,,,,Validate Current Received Job Offload Count increments by 1 for the Manufacturing Facility job was routed to.,,,
+,,,,,,,,,Validate Current Sent Job Offload Count increments by 1 for Manufacturing Facility job was routed from.,,,
+,,,,,,,,,Validate Current Sent Job Block Count increments by 1 for Manufacturing Facility job was routed from.,,,
+"Primary Lab has DNR for Frame to Come, Primary Lab is Active, Does not accepts Union Jobs, Secondary Lab is Null, Manufacturing Facility Offload Sequence 1 set",Functional,Critical,15m,None,Final,Lisa Roselle,Primary Lab DNR - Offload Capacity,"Primary Lab: Richland Hills
+Secondary Lab: Do Not Use
+(See Setup Tab for details)","Account Setup
+DNR: is unchecked
+
+Set-up Primary Lab Facilty Rules: 
+Frame Tab:
+Check Do No Reroute Frame to Come
+General Tab:
+Primary Lab Is Active
+Accepts Union Jobs unchecked
+Manufacturing Facility Offload Sequence Selection:
+Schertz is selected as Sequence 1
+Job Offload Capacity is set ""20""
+Job Block Count is equal to Job Offload Capacity",96,"Primary Lab is Active, Does not accepts Union Jobs, Secondary Lab is Null, Manufacturing Facility Offload Sequence 1 set",35845
+,,,,,,,,,JSON Work Order,,INSERT ORDER HERE,
+,,,,,,,,,"Enter the EOR, Select Search Workorder",,,
+,,,,,,,,,"Enter RX Number, click Search",,Validate all fields translate over to EOR accurately in the Frames & Lens Tab and Add On and Comment Tab.,
+,,,,,,,,,Validate all fields of file,,Under the Communication Tab Validate File Path: ,
+,,,,,,,,,Validate Current WIP Count increments by 1 for the Manufacturing Facility job was routed to.,,,
+,,,,,,,,,Validate Current Receiving Count increments by 1 for the Manufacturing Facility job was routed to.,,,
+"Primary Lab has DNR SKU, Primary Lab is Active, Does not accepts Union Jobs, Secondary Lab is Null, Manufacturing Facility Offload Sequence 1 set",Functional,Critical,15m,None,Final,Lisa Roselle,Primary Lab DNR - Offload Capacity,"Primary Lab: Richland HIlls
+Secondary Lab: Do Not Use
+(See Setup Tab for details)","Account Setup
+DNR: is unchecked
+
+Set-up Primary Lab Facilty Rules: 
+Frame Tab:
+Add sku to the Do Not Reroute these Frames
+General Tab: 
+Primary Lab Is Active
+Accepts Union Jobs in unchecked
+Manufacturing Facility Offload Sequence Selection:
+Schertz is selected as Sequence 1
+Job Offload Capacity is set ""High Number""
+Job Block Count is equal to Job Offload Capacity",100,"Primary Lab has DNR SKU, Primary Lab is Active, Does not accepts Union Jobs, Secondary Lab is Null, Manufacturing Facility Offload Sequence 1 set",35845
+,,,,,,,,,JSON Work Order,,INSERT ORDER HERE,
+,,,,,,,,,"Enter the EOR, Select Search Workorder",,,
+,,,,,,,,,"Enter RX Number, click Search",,Validate all fields translate over to EOR accurately in the Frames & Lens Tab and Add On and Comment Tab.,
+,,,,,,,,,Validate all fields of file,,Under the Communication Tab Validate File Path: ,
+,,,,,,,,,Validate Current WIP Count increments by 1 for the Manufacturing Facility job was routed to.,,,
+,,,,,,,,,Validate Current Receiving Count increments by 1 for the Manufacturing Facility job was routed to.,,,
+"Primary Lab has DNR Service (Tint-Solid), Is Active, Primary Lab is Active, Does not accepts Union Jobs, Secondary Lab is Null, Manufacturing Facility Offload Sequence 1 set",Functional,Critical,15m,None,Final,Lisa Roselle,Primary Lab DNR - Offload Capacity,"Primary Lab: Richland Hills
+Secondary Lab: Do Not Use
+(See Setup Tab for details)","Account Setup
+DNR: is unchecked
+
+Set-up Primary Lab Facilty Rules: 
+Service Coating Tab:
+Check Do Not Reroute for Service: Tint Solid
+Is Active is checked
+General Tab:
+Facility Is Active is Checked
+Accept Union Job is Unchecked
+Manufacturing Facility Offload Sequence Selection:
+Schertz is selected as Sequence 1
+Job Offload Capacity is set 20
+Job Block Count is equal to Job Offload Capacity",104,"Primary Lab has DNR Service (Tint-Solid), Is Active, Primary Lab is Active, Does not accepts Union Jobs, Secondary Lab is Null, Manufacturing Facility Offload Sequence 1 set",35845
+,,,,,,,,,JSON Work Order,,INSERT ORDER HERE,
+,,,,,,,,,"Enter the EOR, Select Search Workorder",,,
+,,,,,,,,,"Enter RX Number, click Search",,Validate all fields translate over to EOR accurately in the Frames & Lens Tab and Add On and Comment Tab.,
+,,,,,,,,,Validate all fields of file,,Under the Communication Tab Validate File Path: ,
+,,,,,,,,,Validate Current WIP Count increments by 1 for the Manufacturing Facility job the was routed to.,,,
+,,,,,,,,,Validate Current Receiving Count increments by 1 for the Manufacturing Facility job was routed to.,,,
+,,,,,,,,,Validate Current Received Job Offload Count increments by 1 for the Manufacturing Facility job was routed to.,,,
+,,,,,,,,,Validate Current Sent Job Offload Count increments by 1 for Manufacturing Facility job was routed from.,,,
+,,,,,,,,,Validate Current Sent Job Block Count increments by 1 for Manufacturing Facility job was routed from.,,,
+"Primary Lab has DNR Service (Tint-Solid), Is Not Active, Primary Lab is Active, Does not accepts Union Jobs, Secondary Lab is Null, Manufacturing Facility Offload Sequence 1 set",Functional,Critical,15m,None,Final,Lisa Roselle,Primary Lab DNR - Offload Capacity,"Primary Lab: Richland Hills
+Secondary Lab: Do Not Use
+(See Setup Tab for details)","Account Setup
+DNR: is unchecked
+
+Set-up Primary Lab Facility Rules: 
+General Tab:
+Facility Is Active is checked
+Accept Union Job is unchecked
+Manufacturing Facility Offload Sequence Selection:
+Schertz is selected as Sequence 1
+Job Offload Capacity is set ""20""
+Job Block Count is equal to Job Offload Capacity
+Service Coating Tab:
+Check Do Not Reroute for Service: Tint Solid
+Is Active is unchecked",108,"Primary Lab has DNR Service (Tint-Solid), Is Not Active, Primary Lab is Active, Does not accepts Union Jobs, Secondary Lab is Null, Manufacturing Facility Offload Sequence 1 set",35845
+,,,,,,,,,JSON Work Order,,INSERT ORDER HERE,
+,,,,,,,,,"Enter the EOR, Select Search Workorder",,,
+,,,,,,,,,"Enter RX Number, click Search",,Validate all fields translate over to EOR accurately in the Frames & Lens Tab and Add On and Comment Tab.,
+,,,,,,,,,Validate all fields of file,,Under the Communication Tab Validate File Path: ,
+,,,,,,,,,Validate Current WIP Count increments by 1 for the Manufacturing Facility job the was routed to.,,,
+,,,,,,,,,Validate Current Receiving Count increments by 1 for the Manufacturing Facility job was routed to.,,,
+,,,,,,,,,Validate Current Received Job Offload Count increments by 1 for the Manufacturing Facility job was routed to.,,,
+,,,,,,,,,Validate Current Sent Job Offload Count increments by 1 for Manufacturing Facility job was routed from.,,,
+,,,,,,,,,Validate Current Sent Job Block Count increments by 1 for Manufacturing Facility job was routed from.,,,
+"Primary lab does not accept Lens Code within RX range, Richland Hills is set as Sequence 3 for Associated Labs and does not accept Lens Code within RX range",Functional,Critical,15m,None,Final,Lisa Roselle,Account Rules - Primary Lab w/Associated Lab (Seq 3),"Primary Lab: Schertz
+Secondary Lab: Do Not Use
+Associate Labs:
+Sequence 1 is Syracuse, Sequence 2 is Test Location, Sequence 3 is Richland Hills, Sequence 4 is Test Location 2 ","Set-up Primary Lab Facility Rules: 
+Account Set Up
+Do Not Reroute must be unchecked.
+General Tab:
+Manufacturing Facility Offload Sequence Selection:
+Syracuse is selected as Sequence 1
+Test Location is selected as Sequence 2 
+Richland Hills is selected as Sequence 3
+Test Location 2 is selected as Sequence 4
+Lens Tab:
+Accept Uncut Job is checked
+For Lens Code: 104062  ADAPT POLY set:  
+Sph 1 From: +1.00 
+Sph 1 To:  -1 .00
+
+Set-up Associated Lab Facility Rules: 
+Lens Tab:  Lens Code 104062 ADAPT POLY
+Syracuse is unchecked
+Richland Hills is checked
+Lens Tab:
+Accept Uncut Job is checked
+For Lens Code 104062  ADAPT POLY set:  
+Sph 1 From: +1.00 
+Sph 1 To:  -1 .00
+Test Location  is unchecked
+Test Location 2  is unchecked",,"Primary lab does not accept Lens Code within RX range, Richland Hills is set as Sequence 3 for Associated Labs and does not accept Lens Code within RX range",35851
+,,,,,,,,,JSON Work Order,,INSERT ORDER HERE,
+,,,,,,,,,"Enter the EOR, Select Search Workorder",,,
+,,,,,,,,,"Enter RX Number, click Search",,Validate all fields translate over to EOR accurately in the Frames & Lens Tab and Add On and Comment Tab.,
+,,,,,,,,,Validate all fields of file,281,Under the Communication Tab Validate File Path: ,
+"Primary lab does not accept Service (Tint - Solid), Richland Hills is set as Sequence 3 for Associated Labs and does accept Service (Tint - Solid)",Functional,Critical,15m,None,Final,Lisa Roselle,Account Rules - Primary Lab w/Associated Lab (Seq 3),"Primary Lab: Schertz
+Secondary Lab: Do Not Use
+Associate Labs:
+Sequence 1 is Syracuse, Sequence 2 is Test Location, Sequence 3 is Richland Hills, Sequence 4 is Test Location 2 ","Set-up Primary Lab Facility Rules: 
+Account Set Up
+Do Not Reroute must be unchecked.
+General Tab:
+Manufacturing Facility Offload Sequence Selection:
+Syracuse is selected as Sequence 1
+Test Location is selected as Sequence 2 
+Richland Hills is selected as Sequence 3
+Test Location 2 is selected as Sequence 4
+Service Tab:
+Tint - Solid is unchecked
+
+Set-up Associated Lab Facility Rules: 
+Service Tab: Tint - Solid 
+Syracuse is unchecked
+Richland Hills is checked
+Test Location  is unchecked
+Test Location 2  is unchecked",282,"Primary lab does not accept Service (Tint - Solid), Richland Hills is set as Sequence 3 for Associated Labs and does accept Service (Tint - Solid)",35851
+,,,,,,,,,JSON Work Order,,INSERT ORDER HERE,
+,,,,,,,,,"Enter the EOR, Select Search Workorder",,,
+,,,,,,,,,"Enter RX Number, click Search",,Validate all fields translate over to EOR accurately in the Frames & Lens Tab and Add On and Comment Tab.,
+,,,,,,,,,Validate all fields of file,,Under the Communication Tab Validate File Path: ,
+"Primary lab does not accept Service (Tint - Solid), Richland Hills is set as Sequence 3 for Associated Labs and does not accept Service (Tint - Solid)",Functional,Critical,15m,None,Final,Lisa Roselle,Account Rules - Primary Lab w/Associated Lab (Seq 3),"Primary Lab: Schertz
+Secondary Lab: Do Not Use
+Associate Labs:
+Sequence 1 is Syracuse, Sequence 2 is Test Location, Sequence 3 is Richland Hills, Sequence 4 is Test Location 2 ","Set-up Primary Lab Facility Rules: 
+Account Set Up
+Do Not Reroute must be unchecked.
+General Tab:
+Manufacturing Facility Offload Sequence Selection:
+Syracuse is selected as Sequence 1
+Test Location is selected as Sequence 2 
+Richland Hills is selected as Sequence 3
+Test Location 2 is selected as Sequence 4
+Service Tab:
+Tint - Solid is unchecked
+
+Set-up Associated Lab Facility Rules: 
+Service Tab: Tint - Solid 
+Syracuse is unchecked
+Richland Hills is unchecked
+Test Location  is unchecked
+Test Location 2  is unchecked",283,"Primary lab does not accept Service (Tint - Solid), Richland Hills is set as Sequence 3 for Associated Labs and does not accept Service (Tint - Solid)",35851
+,,,,,,,,,JSON Work Order,,INSERT ORDER HERE,
+,,,,,,,,,"Enter the EOR, Select Search Workorder",,,
+,,,,,,,,,"Enter RX Number, click Search",,Validate all fields translate over to EOR accurately in the Frames & Lens Tab and Add On and Comment Tab.,
+,,,,,,,,,Validate all fields of file,,Under the Communication Tab Validate File Path: ,
